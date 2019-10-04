@@ -6,7 +6,7 @@ private $logindb;
 
 public function __construct()
 {
-	$this->logindb = new mysqli("127.0.0.1","root","12345","login");
+	$this->logindb = new mysqli("localhost","root","sudowudo","OmarDB");
 
 	if ($this->logindb->connect_errno != 0)
 	{
@@ -20,7 +20,11 @@ public function validateLogin($username,$password)
 {
 	$un = $this->logindb->real_escape_string($username);
 	$pw = $this->logindb->real_escape_string($password);
-	$statement = "select * from users where screenname = '$un'";
+	$pw = sha1($pw);
+	$statement = "select * from users where username = '$un'";
+
+	echo $statement .PHP_EOL; //Debug
+
 	$response = $this->logindb->query($statement);
 
 	while ($row = $response->fetch_assoc())

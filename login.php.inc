@@ -20,7 +20,7 @@ public function validateLogin($username,$password)
 {
 	$un = $this->logindb->real_escape_string($username);
 	$pw = $this->logindb->real_escape_string($password);
-	$pw = sha1($pw);
+
 	$statement = "select * from users where username = '$un'";
 
 	echo $statement .PHP_EOL; //Debug

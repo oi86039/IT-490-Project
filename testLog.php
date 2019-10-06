@@ -5,7 +5,7 @@
 
 require_once("Log.php.inc");
 
-$l = new iLog("./_logs/testLog.log","w");
+$l = new iLog("./_logs/testLog.log","a");
 
 $l->print("Testing log system...");
 $l->done();

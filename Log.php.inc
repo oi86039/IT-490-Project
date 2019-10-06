@@ -5,22 +5,28 @@ class iLog{
 	private $log;
 public function __construct($filename,$mode){
 
-	$date = date("m/d/y G.i:s", time());
+	$date = date("y/m/d G.i", time());
 
 	$this->log = fopen ($filename,$mode) or die ("Unable to open file!");
 	fwrite($this->log,
 "
 ====================================================
 $filename
-$date
+Date Created: $date
 ====================================================
 ");
 echo "\n";
 }
 
 public function print($message = "\n"){
-	echo "$message";
+	if (strcmp($message,"\n")==0){
+	echo $message;
 	fwrite($this->log,"$message");
+	}
+	else{	
+	echo "[".date("y/m/d  G.i:s")."] :  $message";
+	fwrite($this->log,"$message");
+	}
 }
 
 public function done(){

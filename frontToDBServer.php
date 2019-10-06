@@ -10,10 +10,18 @@ require_once('login.php.inc');
 
 function doLogin($username,$password)
 {
-    // lookup username in databas
+    // lookup username in database
     // check password
     $login = new loginDB();
     return $login->validateLogin($username,$password);
+    //return false if not valid
+}
+
+function doRegister($user,$email,$pass,$confirmPass,$plainPass)
+{
+    // insert new account into DB
+    $register = new loginDB();
+    return $register->register($user,$email,$pass,$confirmPass,$plainPass);
     //return false if not valid
 }
 
@@ -29,6 +37,13 @@ function requestProcessor($request)
   {
     case "Login":
       return doLogin($request['username'],$request['password']);
+    case "Register":
+	    return doRegister(
+		    $request['user'],
+		    $request['email'],
+		    $request['pass'],
+		    $request['confirmPass'],
+		    $request['plainPass']);
     case "validate_session":
       return doValidate($request['sessionId']);
   }

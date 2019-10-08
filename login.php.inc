@@ -6,7 +6,7 @@ private $logindb;
 
 public function __construct()
 {
-	$this->logindb = new mysqli("127.0.0.1","root","12345","login");
+	$this->logindb = new mysqli("localhost","root"," ","OmarDB");
 
 	if ($this->logindb->connect_errno != 0)
 	{
@@ -20,7 +20,11 @@ public function validateLogin($username,$password)
 {
 	$un = $this->logindb->real_escape_string($username);
 	$pw = $this->logindb->real_escape_string($password);
-	$statement = "select * from users where screenname = '$un'";
+	$pw = $pw;
+	$statement = "select * from users where username = '$un'";
+
+	echo $statement .PHP_EOL; //Debug
+
 	$response = $this->logindb->query($statement);
 
 	while ($row = $response->fetch_assoc())
@@ -35,5 +39,56 @@ public function validateLogin($username,$password)
 	}
 	return 0;//no users matched username
 }
+
+public function register($user,$email,$pass,$confirmPass,$plainPass)
+{
+	$user = $this->logindb->real_escape_string($user);
+	$email = $this->logindb->real_escape_string($email);
+	
+	//Check if user is in DB already
+	$statement = "select * from users where username = '$user'";
+	echo $statement .PHP_EOL; //Debug
+	$response = $this->logindb->query($statement);
+	$num = mysqli_num_rows($response);
+	
+	if ($num > 0){
+		echo "Username is already taken.".PHP_EOL;
+		return 0;
+	}
+
+	//Check if email is in DB already
+	/*$statement = "select * from users where email = '$email'";
+	echo $statement .PHP_EOL; //Debug
+	$response = $this->logindb->query($statement);
+	$num = mysqli_num_rows($response);
+	
+	if ($num > 0){
+		echo "Email is already taken.".PHP_EOL;
+		return 0;
+	}*/
+
+	//Confirm password
+	if (strcmp($pass,$confirmPass)!==0){
+		echo "Passwords do not match. Must confirm password.".PHP_EOL;
+		return 0;
+	}
+
+	//Add to DB
+	$statement = "INSERT INTO users (username, password, email, plainPass) VALUES ('$user','$pass','$email','$plainPass')";
+	echo $statement .PHP_EOL; //Debug
+	$response=$this->logindb->query($statement);
+	if($response===TRUE){
+	
+	echo "Success. Check DB and client response.";
+	
+	return 1;//user added to DB successfully
+	}
+	else{
+		echo $response;
+		echo "Shit went wrong";
+		return 0;
+	}
+}
+
 }
 ?>

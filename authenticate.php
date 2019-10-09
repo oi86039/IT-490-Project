@@ -2,27 +2,52 @@
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
+require_once('Log.php.inc');
 
+//Setup logger
+$l = new iLog(__DIR__ . '/_logs/authenticate.log',"a");
+$l->print("Initializing Logger!\n");
+
+$l->print("Setting up RabbitMQ Client...");
 $client = new rabbitMQClient("frontToDB.ini","frontToDB");
+$l->done();
 
 //Get HTML var
-$user = $_GET["user"];
-$pass = $_GET["pass"];
+$l->print("Getting HTML vars...\n");
+$l->print("Getting user...");
+$user = $_GET["user"]; $l->done();
+$l->print("Getting pass...");
+$pass = $_GET["pass"]; $l->done();
 
 //Prep and send request
+$l->print("Preparing RabbitMQ request...\n");
+$l->print("Type: Login...");
+
 $request = array();
-$request['type'] = "Login";
-$request['username'] = $user;
-$request['password'] = sha1($pass);
+$request['type'] = "Login"; $l->done();
+$l->print("User: $user");
+$request['username'] = $user; $l->done();
+$l->print("Hashed Pass:".sha1($pass));
+$request['password'] = sha1($pass);$l->done();
+$l-print("Message");
 $request['message'] = "Sending Authentication Request to DB";
+
+$l->print();
+
+//Send request
+$l->print("Sending request...\n");
 $response = $client->send_request($request);
 //$response = $client->publish($request);
 
 
 //Wait for response and perform function when received
-echo "client received response: ".PHP_EOL;
-print_r($response);
-echo "\n\n";
+$l->print("Client received response:\n");
+$l->print($response);
 
-echo $argv[0]." END".PHP_EOL;
+
+$l->print("\n\n");
+
+$l->print($argv[0]." END".PHP_EOL);
+$l->print("Exitting logger...\n");
+$l->close();
 

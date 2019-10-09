@@ -1,0 +1,260 @@
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 18.49
+====================================================
+Testing Logger Now...
+Done.
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 18.52
+====================================================
+Testing Logger Now...
+Done.
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.05
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: sdDone.
+Hashed Pass:f10e2821bbbea527ea02200352313bc059445190Done.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.08
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: aksjdlDone.
+Hashed Pass:eecb373bc83939a099152ea54348b1da82029be1Done.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.08
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: omarDone.
+Hashed Pass:c9a7f46bb392292046926d05fab797b08f832f7fDone.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.08
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: omarDone.
+Hashed Pass:4a6db2314c199446c0e2d3e48e30295622c96639Done.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.11
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: asdflkjDone.
+Hashed Pass:41bcddc0ffa98ab9d3a9c82496dc71b9774ff037Done.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.11
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: omarDone.
+Hashed Pass:502b2eeaba2ba49709743526eec206814e6d6d7dDone.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.11
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: omarDone.
+Hashed Pass:85f1002bf139bebdb7f0d07b31fa14155aea9dfcDone.
+
+Sending request...
+Client received response:
+1
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.56
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: dsafjDone.
+Hashed Pass:c0703bd432f61a9d8350c662a523d68b15d1c2b6Done.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 19.58
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: asdm,Done.
+Hashed Pass:92fb75a4595b16116c2a8f5ecba6205c32a8441bDone.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 20.08
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: noumanDone.
+Hashed Pass:763441f764ed1619970262f11ea88e7fd250388dDone.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 20.08
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: noumanDone.
+Hashed Pass:0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33Done.
+
+Sending request...
+Client received response:
+1
+
+ END
+Exitting logger...
+

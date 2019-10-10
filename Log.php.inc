@@ -18,8 +18,8 @@ Date Created: $date
 echo "\n";
 }
 
-public function print($message = "\n"){
-	if (strcmp($message,"\n")==0){
+public function print($message = "<br>\n"){
+	if (strcmp($message,"<br>\n")==0){
 	echo $message;
 	fwrite($this->log,"$message");
 	}
@@ -30,14 +30,14 @@ public function print($message = "\n"){
 }
 
 public function done(){
-	echo "Done.\n";
-	fwrite($this->log,"Done.\n");
+	echo "Done.<br>\n";
+	fwrite($this->log,"Done.<br>\n");
 }
 
 public function close(){
-	fwrite($this->log,"\n");
+	fwrite($this->log,"<br>\n");
 	fclose($this->log);
-	echo "\n";
+	echo "<br>\n";
 }
 
 }

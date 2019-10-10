@@ -258,3 +258,204 @@ Client received response:
  END
 Exitting logger...
 
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 20.55
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: asdfjDone.
+Hashed Pass:f8ee3bf88e00c56182dc851312e1f531482959d0Done.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 20.56
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: noumanDone.
+Hashed Pass:40bd001563085fc35165329ea1ff5c5ecbdbbeefDone.
+
+Sending request...
+Client received response:
+1
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 20.57
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: randyDone.
+Hashed Pass:7110eda4d09e062aa5e4a390b0a572ac0d2c0220Done.
+
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/08 20.57
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.
+Getting HTML vars...
+Getting user...Done.
+Getting pass...Done.
+Preparing RabbitMQ request...
+Type: Login...Done.
+User: randyDone.
+Hashed Pass:40bd001563085fc35165329ea1ff5c5ecbdbbeefDone.
+
+Sending request...
+Client received response:
+1
+
+ END
+Exitting logger...
+
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 19.31
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: asdjhDone.<br>
+Hashed Pass:44b688010da6dde513514d460ddff1cf9ab56d89Done.<br>
+<br>
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+<br>
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 19.35
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: alksdjDone.<br>
+Hashed Pass:94d0e7ef79776bbfab1eda78c3834512e15814bfDone.<br>
+<br>
+Sending request...
+Client received response:
+0
+
+ END
+Exitting logger...
+<br>
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 19.35
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: laksndDone.<br>
+Hashed Pass:d2b6778b67b9e49b72eebe465f7af1f23a48a5b2Done.<br>
+<br>
+Sending request...
+Client received response:
+0
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 19.38
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: ascDone.<br>
+Hashed Pass:2d23b64606c14bffd47c4ddd6cfc3b930f3b1ccaDone.<br>
+<br>
+Sending request...
+Client received response:
+0
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 19.38
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: adlkDone.<br>
+Hashed Pass:0bdf87db77cc0e289ce0c7c0689c290796360739Done.<br>
+<br>
+Sending request...
+Client received response:
+0
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 19.39
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: asdnDone.<br>
+Hashed Pass:9406cb53c42d75925d1c08185c0289b966e7490dDone.<br>
+<br>
+Sending request...
+Client received response:
+0

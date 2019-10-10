@@ -4,6 +4,8 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 require_once('Log.php.inc');
 
+require_once("../myfunctions.php");
+
 //Setup logger
 $l = new iLog(__DIR__ . '/_logs/authenticate.log',"a");
 $l->print("Initializing Logger!\n");
@@ -44,6 +46,10 @@ $response = $client->send_request($request);
 $l->print("Client received response:\n");
 $l->print($response);
 
+//if incorrect login, redirect user to login page.
+if ($response == 0){
+	redirect("Authentication Failed. Redirecting back to Login Page...", 6,"../login.html" );
+}
 
 $l->print("\n\n");
 

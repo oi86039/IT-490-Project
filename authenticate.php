@@ -17,9 +17,9 @@ $l->done();
 //Get HTML var
 $l->print("Getting HTML vars...\n");
 $l->print("Getting user...");
-$user = $_GET["user"]; $l->done();
+$user = $_POST["user"]; $l->done();
 $l->print("Getting pass...");
-$pass = $_GET["pass"]; $l->done();
+$pass = $_POST["pass"]; $l->done();
 
 //Prep and send request
 $l->print("Preparing RabbitMQ request...\n");

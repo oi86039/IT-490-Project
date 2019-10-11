@@ -6,10 +6,10 @@ require_once('rabbitMQLib.inc');
 $client = new rabbitMQClient("frontToDB.ini","frontToDB");
 
 //Get HTML var
-$user = $_GET["user"];
-$email = $_GET["email"];
-$pass = $_GET["pass"];
-$confirmPass = $_GET["confirmPass"];
+$user = $_POST["user"];
+$email = $_POST["email"];
+$pass = $_POST["pass"];
+$confirmPass = $_POST["confirmPass"];
 
 //Prep and send request
 $request = array();

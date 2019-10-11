@@ -459,3 +459,71 @@ Hashed Pass:9406cb53c42d75925d1c08185c0289b966e7490dDone.<br>
 Sending request...
 Client received response:
 0
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 20.00
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: adlkDone.<br>
+Hashed Pass:1fee8e1ccabb06bf63e1f8d9007692ebcddd03ddDone.<br>
+<br>
+Sending request...
+Client received response:
+0
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 20.21
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: Done.<br>
+Hashed Pass:da39a3ee5e6b4b0d3255bfef95601890afd80709Done.<br>
+<br>
+Sending request...
+Client received response:
+0
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 20.25
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: asldkDone.<br>
+Hashed Pass:9b0624450f01221c142664b91bbaf737d90b79a7Done.<br>
+<br>
+Sending request...
+Client received response:
+0
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/10 20.25
+====================================================
+Initializing Logger!
+Setting up RabbitMQ Client...Done.<br>
+Getting HTML vars...
+Getting user...Done.<br>
+Getting pass...Done.<br>
+Preparing RabbitMQ request...
+Type: Login...Done.<br>
+User: asdkljDone.<br>
+Hashed Pass:41695c67a155cee285fce48ef0bcc5f0f02dc51bDone.<br>
+<br>
+Sending request...
+Client received response:
+0

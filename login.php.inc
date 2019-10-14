@@ -9,7 +9,7 @@ private $l;
 public function __construct()
 {
 	$this->logindb = new mysqli("localhost","root"," ","OmarDB");
-	$l = new iLog(__DIR__ . '/_logs/login.php.inc.log',"a");
+	$this->l = new iLog(__DIR__ . '/_logs/login.php.inc.log',"a");
 	if ($this->logindb->connect_errno != 0)
 	{
 		$this->l->print( "Error connecting to database: ".$this->logindb->connect_error.PHP_EOL);

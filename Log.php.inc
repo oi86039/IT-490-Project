@@ -4,7 +4,7 @@ require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 //require_once('Log.php.inc');
 
-require_once("../myfunctions.php");
+//require_once("../myfunctions.php");
 
 //ILOG.php
 class iLog{

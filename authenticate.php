@@ -43,17 +43,20 @@ $response = $client->send_request($request);
 
 
 //Wait for response and perform function when received
-$l->print("Client received response:\n");
-$l->print($response);
+$l->print("Client received response: $response");
 
 //if incorrect login, redirect user to login page.
-if ($response == 0){
-	redirect("Authentication Failed. Redirecting back to Login Page...", 6,"../login.html" );
-}
+//if ($response == 0){
+//	redirect("Authentication Failed. Redirecting back to Login Page...", 6,"../login.html" );
+//}
 
 $l->print("\n\n");
+//$l->close();
 
-$l->print($argv[0]." END".PHP_EOL);
-$l->print("Exitting logger...\n");
-$l->close();
+//Send file to RMQ
+$l->sendToRabbitMQ();
+echo "Sent Log to rabbitMQ.";
 
+
+echo ($argv[0]." END".PHP_EOL);
+?>

@@ -1,4 +1,10 @@
 <?php
+require_once('path.inc');
+require_once('get_host_info.inc');
+require_once('rabbitMQLib.inc');
+//require_once('Log.php.inc');
+
+require_once("../myfunctions.php");
 
 //ILOG.php
 class iLog{
@@ -24,8 +30,9 @@ public function print($message = "<br>\n"){
 	fwrite($this->log,"$message");
 	}
 	else{	
-	echo "[".date("y/m/d  G.i:s")."] :  $message";
-	fwrite($this->log,"$message");
+		$nMessage = "[".date("y/m/d  G.i:s")."] :  $message";
+		echo $nMessage;
+	fwrite($this->log,$nMessage);
 	}
 }
 
@@ -38,6 +45,36 @@ public function close(){
 	fwrite($this->log,"<br>\n");
 	fclose($this->log);
 	echo "<br>\n";
+}
+
+public function sendToRabbitMQ(){
+fwrite($this->log,"<br>\n");
+        fclose($this->log);
+        echo "<br>\n";
+	//Send log file to rabbitMQ
+//$l->print("Setting up RabbitMQ Client...");
+$client = new rabbitMQClient("log.ini","LogServer");
+//$l->done();
+//$l->close();
+
+//Prep and send request
+$filenameOUT = __DIR__ . '/_RLogs/authenticate.log';
+$filenameIN = __DIR__ . '/_logs/authenticate.log';
+echo $filename;
+$request = array();
+$request['type'] = "logging";
+$request['filename'] = $filenameOUT;
+$request['contents'] = file_get_contents($filenameIN);
+
+//Send request
+$response = $client->send_request($request);
+//$response = $client->publish($request);
+
+
+//Wait for response and perform function when received
+echo("Client received response:\n");
+echo($response);
+
 }
 
 }

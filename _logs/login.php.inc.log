@@ -1,0 +1,8 @@
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/14 19.46
+====================================================
+[19/10/14  19.46:30] :  correctly connected to database
+[19/10/14  19.46:30] :  select * from users where username = 'sadfljk'
+<br>

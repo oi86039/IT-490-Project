@@ -47,7 +47,7 @@ public function close(){
 	echo "<br>\n";
 }
 
-public function sendToRabbitMQ(){
+public function sendToRabbitMQ($filenameIN, $filenameOUT){
 fwrite($this->log,"<br>\n");
         fclose($this->log);
         echo "<br>\n";
@@ -58,9 +58,6 @@ $client = new rabbitMQClient("log.ini","LogServer");
 //$l->close();
 
 //Prep and send request
-$filenameOUT = __DIR__ . '/_RLogs/authenticate.log';
-$filenameIN = __DIR__ . '/_logs/authenticate.log';
-echo $filename;
 $request = array();
 $request['type'] = "logging";
 $request['filename'] = $filenameOUT;

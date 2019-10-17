@@ -27,22 +27,25 @@ public function validateLogin($username,$password)
 	$un = $this->logindb->real_escape_string($username);
 	$pw = $this->logindb->real_escape_string($password);
 	$pw = $pw;
-	$statement = "select * from users where username = '$un'";
+
+	$statement = "select * from users where user = '$un'";
+	//$statement = "select * from users where user = 'omar'";
 
 	$this->l->print( $statement .PHP_EOL); //Debug
 
 	$response = $this->logindb->query($statement);
-
+		
 	while ($row = $response->fetch_assoc())
-	{
+	{	
 		$this->l->print( "checking password for $username".PHP_EOL);
-		if ($row["password"] == $pw)
+		if ($row["pass"] == $pw)
 		{
 			$this->l->print( "passwords match for $username".PHP_EOL);
 			return 1;// password match
 		}
 		$this->l->print( "passwords did not match for $username".PHP_EOL);
 	}
+	echo "Username/Password incorrect";
 	return 0;//no users matched username
 }
 

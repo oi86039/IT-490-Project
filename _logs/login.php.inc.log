@@ -6,3 +6,164 @@ Date Created: 19/10/14 19.46
 [19/10/14  19.46:30] :  correctly connected to database
 [19/10/14  19.46:30] :  select * from users where username = 'sadfljk'
 <br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 18.28
+====================================================
+[19/10/16  18.28:23] :  correctly connected to database
+[19/10/16  18.28:23] :  select * from users where user = 'aksfj'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 18.40
+====================================================
+[19/10/16  18.40:56] :  correctly connected to database
+[19/10/16  18.40:56] :  select * from users where user = 's,d'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 18.43
+====================================================
+[19/10/16  18.43:47] :  correctly connected to database
+[19/10/16  18.43:47] :  select * from users where user = ',mad'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 18.55
+====================================================
+[19/10/16  18.55:56] :  correctly connected to database
+[19/10/16  18.55:56] :  select * from users where user = 'jxc'
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 18.56
+====================================================
+[19/10/16  18.56:36] :  correctly connected to database
+[19/10/16  18.56:36] :  select * from users where user = 'adm,n'
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.01
+====================================================
+[19/10/16  19.01:13] :  correctly connected to database
+[19/10/16  19.01:13] :  select * from users where user = ','
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.01
+====================================================
+[19/10/16  19.01:33] :  correctly connected to database
+[19/10/16  19.01:33] :  select * from users where user = 'kaa'
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.03
+====================================================
+[19/10/16  19.03:45] :  correctly connected to database
+[19/10/16  19.03:45] :  select * from users where user = 'asmd'
+[19/10/16  19.03:45] :  Querried
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.05
+====================================================
+[19/10/16  19.05:09] :  correctly connected to database
+[19/10/16  19.05:09] :  select * from users where user = 'a.dfsj'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.06
+====================================================
+[19/10/16  19.06:24] :  correctly connected to database
+[19/10/16  19.06:24] :  select * from users where user = 'adf'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.30
+====================================================
+[19/10/16  19.30:08] :  correctly connected to database
+[19/10/16  19.30:08] :  select * from users where user = ',S'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.31
+====================================================
+[19/10/16  19.31:32] :  correctly connected to database
+[19/10/16  19.31:32] :  select * from users where user = 'asdasyd'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.33
+====================================================
+[19/10/16  19.33:49] :  correctly connected to database
+[19/10/16  19.33:49] :  select * from users where user = 'asdaadfssyd'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.34
+====================================================
+[19/10/16  19.34:24] :  correctly connected to database
+[19/10/16  19.34:24] :  select * from users where user = 'asdaadfssyd'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.38
+====================================================
+[19/10/16  19.38:27] :  correctly connected to database
+[19/10/16  19.38:27] :  select * from users where user = 'omar'
+[19/10/16  19.38:27] :  checking password for dd
+[19/10/16  19.38:27] :  passwords did not match for dd
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.39
+====================================================
+[19/10/16  19.39:52] :  correctly connected to database
+[19/10/16  19.39:52] :  select * from users where user = 'omar'
+[19/10/16  19.39:52] :  checking password for adsf
+[19/10/16  19.39:52] :  passwords did not match for adsf
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.52
+====================================================
+[19/10/16  19.52:07] :  correctly connected to database
+[19/10/16  19.52:07] :  select * from users where user = 'ldksajf'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.57
+====================================================
+[19/10/16  19.57:45] :  correctly connected to database
+[19/10/16  19.57:45] :  select * from users where user = 'kj'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 19.59
+====================================================
+[19/10/16  19.59:34] :  correctly connected to database
+[19/10/16  19.59:34] :  select * from users where user = 'asd'
+<br>
+
+====================================================
+/home/omar/Desktop/IT490/_logs/login.php.inc.log
+Date Created: 19/10/16 20.39
+====================================================
+[19/10/16  20.39:16] :  correctly connected to database
+[19/10/16  20.39:16] :  select * from users where user = 'faj'
+<br>

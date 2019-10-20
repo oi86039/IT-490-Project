@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SMTPFROM=entermatrixxx@gmail.com
+SMTPTO=entermatrixxx@gmail.com
+SMTPSERVER=smtp.googlemail.com:587
+SMTPUSER=entermatrixxx
+SMTPPASS=NJITit490
+MESSAGEBODY="Testing 1 2 3"
+SUBJECT="This is a test."
+
+sendmail -f $SMTPFROM -t $SMTPTO -u $SUBJECT -m $MESSAGEBODY -s $SMTPSERVER -xu $SMTPUSER -xp $SMTPPASS
+
+

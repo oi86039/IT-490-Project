@@ -1,0 +1,26 @@
+cat /tmp/email.txt
+
+Subject: it490
+
+Email Content line 1 : www.google.com
+Email Content line 2 : www.priceline.com
+
+
+
+
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+                                                              5,0-1         All
+

@@ -133,9 +133,11 @@ function requestProcessor($request)
 		case "getplaces":
 			return getPlaces($request['query'],$request['country'],$request['currency'],$request['locale']);
 		case "setSession":
-			//return setSession(country,currency,locale,originPlace,destinationPlace,outboundDate,adults,tags[]);
+			//return setSession(country,currency,locale,originPlace,destinationPlace,outboundDate,adults,tags[])
+			//tag must include : inboundDate,cabinClass,children,infants,includeCarriers,excludeCarriers,groupPricing
 		case "getSession":
 			//return getSession($locKey,filters);
+			//filter must have: sortTypeSTRING, duration, outboundarrivetime, outbounddeparttime, inboundarrivetime, inbounddeparttime, price*,sortOrderSTRING,durationNUMBER,includeCarriersSTRING,excludeCarriersSTRING,originAirportsSTRING,destinationAirportsSTRING,stopsSTRING,outboundDepartTimeSTRING,outboundDepartStartTimeSTRING,outboundDepartEndTimeSTRING,outboundArriveStartTimeSTRING,outboundArriveEndTimeSTRING,inboundDepartTimeSTRING,inboundDepartStartTimeSTRING,inboundArriveStartTimeSTRING,inboundArriveEndTimeSTRING,pageIndex,pageSize
   	}
   	return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }

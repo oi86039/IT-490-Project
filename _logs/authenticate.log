@@ -1017,3 +1017,22 @@ Date Created: 19/10/14 20.09
 [19/10/14  20.10:04] :  Client received response: 0[19/10/14  20.10:04] :  
 
 <br>
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/21 11.31
+====================================================
+[19/10/21  11.31:05] :  Initializing Logger!
+[19/10/21  11.31:05] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/21  11.31:05] :  Getting HTML vars...
+[19/10/21  11.31:05] :  Getting user...Done.<br>
+[19/10/21  11.31:05] :  Getting pass...Done.<br>
+[19/10/21  11.31:05] :  Preparing RabbitMQ request...
+[19/10/21  11.31:05] :  Type: Login...Done.<br>
+[19/10/21  11.31:05] :  User: sdaf,m.Done.<br>
+[19/10/21  11.31:05] :  Hashed Pass:c00274e680a816b9570dc3259e89b52dceeff37cDone.<br>
+<br>
+[19/10/21  11.31:05] :  Sending request...
+[19/10/21  11.33:01] :  Client received response: 0[19/10/21  11.33:01] :  
+
+<br>

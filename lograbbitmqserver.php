@@ -9,7 +9,7 @@ function logging($filename,$contents)
 {
     // lookup username in databas
     // check password
-   $log= fopen($filename, 'a')or die("Unable to open $filename");
+   $log= fopen($filename, 'w')or die("Unable to open $filename");
    fwrite($log, $contents);
    fclose($log);
    return "Success!";

@@ -1,5 +1,5 @@
 <?php
-require_once("Log.database.php.inc");
+require_once("Log.php.inc");
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
@@ -50,7 +50,7 @@ fwrite($this->log,"<br>\n");
 	//Send log file to rabbitMQ
 //$l->print("Setting up RabbitMQ Client...");
 	$client = new rabbitMQClient("log.ini","LogServer");
-$l = new iLog("Log.database.php.inc"), "a");
+$l = new iLog("Log.php.inc", "a");
 //$l->done();
 //$l->close();
 //Prep and send request

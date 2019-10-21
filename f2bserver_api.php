@@ -56,6 +56,7 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 	$curl = curl_init();
 	
 	curl_setopt_array($curl, array(
+		CURLOPT_HEADER => true,
 		CURLOPT_URL => "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0",
 		CURLOPT_RETURNTRANSFER => true,
 		CURLOPT_FOLLOWLOCATION => true,
@@ -72,7 +73,8 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 		),
 	));
 	
-	$locKey = curl_exec($curl);
+	$header = curl_exec($curl);
+	$locKey = substr($header, 189, 36);
 	$err = curl_error($curl);
 	
 	curl_close($curl);
@@ -118,6 +120,7 @@ function getSession($lockKey){
 
 function requestProcessor($request)
 {
+	//Required Params: query, country, currency, locale, originPlace, destinationPlace, outboundDate, adults, tags[].
 	$L -> print("Request received");
 
 	//array should have: ()
@@ -132,11 +135,9 @@ function requestProcessor($request)
   	{
 		case "getplaces":
 			return getPlaces($request['query'],$request['country'],$request['currency'],$request['locale']);
-		case "setSession":
-			//return setSession(country,currency,locale,originPlace,destinationPlace,outboundDate,adults,tags[])
+			setSession($request['country'],$request['currency'],$request['locale'],$request['originPlace'],$request['destinationPlace'],['outboundDate'],['adults'],['tags'])
 			//tag must include : inboundDate,cabinClass,children,infants,includeCarriers,excludeCarriers,groupPricing
-		case "getSession":
-			//return getSession($locKey,filters);
+			return getSession($locKey);
 			//filter must have: sortTypeSTRING, duration, outboundarrivetime, outbounddeparttime, inboundarrivetime, inbounddeparttime, price*,sortOrderSTRING,durationNUMBER,includeCarriersSTRING,excludeCarriersSTRING,originAirportsSTRING,destinationAirportsSTRING,stopsSTRING,outboundDepartTimeSTRING,outboundDepartStartTimeSTRING,outboundDepartEndTimeSTRING,outboundArriveStartTimeSTRING,outboundArriveEndTimeSTRING,inboundDepartTimeSTRING,inboundDepartStartTimeSTRING,inboundArriveStartTimeSTRING,inboundArriveEndTimeSTRING,pageIndex,pageSize
   	}
   	return array("returnCode" => '0', 'message'=>"Server received request and processed");

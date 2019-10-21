@@ -1,0 +1,12 @@
+<?php
+
+$l->print("message");
+$l->print();
+$l->done();
+$l=close(); 
+
+$l->sendToRabbitMQ("Log.database.php.incIN","Log.database.php.incOUT");
+
+?>
+
+

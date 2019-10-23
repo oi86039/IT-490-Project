@@ -33,6 +33,7 @@ function getPlace($query,$country,$currency,$locale){
 	curl_close($curl);
 
 	if ($err) {
+		$L -> print("ERROR: in 'getPlaces' function");
 		echo "cURL Error #:" . $err;
 	} else {
 		return $response;
@@ -81,8 +82,9 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 	
 	if ($err) {
 		echo "cURL Error #:" . $err;
+		$L -> print("ERROR: in 'setSession' function");
 	} else {
-		echo $locKey;
+		return $locKey;
 	}
 }
 
@@ -106,22 +108,22 @@ function getSession($lockKey){
 		),
 	));
 	
-	$response = curl_exec($curl);
+	$response = json_decode(curl_exec($curl));
 	$err = curl_error($curl);
 	
 	curl_close($curl);
 	
 	if ($err) {
 		echo "cURL Error #:" . $err;
+		$L -> print("ERROR: in 'getSession' function");
 	} else {
-		echo $response;
+		return $response;
 	}
 }
 
-function requestProcessor($request)
-{
+function requestProcessor($request){
 	//Required Params: query, country, currency, locale, originPlace, destinationPlace, outboundDate, adults, tags[].
-	$L -> print("Request received");
+	$L -> print("Request received from Front-End");
 
 	//array should have: ()
 
@@ -129,22 +131,63 @@ function requestProcessor($request)
 	var_dump($request);
 	if(!isset($request['type']))
 	{
+		$L -> print("ERROR: unsupported message type");
 		return "ERROR: unsupported message type";
   	}
   	switch ($request['type'])
   	{
 		case "getplaces":
-			return getPlaces($request['query'],$request['country'],$request['currency'],$request['locale']);
-			setSession($request['country'],$request['currency'],$request['locale'],$request['originPlace'],$request['destinationPlace'],['outboundDate'],['adults'],['tags'])
-			//tag must include : inboundDate,cabinClass,children,infants,includeCarriers,excludeCarriers,groupPricing
-			return getSession($locKey);
-			//filter must have: sortTypeSTRING, duration, outboundarrivetime, outbounddeparttime, inboundarrivetime, inbounddeparttime, price*,sortOrderSTRING,durationNUMBER,includeCarriersSTRING,excludeCarriersSTRING,originAirportsSTRING,destinationAirportsSTRING,stopsSTRING,outboundDepartTimeSTRING,outboundDepartStartTimeSTRING,outboundDepartEndTimeSTRING,outboundArriveStartTimeSTRING,outboundArriveEndTimeSTRING,inboundDepartTimeSTRING,inboundDepartStartTimeSTRING,inboundArriveStartTimeSTRING,inboundArriveEndTimeSTRING,pageIndex,pageSize
+			return getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']);
+			$L -> print("Returned getPlaces -> originPlace <- to FE");
+			return getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']);
+			$L -> print("Returned getPlaces -> destinationPlace <- to FE");
+		case "getresults":
+			$locKey = setSession($request['country'],$request['currency'],$request['locale'],$request['originPlace'],$request['destinationPlace'],$request['outboundDate'],$request['adults'],$request['tags'],$request['filters']);
+			$L -> print("Returned setSession to FE");
+			//tag must include: 
+			//	inboundDate,
+			//	cabinClass,
+			//	children,
+			//	infants,
+			//	includeCarriers,
+			//	excludeCarriers,
+			//	groupPricing
+			return getSession($locKey,$request['filters']);
+			$L -> print("Returned getSession to FE");
+			//filter must have:
+			//	sortTypeSTRING,
+			//	duration,
+			//	outboundarrivetime,
+			//	outbounddeparttime,
+			//	inboundarrivetime,
+			//	inbounddeparttime,
+			//	price*,
+			//	sortOrderSTRING,
+			//	durationNUMBER,
+			//	includeCarriersSTRING,
+			//	excludeCarriersSTRING,
+			//	originAirportsSTRING,
+			//	destinationAirportsSTRING,
+			//	stopsSTRING,
+			//	outboundDepartTimeSTRING,
+			//	outboundDepartStartTimeSTRING,
+			//	outboundDepartEndTimeSTRING,
+			//	outboundArriveStartTimeSTRING,
+			//	outboundArriveEndTimeSTRING,
+			//	inboundDepartTimeSTRING,
+			//	inboundDepartStartTimeSTRING,
+			//	inboundArriveStartTimeSTRING,
+			//	inboundArriveEndTimeSTRING,
+			//	pageIndex,
+			//	pageSize
   	}
   	return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }
+
+
 $L = new iLog("./backend_log.log","a");
 
-$L -> print("Log session created");
+$L -> print("Listening session created");
 
 $server = new rabbitMQServer("frontToBack.ini","frontToBack");
 

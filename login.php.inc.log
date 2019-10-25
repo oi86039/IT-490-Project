@@ -17,3 +17,19 @@ Date Created: 19/10/21 16.03
 [19/10/21  16.03:43] :  correctly connected to database:
 [19/10/21  16.03:43] :  select * from users where username = 'nkljl'
 <br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/24 20.05
+====================================================
+[19/10/24  20.05:42] :  correctly connected to database:
+[19/10/24  20.05:42] :  select * from users where username = 'lkh'
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/24 20.07
+====================================================
+[19/10/24  20.07:05] :  correctly connected to database:
+[19/10/24  20.07:05] :  select * from users where username = 'asd,fj'
+<br>

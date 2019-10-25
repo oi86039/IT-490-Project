@@ -3,23 +3,19 @@ require_once("Log.php.inc");
 class loginDB
 {
 private $logindb;
-private $l;
-	
-    
+private $l;    
 
 public function __construct()
-
-
 {
 	$this->l =new iLog("./login.php.inc.log","a");
-	$this->logindb = new mysqli("localhost","root","Edisonfall1006","it490");
+	$this->logindb = new mysqli("localhost","root"," ","it490");
 
 	if ($this->logindb->connect_errno != 0)
 	{
-		$this ->l ->print("Error connecting to database:" .$this->logindb->connect_error.PHP_EOL);
+		$this->l->print("Error connecting to database:" .$this->logindb->connect_error.PHP_EOL);
 		exit(1);
 	}
-	$this -> l ->print("correctly connected to database:".PHP_EOL);
+	$this->l->print("correctly connected to database:".PHP_EOL);
 }
 
 public function validateLogin($username,$password)
@@ -29,22 +25,22 @@ public function validateLogin($username,$password)
 	$pw = $pw;
 	$statement = "select * from users where username = '$un'";
 
-	$this ->l ->print($statement .PHP_EOL); //Debug
+	$this->l->print($statement .PHP_EOL); //Debug
 
 	$response = $this->logindb->query($statement);
 
 	while ($row = $response->fetch_assoc())
 	{
-		$this ->l ->print("checking password for $username".PHP_EOL);
+		$this->l->print("checking password for $username".PHP_EOL);
 		if ($row["password"] == $pw)
 		{
-			$this ->l ->print("passwords match for $username".PHP_EOL);
-			$this ->l ->close();
+			$this->l->print("passwords match for $username".PHP_EOL);
+			$this->l->close();
 			return 1;// password match
 		}
-		$this ->l ->print("passwords did not match for $username".PHP_EOL);
+		$this->l->print("passwords did not match for $username".PHP_EOL);
 	}
-	$this ->l ->close();
+	$this->l->close();
 	return 0;//no users matched username
 }
 
@@ -84,7 +80,7 @@ public function register($user, $email, $pass, $confirmPass, $plainPass)
 	}
 
 	//Add to DB
-	$statement = "INSERT INTO users (username, password, email, plainPass) VALUES ('$user','$pass','$email','$plainPass')";
+	$statement = "INSERT INTO users (username, password, plainpassword, email, verify) VALUES ('$user','$pass','$plainpass','$email,'0')";
 	$this ->l ->print($statement .PHP_EOL); //Debug
 	$response=$this->logindb->query($statement);
 	if($response===TRUE){

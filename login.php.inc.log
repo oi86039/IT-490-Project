@@ -33,3 +33,18 @@ Date Created: 19/10/24 20.07
 [19/10/24  20.07:05] :  correctly connected to database:
 [19/10/24  20.07:05] :  select * from users where username = 'asd,fj'
 <br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/24 20.27
+====================================================
+[19/10/24  20.27:47] :  correctly connected to database:
+[19/10/24  20.27:47] :  select * from users where username = 'nf,nds,afn'
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/24 20.39
+====================================================
+[19/10/24  20.39:47] :  correctly connected to database:
+[19/10/24  20.39:47] :  select * from users where username = 'dsdsf,ajasf'
+<br>

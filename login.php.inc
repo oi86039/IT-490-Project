@@ -35,12 +35,12 @@ public function validateLogin($username,$password)
 		if ($row["password"] == $pw)
 		{
 			$this->l->print("passwords match for $username".PHP_EOL);
-			$this->l->close();
+			$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
 			return 1;// password match
 		}
 		$this->l->print("passwords did not match for $username".PHP_EOL);
 	}
-	$this->l->close();
+	$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
 	return 0;//no users matched username
 }
 
@@ -57,7 +57,7 @@ public function register($user, $email, $pass, $confirmPass, $plainPass)
 	
 	if ($num > 0){
 		$this ->l -> print("Username is already taken.:").PHP_EOL;
-		$this ->l ->close();
+		$this ->l ->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
 		return 0;
 	}
 
@@ -75,7 +75,7 @@ public function register($user, $email, $pass, $confirmPass, $plainPass)
 	//Confirm password
 	if (strcmp($pass, $confirmPass)!==0){
 		$this ->l ->print("Passwords do not match. Must confirm password.").PHP_EOL;
-		$this ->l ->close();
+		$this ->l ->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
 		return 0;
 	}
 
@@ -92,7 +92,7 @@ public function register($user, $email, $pass, $confirmPass, $plainPass)
 	else{
 		$this ->l ->print($response);
 		$this ->l ->print("Shit went wrong");
-		$this ->l ->close();
+		$this ->l ->sendToRabbitMQ();
 		return 0;
 	}
 }

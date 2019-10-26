@@ -34,7 +34,7 @@ function requestProcessor($request)
 $l= new iLog(__DIR__ ."test.log", "a");
 $l->print("success!!\n");
 
-$server = new rabbitMQServer("log.ini","LogServer");
+$server = new rabbitMQServer("logBE.ini","LogBEServer");
 
 $server->process_requests('requestProcessor');
 $l->close();

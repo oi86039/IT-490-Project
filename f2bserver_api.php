@@ -7,12 +7,12 @@ require_once('rabbitMQLib.inc');
 require_once('login.php.inc');
 require_once('Log.php.inc');
 
-$L = new iLog("./backend_log.log","a");
+//$L = new iLog("./backend_log.log","a");
 
 function getPlaces($query,$country,$currency,$locale){
-	global $L;
-	$L -> print("'getPlaces' called for proper syntax");
-	
+	//global $L;
+	//$L -> print("'getPlaces' called for proper syntax");
+	echo "query: ".$query."\n";	
 	$curl = curl_init();
 
 	curl_setopt_array($curl, array(
@@ -30,22 +30,24 @@ function getPlaces($query,$country,$currency,$locale){
 			),
 		));
 
-	$response = json_decode(curl_exec($curl));
+	$response = curl_exec($curl);
 	$err = curl_error($curl);
 
 	curl_close($curl);
 
 	if ($err) {
-		$L -> print("ERROR: in 'getPlaces' function");
+		//$L -> print("ERROR: in 'getPlaces' function");
 		echo "cURL Error #:" . $err;
 	} else {
-		return $response;
+		$jresponse = json_decode($response);
+		var_dump($jresponse);
+		return $jresponse;
 	}
 }
 
 function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,$tags){
-	global $L;
-	$L -> print("'setSession' called");
+	//global $L;
+	//$L -> print("'setSession' called");
 	
 	$postF = "";
 	
@@ -86,15 +88,15 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 	
 	if ($err) {
 		echo "cURL Error #:" . $err;
-		$L -> print("ERROR: in 'setSession' function");
+		//$L -> print("ERROR: in 'setSession' function");
 	} else {
 		return $locKey;
 	}
 }
 
 function getSession($lockKey){
-	global $L;
-	$L -> print("'getSession' is called");
+	//global $L;
+	//$L -> print("'getSession' is called");
 
 	$curl = curl_init();
 
@@ -120,17 +122,17 @@ function getSession($lockKey){
 	
 	if ($err) {
 		echo "cURL Error #:" . $err;
-		$L -> print("ERROR: in 'getSession' function");
+		//$L -> print("ERROR: in 'getSession' function");
 	} else {
 		return $response;
 	}
 }
 
 function requestProcessor($request){
-	global $L;
+	//global $L;
 	static $origin = 0;
 	//Required Params: query, country, currency, locale, originPlace, destinationPlace, outboundDate, adults, tags[].
-	$L -> print("Request received from Front-End");
+	//$L -> print("Request received from Front-End");
 
 	//array should have: ()
 
@@ -138,26 +140,33 @@ function requestProcessor($request){
 	var_dump($request);
 	if(!isset($request['type']))
 	{
-		$L -> print("ERROR: unsupported message type");
+		//$L -> print("ERROR: unsupported message type");
 		return "ERROR: unsupported message type";
   	}
   	switch ($request['type'])
   	{
 		case "getPlaces":
 			if($origin == 0){
-                                $L -> print("Returned getPlaces -> originPlace <- to FE");
+				//$rArray = array();
+				//$L -> print("Returned getPlaces -> originPlace <- to FE");
+				echo "**getPlaces -> originPlace**";
+				echo '\n';
                                 $origin = 1;
                                 return getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']);
                         }
 			else{
+				echo "**getPlaces -> destinationPlace**";
+				echo '\n';
                                 $origin = 0;
-                                $L -> print("Returned getPlaces -> destinationPlace <- to FE");
+                                //$L -> print("Returned getPlaces -> destinationPlace <- to FE");
                                 return getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']);
 			}
 			break;
 		case "getResults":
 			$locKey = setSession($request['country'],$request['currency'],$request['locale'],$request['originPlace'],$request['destinationPlace'],$request['outboundDate'],$request['adults'],$request['tags'],$request['filters']);
-			$L -> print("Returned setSession to FE");
+			
+			//$L -> print("Returned setSession to FE");
+			
 			//tag must include: 
 			//	inboundDate,
 			//	cabinClass,
@@ -167,8 +176,8 @@ function requestProcessor($request){
 			//	excludeCarriers,
 			//	groupPricing
 		
-
-			$L -> print("Returned getSession to FE");
+			//$L -> print("Returned getSession to FE");
+			
 			return getSession($locKey,$request['filters']);
 			break;
 			//filter must have:
@@ -204,12 +213,12 @@ function requestProcessor($request){
 
 //$L = new iLog("./backend_log.log","a");
 
-$L -> print("Listening session created");
+//$L -> print("Listening session created");
 
 $server = new rabbitMQServer("frontToBack.ini","frontToBack");
 
 $server->process_requests('requestProcessor');
-$L -> sentToRabbitMQ("./backend_log.log","./_logs/BackEnd.log");
+//$L -> sentToRabbitMQ("./backend_log.log","./_logs/BackEnd.log");
 exit();
 ?>
 

@@ -45,7 +45,7 @@ fwrite($this->log,"<br>\n");
         echo "<br>\n";
 	//Send log file to rabbitMQ
 //$l->print("Setting up RabbitMQ Client...");
-$client = new rabbitMQClient("log.ini","LogServer");
+$client = new rabbitMQClient("logBE.ini","LogBE");
 //$l->done();
 //$l->close();
 //Prep and send request

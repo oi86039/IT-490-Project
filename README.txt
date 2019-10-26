@@ -2,18 +2,36 @@
 #IT 490
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 					|
-             FUNCTIONALITY              |
+             HOW IT WORKS               |
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ |
 
-1. Front end sends to backend the parameters that come from what the user is searching for (location, country, currency, locale, etc.)
-2. Back end searches for the legitimate place based on the query that the user inputed, via the getPlace function. (If user searches "Orlando", the function will find the appropriate place, which would be "Orlando, Florida")
-3. With the appropriate syntax now available, the function setSession is called. The function allows the API to create a session key so a query of links to ticekting sites is available based on what the user parameters entail.
-4. With the session key available, it is returned to the getSession function, where the session is called, with the key, to provide the links needed to access the ticketing sites.
-5. Finally this information is sent to the front end again via rabbitmq
+Step 1)
+User inputs desired search parameters, based on the location they wish to fly to, as well as where they will fly from in the Front-End(FE). Once the user has completed the desired search parameters, they will submit the parameters to the FE. The FE will then send a "Search Array", populated with the user's search parameters, to the Back-End(BE).
+
+Step 2)
+The BE will take the "Search Array" and, using the Skyscanner API database, will then search for any matching places that reference the parameters given in the "Search Array". The FE will be sending two requests for this task, accomodating for both origin and destination the user had inputed. Both created arrays for both origin and destination will be sent to the FE.
+
+Step 3)
+The FE will allow the user to choose the desired location that the Skyscanner API database can provide. Once both origin and destination have been chosen, the FE will update the "Search Array" and send it back to the BE.
+
+Step 4)
+The BE will now create a session key, using the parameters in the updated "Search Array", to use to initiate a search via the Skyscanner API for ticket prices and links. Once the session key is created, the link search can begin. All results from this search will be sent to the FE.
+
+Step 4.1)
+The user might incorporate additional parameters to narrow the search before creating the session key. These filters will be included in the creation of the session key before initiation the search for the links.
+
+Step 4.2)
+The user might also incorporate filters for when the link search is initiated, in order to narrow down the search results. These filters will also be incorporated into the link search when it is reinitialized.
+
 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 					|
-	      HOW TO USE                |
+	    FUNCTIONALITIES             |
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ |
 
-1.
+The script, f2bserver_api.php, allows communication via RabbitMQ between Back-End and Front-End, as well as calling to a number of functions that allow the script to connect, request, and pull data from the SkyScanner API.
+
+The script delegates tasks based on states given from the Front-End via strings in the search array ccalled ["Types"}
+Below are the functionalities of each of the functions:
+
+

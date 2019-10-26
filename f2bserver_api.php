@@ -15,8 +15,10 @@ function getPlaces($query,$country,$currency,$locale){
 	echo "query: ".$query."\n";	
 	$curl = curl_init();
 
+	$q = str_replace(" ", "%20",$query);
+
 	curl_setopt_array($curl, array(
-		CURLOPT_URL => "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/$country/$currency/$locale/?query=$query",
+		CURLOPT_URL => "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/$country/$currency/$locale/?query=$q",
 		CURLOPT_RETURNTRANSFER => true,
 		CURLOPT_FOLLOWLOCATION => true,
 		CURLOPT_ENCODING => "",
@@ -39,7 +41,7 @@ function getPlaces($query,$country,$currency,$locale){
 		//$L -> print("ERROR: in 'getPlaces' function");
 		echo "cURL Error #:" . $err;
 	} else {
-		$jresponse = json_decode($response);
+		$jresponse = json_decode($response,true);
 		var_dump($jresponse);
 		return $jresponse;
 	}
@@ -146,7 +148,7 @@ function requestProcessor($request){
   	switch ($request['type'])
   	{
 		case "getPlaces":
-			if($origin == 0){
+			/*if($origin == 0){
 				//$rArray = array();
 				//$L -> print("Returned getPlaces -> originPlace <- to FE");
 				echo "**getPlaces -> originPlace**";
@@ -160,9 +162,11 @@ function requestProcessor($request){
                                 $origin = 0;
                                 //$L -> print("Returned getPlaces -> destinationPlace <- to FE");
                                 return getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']);
-			}
+			}*/
+			$setPlaces = array(getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']),getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']));
+			return $setPlaces;
 			break;
-		case "getResults":
+		case "getSession":
 			$locKey = setSession($request['country'],$request['currency'],$request['locale'],$request['originPlace'],$request['destinationPlace'],$request['outboundDate'],$request['adults'],$request['tags'],$request['filters']);
 			
 			//$L -> print("Returned setSession to FE");

@@ -25,3 +25,103 @@ Date Created: 19/10/20 12.11
 Date Created: 19/10/22 20.32
 ====================================================
 [19/10/22  20.32:58] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 19.24
+====================================================
+[19/10/25  19.24:59] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.21
+====================================================
+[19/10/25  20.21:40] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.34
+====================================================
+[19/10/25  20.34:22] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.36
+====================================================
+[19/10/25  20.36:02] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.41
+====================================================
+[19/10/25  20.41:53] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.46
+====================================================
+[19/10/25  20.46:59] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.47
+====================================================
+[19/10/25  20.47:11] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.48
+====================================================
+[19/10/25  20.48:10] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.52
+====================================================
+[19/10/25  20.52:45] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.52
+====================================================
+[19/10/25  20.52:53] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.57
+====================================================
+[19/10/25  20.57:31] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 20.57
+====================================================
+[19/10/25  20.57:53] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.02
+====================================================
+[19/10/25  21.02:58] :  Listening session created[19/10/25  21.06:28] :  Request received from Front-End[19/10/25  21.06:28] :  Returned getPlaces -> originPlace <- to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.06
+====================================================
+[19/10/25  21.06:37] :  Listening session created[19/10/25  21.06:50] :  Request received from Front-End[19/10/25  21.06:50] :  Returned getPlaces -> originPlace <- to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.08
+====================================================
+[19/10/25  21.08:19] :  Listening session created[19/10/25  21.08:19] :  Request received from Front-End[19/10/25  21.08:19] :  Returned getPlaces -> originPlace <- to FE[19/10/25  21.08:19] :  'getPlace' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.10
+====================================================
+[19/10/25  21.10:23] :  Listening session created[19/10/25  21.10:23] :  Request received from Front-End[19/10/25  21.10:23] :  Returned getPlaces -> originPlace <- to FE[19/10/25  21.10:23] :  'getPlace' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.15
+====================================================
+[19/10/25  21.15:04] :  Listening session created[19/10/25  21.15:06] :  Request received from Front-End[19/10/25  21.15:06] :  Returned getPlaces -> originPlace <- to FE[19/10/25  21.15:06] :  'getPlace' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.17
+====================================================
+[19/10/25  21.17:50] :  Listening session created[19/10/25  21.17:54] :  Request received from Front-End[19/10/25  21.17:54] :  Returned getPlaces -> originPlace <- to FE[19/10/25  21.17:54] :  'getPlace' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.20
+====================================================
+[19/10/25  21.20:58] :  Listening session created[19/10/25  21.21:03] :  Request received from Front-End[19/10/25  21.21:03] :  Returned getPlaces -> originPlace <- to FE[19/10/25  21.21:03] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/25 21.21
+====================================================
+[19/10/25  21.21:55] :  Listening session created

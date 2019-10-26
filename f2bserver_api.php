@@ -7,8 +7,11 @@ require_once('rabbitMQLib.inc');
 require_once('login.php.inc');
 require_once('Log.php.inc');
 
-function getPlace($query,$country,$currency,$locale){
-	$L -> print("'getPlace' called for proper syntax");
+$L = new iLog("./backend_log.log","a");
+
+function getPlaces($query,$country,$currency,$locale){
+	global $L;
+	$L -> print("'getPlaces' called for proper syntax");
 	
 	$curl = curl_init();
 
@@ -41,6 +44,7 @@ function getPlace($query,$country,$currency,$locale){
 }
 
 function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,$tags){
+	global $L;
 	$L -> print("'setSession' called");
 	
 	$postF = "";
@@ -89,6 +93,7 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 }
 
 function getSession($lockKey){
+	global $L;
 	$L -> print("'getSession' is called");
 
 	$curl = curl_init();
@@ -122,6 +127,8 @@ function getSession($lockKey){
 }
 
 function requestProcessor($request){
+	global $L;
+	static $origin = 0;
 	//Required Params: query, country, currency, locale, originPlace, destinationPlace, outboundDate, adults, tags[].
 	$L -> print("Request received from Front-End");
 
@@ -136,12 +143,19 @@ function requestProcessor($request){
   	}
   	switch ($request['type'])
   	{
-		case "getplaces":
-			return getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']);
-			$L -> print("Returned getPlaces -> originPlace <- to FE");
-			return getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']);
-			$L -> print("Returned getPlaces -> destinationPlace <- to FE");
-		case "getresults":
+		case "getPlaces":
+			if($origin == 0){
+                                $L -> print("Returned getPlaces -> originPlace <- to FE");
+                                $origin = 1;
+                                return getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']);
+                        }
+			else{
+                                $origin = 0;
+                                $L -> print("Returned getPlaces -> destinationPlace <- to FE");
+                                return getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']);
+			}
+			break;
+		case "getResults":
 			$locKey = setSession($request['country'],$request['currency'],$request['locale'],$request['originPlace'],$request['destinationPlace'],$request['outboundDate'],$request['adults'],$request['tags'],$request['filters']);
 			$L -> print("Returned setSession to FE");
 			//tag must include: 
@@ -152,8 +166,11 @@ function requestProcessor($request){
 			//	includeCarriers,
 			//	excludeCarriers,
 			//	groupPricing
-			return getSession($locKey,$request['filters']);
+		
+
 			$L -> print("Returned getSession to FE");
+			return getSession($locKey,$request['filters']);
+			break;
 			//filter must have:
 			//	sortTypeSTRING,
 			//	duration,
@@ -185,7 +202,7 @@ function requestProcessor($request){
 }
 
 
-$L = new iLog("./backend_log.log","a");
+//$L = new iLog("./backend_log.log","a");
 
 $L -> print("Listening session created");
 

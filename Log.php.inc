@@ -21,36 +21,36 @@ $filename
 Date Created: $date
 ====================================================
 ");
-echo "\n";
+//echo "\n";
 }
 
 public function print($message = "<br>\n"){
 	if (strcmp($message,"<br>\n")==0){
-	echo $message;
+//	echo $message;
 	fwrite($this->log,"$message");
 	}
 	else{	
 		$nMessage = "[".date("y/m/d  G.i:s")."] :  $message";
-		echo $nMessage;
+//		echo $nMessage;
 	fwrite($this->log,$nMessage);
 	}
 }
 
 public function done(){
-	echo "Done.<br>\n";
+//	echo "Done.<br>\n";
 	fwrite($this->log,"Done.<br>\n");
 }
 
 public function close(){
 	fwrite($this->log,"<br>\n");
 	fclose($this->log);
-	echo "<br>\n";
+//	echo "<br>\n";
 }
 
 public function sendToRabbitMQ($filenameIN, $filenameOUT){
 fwrite($this->log,"<br>\n");
         fclose($this->log);
-        echo "<br>\n";
+  //      echo "<br>\n";
 	//Send log file to rabbitMQ
 //$l->print("Setting up RabbitMQ Client...");
 $client = new rabbitMQClient("logFE.ini","LogFEServer");
@@ -69,8 +69,8 @@ $response = $client->send_request($request);
 
 
 //Wait for response and perform function when received
-echo("Client received response:\n");
-echo($response);
+//echo("Client received response:\n");
+//echo($response);
 
 }
 

@@ -3,17 +3,17 @@
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
-//require_once('Log.php.inc');
+require_once('Log.php.inc');
 
 //PHP Error Reporting
 error_reporting(E_ERROR | E_Warning | E_PARSE | E_NOTICE);
 ini_set( 'display_errors', 1);
 
 //Initialize Logger
-//$l = new iLog(__DIR__ . '/_logs/flightSearch.log',"a");
+$l = new iLog(__DIR__ . '/_logs/flightSearch.log',"a");
 
 //Initialize Client
-//$l->print("Setting up RMQ Client...\n");
+$l->print("Setting up RMQ Client...\n");
 $client = new rabbitMQClient("frontToBack.ini","frontToBack");
 
 //Prep request
@@ -45,19 +45,19 @@ $filters = array();
 
 $request['filters'] = $filters;
 
-//$l->print("Request VarDump:\n\n")
+$l->print("Request VarDump:\n\n");
 //$l->print($request);
-//$l->print();
+$l->print();
 
 $response = $client->send_request($request);
 //$response = $client->publish($request);
 
 echo "client received response: ".PHP_EOL;
-print_r($response);
+var_dump($response);
 echo "\n\n";
 
 //CLose Logger
-//$l->close();
+$l->sendToRabbitMQ(__DIR__ . '/_logs/flightSearch.log','./_logs/flightSearch.log');
 
-echo $argv[0]." END".PHP_EOL;
+echo "Flight Search.php"." END".PHP_EOL;
 

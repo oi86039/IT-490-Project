@@ -56,6 +56,7 @@ $l->print("\n\n");
 //Send file to RMQ
 $filenameOUT = __DIR__ . '/_RLogs/authenticate.log';
 $filenameIN = __DIR__ . '/_logs/authenticate.log';
+//$l->close();
 $l->sendToRabbitMQ($filenameIN, $filenameOUT);
 echo "Sent Log to rabbitMQ.";
 

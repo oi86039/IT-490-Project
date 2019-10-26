@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SMTPFROM=njitit490@gmail.com
+SMTPTO=ars66@njit.edu
+SMTPSERVER=smtp.googlemail.com:587
+SMTPUSER=njitit490
+SMTPPASS=NJITIT490
+MESSAGEBODY="This is a test using nano email"
+SUBJECT="This is a test."
+
+sendEmail -f $SMTPFROM -t $SMTPTO -u $SUBJECT -m $MESSAGEBODY -s $SMTPSERVER -xu $SMTPUSER -xp $SMTPPASS

@@ -1,8 +1,8 @@
 <?php
-   $to_email = "entermatrixxx@gmail.com";
+   $to_email = "njitit490@gmail.com";
    $subject = "Simple Email Test via PHP";
    $body = "Hi, This is test email send by PHP Script";
-   $headers = "From: entermatrixxx@gmail.com";
+   $headers = "From: njitit490@gmail.com";
  
    if ( mail($to_email, $subject, $body, $headers)) {
       echo("Email successfully sent to $to_email...");

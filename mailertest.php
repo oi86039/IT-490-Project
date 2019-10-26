@@ -1,7 +1,7 @@
 <?php
 
 //to the sender
-$to = 'reeleex@yahoo.com';
+$to = 'njitit490@gmail.com';
 
 //subject
 $subject = 'Test mail';
@@ -12,8 +12,8 @@ $message = '<h1>Whats good bruh!</h>';
 
 //headers
 
-$headers = "From: Butch Cassidy <anwarrshaw@gmail.com>\r\n";
-$headers .= "Reply-To: anwarrshaw@gmail.com\r\n";
+$headers = "From: Butch Cassidy <njitit490@gmail.com>\r\n";
+$headers .= "Reply-To: njitit490@gmail.com\r\n";
 $headers .= "Content-Type: text/html\r\n";
 
 

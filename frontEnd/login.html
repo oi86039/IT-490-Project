@@ -3,22 +3,31 @@
 
 <!-- LOGIN.HTML -->
 
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
 <style>
-  .F1 {   width: 60% ; Background: white ;   margin:auto   }					
+  .F1 {   width: 60% ;   margin:auto   }					
 </style>
 
 <form  action="./IT-490/authenticate.php" method = post>
 <fieldset   class="F1"> 
 		<legend>  Log in to an existing account   </legend>
    
-Username <input type=text name="user"  required   autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
-Password <input type=text name="pass" required  autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
+<h3><div>
+<label>Username: </label><input type=text name="user"  required   autocomplete=off  placeholder="Required" ><br><br>
+<label>Password: </label><input type=text name="pass" required  autocomplete=off  placeholder="Required" ><br><br>
 
-<input type=submit value="Submit"><br>
-<br> Don't have an account? 
+<input type=submit id="submit" value="Submit"  ;><br>
+<br>Don't have an account? 
+</h3>
 
-<button onclick="window.location.href = 'register.html';">Sign Up</button>
+<button onclick="window.location.href = 'register.html' ;">Sign Up</button>
 
 </fieldset>
 </form>
+
+
+
+
+
 

@@ -3,27 +3,31 @@
 
 <!-- REGISTER.HTML -->
 
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
 <style>
-  .F1 {   width: 60% ; Background: white ;   margin:auto   }					
+  .F1 {   width: 60%  ;   margin:auto  ;   }					
 </style>
 
 <form  action="./IT-490/register.php" method="post" >
 <fieldset   class="F1"> 
 		<legend>  Sign Up for a New Account   </legend>
-   
-Username* <input type=text name="user"  required   autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
+<h3><div>
 
-Email* <input type=text name="email" required  autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
 
-Password* <input type=text name="pass" required  autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
+<label>Username:</label> <input type=text name="user"  required   autocomplete=off  placeholder="Required"><br><br>
 
-Confirm Password* <input type=text name="confirmPass" required  autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
+<label>Email:</label><input type=text name="email" required  autocomplete=off  placeholder="Required" ><br><br>
+
+<label>Password:</label> <input type=text name="pass" required  autocomplete=off  placeholder="Required"><br><br>
+<label>Confirm Password:</label><input type=text name="confirmPass" required  autocomplete=off  placeholder="Required" ><br><br>
 
 <input type=submit value="Submit"><br>
 <br> Already have an account? 
 
-<button onclick="window.location.href = 'login.html';">Log In</button>
-
+<br><button onclick="window.location.href = 'login.html';">Log In</button>
+		
+</h3></div>
 
 </fieldset>
 </form>

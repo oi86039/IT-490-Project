@@ -1,0 +1,50 @@
+
+body , html{
+ background-image:url('plane.jpg') ;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height:100%;
+}
+
+fieldset{
+position: relative ; top: 15px ; width: 400px  ;   
+}
+
+legend{
+	font-size:32px; position: relative ;
+
+}
+ 
+.F1 {width: 60% ; margin: auto  ; text-align:center ; 
+}
+
+#h2{
+position: relative ; top: 20px ;
+
+}
+
+#button1 {
+height: 100px;
+width: 150px ;
+border-radius: 10px ; 
+margin: auto  ;
+position: 20px ; 
+}
+#button2{
+height: 100px; 
+width: 150px;
+border-radius: 10px;
+}
+
+label { 
+	display: inline-block;
+	position: absolute;
+	left:125px;
+	width: 250px;
+	text-align: right;
+}
+input {
+	display: inline-block;
+	float: center;
+}

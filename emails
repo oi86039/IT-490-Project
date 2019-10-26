@@ -8,4 +8,4 @@ SMTPPASS=NJITIT490
 MESSAGEBODY="This is a test using nano email"
 SUBJECT="This is a test."
 
-sendEmail -f $SMTPFROM -t $SMTPTO -u $SUBJECT -m $MESSAGEBODY -s $SMTPSERVER -xu $SMTPUSER -xp $SMTPPASS
+sendmail -f $SMTPFROM -t $SMTPTO -u $SUBJECT -m $MESSAGEBODY -s $SMTPSERVER -xu $SMTPUSER -xp $SMTPPASS

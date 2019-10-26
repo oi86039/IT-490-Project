@@ -1,5 +1,6 @@
 <?php
 require_once("Log.php.inc");
+require_once("sendmail.php");
 class loginDB
 {
 private $logindb;

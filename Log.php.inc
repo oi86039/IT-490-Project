@@ -49,7 +49,7 @@ fwrite($this->log,"<br>\n");
         echo "<br>\n";
 	//Send log file to rabbitMQ
 //$l->print("Setting up RabbitMQ Client...");
-	$client = new rabbitMQClient("log.ini","LogServer");
+	$client = new rabbitMQClient("logDb.ini","logDBServer.php");
 $l = new iLog("Log.php.inc", "a");
 //$l->done();
 //$l->close();

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+
+<!-- LOGIN.HTML -->
+
+<style>
+  .F1 {   width: 60% ; Background: white ;   margin:auto   }					
+</style>
+
+<form  action="./IT-490/authenticate.php" method = post>
+<fieldset   class="F1"> 
+		<legend>  Log in to an existing account   </legend>
+   
+Username <input type=text name="user"  required   autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
+Password <input type=password name="pass" required  autocomplete=off  placeholder="A-Z,a-z,0-9" ><br><br>
+
+<input type=submit value="Submit"><br>
+<br> Don't have an account? 
+
+<button onclick="window.location.href = 'register.html';">Sign Up</button>
+
+</fieldset>
+</form>
+

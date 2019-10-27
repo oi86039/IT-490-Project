@@ -42,13 +42,17 @@ function getPlaces($query,$country,$currency,$locale){
 		echo "cURL Error #:" . $err;
 	} else {
 		$jresponse = json_decode($response,true);
-		var_dump($jresponse);
+		//var_dump($jresponse);
+		echo "getPlaces Created for ".$query."\n";
 		return $jresponse;
 	}
 }
 function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,$tags){
 	//global $L;
 	//$L -> print("'setSession' called");
+	
+	echo "sS: Origin is ".$origin."\n";
+	echo "sS: Destination is ".$dest."\n";
 	
 	$postF = "";
 	
@@ -91,40 +95,49 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 		echo "cURL Error #:" . $err;
 		//$L -> print("ERROR: in 'setSession' function");
 	} else {
+		echo "Session key created: ".$locKey."\n";
 		return $locKey;
 	}
 }
 function getSession($locKey){
 	//global $L;
 	//$L -> print("'getSession' is called");
-
-	$curl = curl_init();
-
-	curl_setopt_array($curl, array(
-		CURLOPT_URL => "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/$locKey?pageIndex=0&pageSize=10",
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_FOLLOWLOCATION => true,
-		CURLOPT_ENCODING => "",
-		CURLOPT_MAXREDIRS => 10,
-		CURLOPT_TIMEOUT => 30,
-		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		CURLOPT_CUSTOMREQUEST => "GET",
-		CURLOPT_HTTPHEADER => array(
-			"x-rapidapi-host: skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
-			"x-rapidapi-key: 611b8afb5amsh84f452847ecbb28p1d4ec6jsn2f48f70e985a"
-		),
-	));
 	
-	$response = curl_exec($curl);
-	$err = curl_error($curl);
+
+	while(true){
+		$curl = curl_init();
 	
-	curl_close($curl);
+		curl_setopt_array($curl, array(
+			CURLOPT_URL => "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/$locKey?pageIndex=0&pageSize=10",
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_FOLLOWLOCATION => true,
+			CURLOPT_ENCODING => "",
+			CURLOPT_MAXREDIRS => 10,
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => "GET",
+			CURLOPT_HTTPHEADER => array(
+				"x-rapidapi-host: skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
+				"x-rapidapi-key: 611b8afb5amsh84f452847ecbb28p1d4ec6jsn2f48f70e985a"
+			),
+		));
+		
+		$response = curl_exec($curl);
+		$err = curl_error($curl);
+		
+		curl_close($curl);
+		$jresponse = json_decode($response,true);
+
+		if($jresponse["Status"] == "UpdatesComplete"){
+			break;
+		}
+	}
+
 	
 	if ($err) {
 		echo "cURL Error #:" . $err;
 		//$L -> print("ERROR: in 'getSession' function");
 	} else {
-		$jresponse = json_decode($response,true);
                 var_dump($jresponse);
                 return $jresponse;
 	}

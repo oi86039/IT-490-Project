@@ -48,3 +48,55 @@ Date Created: 19/10/24 20.39
 [19/10/24  20.39:47] :  correctly connected to database:
 [19/10/24  20.39:47] :  select * from users where username = 'dsdsf,ajasf'
 <br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/26 20.56
+====================================================
+[19/10/26  20.56:07] :  correctly connected to database:
+[19/10/26  20.56:07] :  select * from users where username = 'afmd,.'
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/26 20.58
+====================================================
+[19/10/26  20.58:16] :  correctly connected to database:
+[19/10/26  20.58:16] :  select * from users where username = 'omar'
+[19/10/26  20.58:16] :  checking password for omar
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/26 21.02
+====================================================
+[19/10/26  21.02:37] :  correctly connected to database:
+[19/10/26  21.02:37] :  select * from users where username = 'omar'
+[19/10/26  21.02:37] :  checking password for omar
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/26 21.05
+====================================================
+[19/10/26  21.05:14] :  correctly connected to database:
+[19/10/26  21.05:14] :  select * from users where username = ';lkeeq'
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/26 21.06
+====================================================
+[19/10/26  21.06:04] :  correctly connected to database:
+[19/10/26  21.06:04] :  select * from users where username = 'omar'
+[19/10/26  21.06:04] :  checking password for omar
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/26 21.15
+====================================================
+[19/10/26  21.15:57] :  correctly connected to database:
+[19/10/26  21.15:57] :  select * from users where username = 'omar'
+[19/10/26  21.15:57] :  checking password for omar
+<br>

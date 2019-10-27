@@ -52,8 +52,8 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 	
 	$postF = "";
 	
-	if(sizeof($tag) != 0){
-		foreach($tag as $t){
+	if(count($tags) != 0){
+		foreach($tags as $t){
 			$postF .= key($t)."=".$t."&";	
 		}
 		echo $postF." FOR EXTRA TAGS";
@@ -94,7 +94,7 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 		return $locKey;
 	}
 }
-function getSession($lockKey){
+function getSession($locKey){
 	//global $L;
 	//$L -> print("'getSession' is called");
 
@@ -150,7 +150,7 @@ function requestProcessor($request){
 			$setPlaces = array(getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']),getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']));
 			return $setPlaces;
 			break;
-		case "getSession":
+		case "getSessions":
 			$locKey = setSession($request['country'],$request['currency'],$request['locale'],$request['originPlace'],$request['destinationPlace'],$request['outboundDate'],$request['adults'],$request['tags'],$request['filters']);
 			
 			//$L -> print("Returned setSession to FE");

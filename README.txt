@@ -29,9 +29,12 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 	    FUNCTIONALITIES             |
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ |
 
-The script, f2bserver_api.php, allows communication via RabbitMQ between Back-End and Front-End, as well as calling to a number of functions that allow the script to connect, request, and pull data from the SkyScanner API.
+The script, f2bserver_api.php, allows communication via RabbitMQ between Back-End and Front-End, as well as calling to a number of functions that allow the script to connect, request, and pull data from the SkyScanner API. This is all done in the span of three requests for each search session.
 
-The script delegates tasks based on states given from the Front-End via strings in the search array ccalled ["Types"}
-Below are the functionalities of each of the functions:
+The user must fill out all parameters presented to them correctly in order to get an accurate and timely search session. Once they have initialed the search, the API may or may not provide the user one or more results for both origin and destination queries. Once the user inputs the correct PlaceId's for both origin and destination places, they click submit.
+
+The BE will use this updated code to retrieve a session key, which will help retrieve an array with all the links and prices for the "origin to destination" query.
+
+The script delegates tasks based on states given from the Front-End via strings in the search array called ["Types"], which include "getPlaces" and "getSession". Any other types that are not the said two will not work and will result in an error.
 
 

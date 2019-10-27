@@ -46,7 +46,6 @@ function getPlaces($query,$country,$currency,$locale){
 		return $jresponse;
 	}
 }
-
 function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,$tags){
 	//global $L;
 	//$L -> print("'setSession' called");
@@ -95,7 +94,6 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 		return $locKey;
 	}
 }
-
 function getSession($lockKey){
 	//global $L;
 	//$L -> print("'getSession' is called");
@@ -129,7 +127,6 @@ function getSession($lockKey){
 		return $response;
 	}
 }
-
 function requestProcessor($request){
 	//global $L;
 	static $origin = 0;

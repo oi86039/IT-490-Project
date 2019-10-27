@@ -43,7 +43,7 @@ public function validateLogin($username,$password)
 			return 1;// password match send to rabbitmq with a 1
 		} else{
 			$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");//send a 0 to rabbitmq and an email link for the user to register.
-	       email($row ['$email'], ' register', 'please setup your account');
+	       email($row ['email'], ' register', 'please setup your account');
 		return 0;
 		}
 		$this->l->print("passwords did not match for $username".PHP_EOL);
@@ -88,7 +88,7 @@ public function register($user, $email, $pass, $confirmPass, $plainPass)
 	}
 
 	//Add to DB
-	$statement = "INSERT INTO users (username, password, plainpassword, email, verify) VALUES ('$user','$pass','$plainpass','$email,'0')";
+	$statement = "INSERT INTO users (username, password, plainpassword, email, verify) VALUES ('$user','$pass','$plainPass','$email','0')";
 	$this ->l ->print($statement .PHP_EOL); //Debug
 	$response=$this->logindb->query($statement);
 	if($response===TRUE){
@@ -100,7 +100,7 @@ public function register($user, $email, $pass, $confirmPass, $plainPass)
 	else{
 		$this ->l ->print($response);
 		$this ->l ->print("Shit went wrong");
-		$this ->l ->sendToRabbitMQ();
+		$this ->l ->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
 		return 0;
 	}
 }

@@ -103,10 +103,9 @@ function getSession($locKey){
 	//global $L;
 	//$L -> print("'getSession' is called");
 	
+	$curl = curl_init();
 
 	while(true){
-		$curl = curl_init();
-	
 		curl_setopt_array($curl, array(
 			CURLOPT_URL => "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/$locKey?pageIndex=0&pageSize=10",
 			CURLOPT_RETURNTRANSFER => true,
@@ -124,15 +123,13 @@ function getSession($locKey){
 		
 		$response = curl_exec($curl);
 		$err = curl_error($curl);
-		
-		curl_close($curl);
 		$jresponse = json_decode($response,true);
 
 		if($jresponse["Status"] == "UpdatesComplete"){
 			break;
 		}
 	}
-
+	curl_close($curl);
 	
 	if ($err) {
 		echo "cURL Error #:" . $err;

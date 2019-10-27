@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<?php
+$cookie_name = "BE_Request";
+$cookie_value = array();
+$cookie_value['country'] = $_GET["country"];
+$cookie_value['currency'] = $_GET["currency"];
+$cookie_value['locale'] = $_GET["locale"];
+$cookie_value['originPlace'] = $_GET["originPlace"];
+$cookie_value['destinationPlace'] = $_GET["destinationPlace"];
+$cookie_value['outboundDate'] = date_format($_GET["outboundDate"],"YYYY-mm-dd"); //YYYY-01-06 | When to leave
+$cookie_value['adults'] = $_GET["adults"]; //int
+
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+?>
+
 <meta charset="utf-8"/>
 
 <style>
@@ -14,7 +28,6 @@
 Enter Place ID of desired origin: <input type= text name="PlaceID" id= "PlaceID" placeholder="Enter PlaceID:"  autocomplete=off> <br>
 Enter Place ID of desired destination: <input type= text name= "PlaceID" id="PlaceID" placeholder="Enter PlaceID:" autocomplete = off> <br><br>
 </span>
-
 
 Origin <br>
 Place ID &#9;|&#9; Place Name &#9;|&#9; Country ID &#9;|&#9; RegionId &#9;|&#9; City ID &#9;|&#9; Country Name <br><br>
@@ -82,7 +95,7 @@ $l->print("Client received response: ".PHP_EOL);
 //var_dump($response);
 $l->print("\n\n");
 
-var_dump($response);
+//var_dump($response);
 
 //echo ("PROJECTED VALUE:". $response["Places"][0]["PlaceId"]."\n");
 
@@ -94,7 +107,7 @@ for($i = 0; $i < count($response[0]["Places"]); $i++){
 	$RegionID = $response[0]["Places"][$i]["RegionId"];
 	$CityID = $response[0]["Places"][$i]["PlaceId"];
 	$CountryName = $response[0]["Places"][$i]["CountryName"];
-	echo "<br>    ". $PlaceID."&#9;|&#9;".$PlaceName."&#9;|&#9;".$CountryId."&#9;|&#9;".$RegionID."&#9;|&#9;".$CityID."&#9;|&#9;".$CountryName."<br><br>";
+	echo "    ". $PlaceID."&#9;|&#9;".$PlaceName."&#9;|&#9;".$CountryId."&#9;|&#9;".$RegionID."&#9;|&#9;".$CityID."&#9;|&#9;".$CountryName."<br><br>";
 }
 
 echo "<br>Destination <br>

@@ -115,7 +115,7 @@ function getSession($lockKey){
 		),
 	));
 	
-	$response = json_decode(curl_exec($curl));
+	$response = curl_exec($curl);
 	$err = curl_error($curl);
 	
 	curl_close($curl);
@@ -124,7 +124,9 @@ function getSession($lockKey){
 		echo "cURL Error #:" . $err;
 		//$L -> print("ERROR: in 'getSession' function");
 	} else {
-		return $response;
+		$jresponse = json_decode($response,true);
+                var_dump($jresponse);
+                return $jresponse;
 	}
 }
 function requestProcessor($request){
@@ -145,21 +147,6 @@ function requestProcessor($request){
   	switch ($request['type'])
   	{
 		case "getPlaces":
-			/*if($origin == 0){
-				//$rArray = array();
-				//$L -> print("Returned getPlaces -> originPlace <- to FE");
-				echo "**getPlaces -> originPlace**";
-				echo '\n';
-                                $origin = 1;
-                                return getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']);
-                        }
-			else{
-				echo "**getPlaces -> destinationPlace**";
-				echo '\n';
-                                $origin = 0;
-                                //$L -> print("Returned getPlaces -> destinationPlace <- to FE");
-                                return getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']);
-			}*/
 			$setPlaces = array(getPlaces($request['originPlace'],$request['country'],$request['currency'],$request['locale']),getPlaces($request['destinationPlace'],$request['country'],$request['currency'],$request['locale']));
 			return $setPlaces;
 			break;

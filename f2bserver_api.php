@@ -55,16 +55,29 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 	echo "sS: Destination is ".$dest."\n";
 	
 	$postF = "";
+
+	$a_int = intval($adults);
+        $c_int = intval($tags['children']);
+	$i_int = intval($tags['infants']);
+
+	if($a_int >= 1 && ($c_int > 0 || $i_int > 0)){
+		$tags['groupPricing'] = "true";
+	}
+
 	
 	if(count($tags) != 0){
-		foreach($tags as $t){
-			$postF .= key($t)."=".$t."&";	
+		foreach($tags as $key => $t){
+			if($t != ""){
+				$postF .= $key."=".$t."&";
+			}
 		}
-		echo $postF." FOR EXTRA TAGS";
+		echo $postF." FOR EXTRA TAGS"."\n";
 	}
 
 	$postF .= "country=".$country."&currency=".$currency."&locale=".$locale."&originPlace=".$origin."&destinationPlace=".$dest."&outboundDate=".$leaveDate."&adults=".$adults;
-	
+
+	echo "Required + Tags: ".$postF."\n";
+
 	$curl = curl_init();
 	
 	curl_setopt_array($curl, array(
@@ -99,7 +112,7 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 		return $locKey;
 	}
 }
-function getSession($locKey){
+function getSession($locKey, $filters){
 	//global $L;
 	//$L -> print("'getSession' is called");
 	
@@ -135,14 +148,15 @@ function getSession($locKey){
 		echo "cURL Error #:" . $err;
 		//$L -> print("ERROR: in 'getSession' function");
 	} else {
-                var_dump($jresponse);
+		//var_dump($jresponse);
+		var_dump($jresponse["Query"]);
                 return $jresponse;
 	}
 }
 function requestProcessor($request){
 	//global $L;
 	static $origin = 0;
-	//Required Params: query, country, currency, locale, originPlace, destinationPlace, outboundDate, adults, tags[].
+	//Required Params: query, country, currency, locale, originPlace, destinationPlace, outboundDate, adults, tags[], filters[].
 	//$L -> print("Request received from Front-End");
 
 	//array should have: ()
@@ -165,7 +179,7 @@ function requestProcessor($request){
 			
 			//$L -> print("Returned setSession to FE");
 			
-			//tag must include: 
+			//**tag must include: 
 			//	inboundDate,
 			//	cabinClass,
 			//	children,
@@ -178,32 +192,27 @@ function requestProcessor($request){
 			
 			return getSession($locKey,$request['filters']);
 			break;
-			//filter must have:
-			//	sortTypeSTRING,
-			//	duration,
-			//	outboundarrivetime,
-			//	outbounddeparttime,
-			//	inboundarrivetime,
-			//	inbounddeparttime,
-			//	price*,
-			//	sortOrderSTRING,
-			//	durationNUMBER,
-			//	includeCarriersSTRING,
-			//	excludeCarriersSTRING,
-			//	originAirportsSTRING,
-			//	destinationAirportsSTRING,
-			//	stopsSTRING,
-			//	outboundDepartTimeSTRING,
-			//	outboundDepartStartTimeSTRING,
-			//	outboundDepartEndTimeSTRING,
-			//	outboundArriveStartTimeSTRING,
-			//	outboundArriveEndTimeSTRING,
-			//	inboundDepartTimeSTRING,
-			//	inboundDepartStartTimeSTRING,
-			//	inboundArriveStartTimeSTRING,
-			//	inboundArriveEndTimeSTRING,
-			//	pageIndex,
-			//	pageSize
+			//**filter must have:
+			//sortType - string
+			//sortOrder - string
+			//duration - int
+			//includeCarriers - string
+			//excludeCarriers - string
+			//originAirports - string
+			//destinationAirports - string
+			//stops - string
+			//outboundDepartTime - string
+			//outboundDepartStartTime - string
+			//outboundDepartEndTime - string
+			//outboundArriveStartTime - string
+			//outboundArriveEndTime - string
+			//inboundDepartTime - string
+			//inboundDepartStartTime - string
+			//inboundDepartEndTime - string
+			//inboundArriveStartTime - string
+			//inboundArriveEndTime - string
+			//pageIndex - int
+			//pageSize - int
   	}
   	return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }

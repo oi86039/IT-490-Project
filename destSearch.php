@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<?php
-$cookie_name = "BE_Request";
-$cookie_value = array();
-$cookie_value['country'] = $_GET["country"];
-$cookie_value['currency'] = $_GET["currency"];
-$cookie_value['locale'] = $_GET["locale"];
-$cookie_value['originPlace'] = $_GET["originPlace"];
-$cookie_value['destinationPlace'] = $_GET["destinationPlace"];
-$cookie_value['outboundDate'] = $_GET["outboundDate"]; //YYYY-01-06 | When to leave
-$cookie_value['adults'] = $_GET["adults"]; //int
-
-setcookie($cookie_name, json_encode($cookie_value), time() + (86400 * 30), "/"); // 86400 = 1 day
-?>
 
 <meta charset="utf-8"/>
 
@@ -19,22 +6,9 @@ setcookie($cookie_name, json_encode($cookie_value), time() + (86400 * 30), "/");
   .F1 {   width: 60% ; Background: white ;   margin:auto   }             
 </style>
 
-<form  action="./destSearch.php">
+<form  action="./IT-490/login.html">
 <fieldset class="F1">
-  <legend>Select Origin/Destination</legend>
-
-<!--Type Place ID here-->
-<span id = "PlaceID">
-Enter Place ID of desired origin: <input type= text name="OriginID" id= "OriginID" placeholder="Enter PlaceID:"  autocomplete=off> <br>
-Enter Place ID of desired destination: <input type= text name= "DestID" id="DestID" placeholder="Enter PlaceID:" autocomplete = off> <br>
-
-<input type = submit>
-<br>
-<br>
-</span>
-
-Origin <br>
-Place ID &#9;|&#9; Place Name &#9;|&#9; Country ID &#9;|&#9; RegionId &#9;|&#9; City ID &#9;|&#9; Country Name <br><br>
+  <legend>Flight Display</legend>
 
 <?php
 require_once('path.inc');
@@ -47,7 +21,7 @@ error_reporting(E_ERROR | E_Warning | E_PARSE | E_NOTICE);
 ini_set( 'display_errors', 1);
 
 //Initialize Logger
-$l = new iLog(__DIR__ . '/_logs/flightSearch.log',"a");
+$l = new iLog(__DIR__ . '/_logs/destSearch.log',"a");
 
 //Initialize Client
 $l->print("Setting up RMQ Client...\n");
@@ -56,15 +30,20 @@ $client = new rabbitMQClient("frontToBack.ini","frontToBack");
 //Prep request
 $request = array();
 
+//Get cookie
+$c = json_decode($_COOKIE["BE_Request"],true);
+
+//var_dump($c);
+
 //Mandatory search parameters
-$request['type'] = "getPlaces";
-$request['country'] = $_GET["country"];
-$request['currency'] = $_GET["currency"];
-$request['locale'] = $_GET["locale"];
-$request['originPlace'] = $_GET["originPlace"];
-$request['destinationPlace'] = $_GET["destinationPlace"];
-$request['outboundDate'] = $_GET["outboundDate"]; //YYYY-01-06 | When to leave
-$request['adults'] = $_GET["adults"]; //int
+$request['type'] = "getSessions";
+$request['country'] = $c["country"];
+$request['currency'] = $c["currency"];
+$request['locale'] = $c["locale"];
+$request['originPlace'] = $_GET["OriginID"];
+$request['destinationPlace'] = $_GET["DestID"];
+$request['outboundDate'] = $c["outboundDate"]; //YYYY-01-06 | When to leave
+$request['adults'] = $c["adults"]; //int
 
 //Optional tag parameters
 $tags = array();
@@ -99,7 +78,7 @@ $l->print("Client received response: ".PHP_EOL);
 //var_dump($response);
 $l->print("\n\n");
 
-//var_dump($response);
+var_dump($response);
 
 //echo ("PROJECTED VALUE:". $response["Places"][0]["PlaceId"]."\n");
 

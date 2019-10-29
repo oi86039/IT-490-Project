@@ -217,8 +217,9 @@ function getSession($locKey, $filters){
 										foreach($ai as $akey2 => $ai2){//[0] => {}
 											foreach($ai2 as $akey3 => $ai3){//Id => 43234
 												if($akey3 == "Id"){
-													if($i5 == $ai2["Id"]){
-														$jrequest[Itineraries][$key][$key2][$key3][$key4][$key5] = $ai2;
+													if($i5 == $ai2["Id"]){	
+														$jrequest[Itineraries][$key][$key2][$key3][$key4][$key5] = $ai2i["Name"];
+														var_dump($jrequest[Itineraries][$key][$key2][$key3][$key4][$key5]);
 													}
 												}
 											}

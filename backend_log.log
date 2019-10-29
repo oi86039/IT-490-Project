@@ -301,3 +301,43 @@ Date Created: 19/10/29 17.13
 Date Created: 19/10/29 17.15
 ====================================================
 [19/10/29  17.15:35] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 17.51
+====================================================
+[19/10/29  17.51:46] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 17.55
+====================================================
+[19/10/29  17.55:29] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 17.56
+====================================================
+[19/10/29  17.56:00] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 17.56
+====================================================
+[19/10/29  17.56:13] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.01
+====================================================
+[19/10/29  18.01:18] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.02
+====================================================
+[19/10/29  18.02:33] :  Listening session created[19/10/29  18.02:33] :  Request received from Front-End[19/10/29  18.02:33] :  'getPlaces' called for proper syntax[19/10/29  18.02:34] :  'getPlaces' called for proper syntax[19/10/29  18.02:48] :  Request received from Front-End[19/10/29  18.02:48] :  'setSession' called[19/10/29  18.02:49] :  Returned setSession to FE[19/10/29  18.02:49] :  Returned getSession to FE[19/10/29  18.02:49] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.14
+====================================================
+[19/10/29  18.14:44] :  Listening session created[19/10/29  18.14:47] :  Request received from Front-End[19/10/29  18.14:47] :  'getPlaces' called for proper syntax[19/10/29  18.14:47] :  'getPlaces' called for proper syntax[19/10/29  18.14:58] :  Request received from Front-End[19/10/29  18.14:58] :  'setSession' called[19/10/29  18.14:59] :  Returned setSession to FE[19/10/29  18.14:59] :  Returned getSession to FE[19/10/29  18.14:59] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.16
+====================================================
+[19/10/29  18.16:44] :  Listening session created[19/10/29  18.22:03] :  Request received from Front-End[19/10/29  18.22:03] :  'getPlaces' called for proper syntax[19/10/29  18.22:04] :  'getPlaces' called for proper syntax[19/10/29  18.22:18] :  Request received from Front-End[19/10/29  18.22:18] :  'setSession' called[19/10/29  18.22:19] :  Returned setSession to FE[19/10/29  18.22:19] :  Returned getSession to FE[19/10/29  18.22:19] :  'getSession' is called[19/10/29  18.23:34] :  Request received from Front-End[19/10/29  18.23:34] :  'getPlaces' called for proper syntax[19/10/29  18.23:35] :  'getPlaces' called for proper syntax[19/10/29  18.23:45] :  Request received from Front-End[19/10/29  18.23:45] :  'setSession' called[19/10/29  18.23:46] :  Returned setSession to FE[19/10/29  18.23:46] :  Returned getSession to FE[19/10/29  18.23:46] :  'getSession' is called

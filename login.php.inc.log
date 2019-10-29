@@ -170,3 +170,134 @@ Date Created: 19/10/26 21.45
 [19/10/26  21.45:52] :  select * from users where username = 'test'
 [19/10/26  21.45:52] :  INSERT INTO users (username, password, plainpassword, email, verify) VALUES ('test','85f1002bf139bebdb7f0d07b31fa14155aea9dfc','292','entermatrixx@gmail.com','0')
 [19/10/26  21.45:52] :  Success. Check DB and client response.
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 19.36
+====================================================
+[19/10/28  19.36:28] :  correctly connected to database:
+[19/10/28  19.36:28] :  select * from users where username = 'omar'
+[19/10/28  19.36:28] :  checking password for omar
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 19.38
+====================================================
+[19/10/28  19.38:35] :  correctly connected to database:
+[19/10/28  19.38:35] :  select * from users where username = 'omar'
+[19/10/28  19.38:35] :  checking password for omar
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 19.38
+====================================================
+[19/10/28  19.38:46] :  correctly connected to database:
+[19/10/28  19.38:46] :  select * from users where username = 'omar'
+[19/10/28  19.38:46] :  checking password for omar
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 19.47
+====================================================
+[19/10/28  19.47:23] :  correctly connected to database:
+[19/10/28  19.47:23] :  select * from users where username = 'elfjse'
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 19.49
+====================================================
+[19/10/28  19.49:30] :  correctly connected to database:
+[19/10/28  19.49:30] :  select * from users where username = 'omar'
+[19/10/28  19.49:30] :  checking password for omar
+[19/10/28  19.49:30] :  passwords match for omar
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 20.01
+====================================================
+[19/10/28  20.01:56] :  correctly connected to database:
+[19/10/28  20.01:56] :  select * from users where username = 'djjf'
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 20.03
+====================================================
+[19/10/28  20.03:56] :  correctly connected to database:
+[19/10/28  20.03:56] :  select * from users where username = 'omar'
+[19/10/28  20.03:56] :  checking password for omar
+[19/10/28  20.03:56] :  passwords match for omar
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 20.05
+====================================================
+[19/10/28  20.05:01] :  correctly connected to database:
+[19/10/28  20.05:01] :  select * from users where username = 'omar'
+[19/10/28  20.05:01] :  checking password for omar
+[19/10/28  20.05:01] :  passwords match for omar
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 20.07
+====================================================
+[19/10/28  20.07:02] :  correctly connected to database:
+[19/10/28  20.07:02] :  select * from users where username = 'omar'
+[19/10/28  20.07:02] :  checking password for omar
+[19/10/28  20.07:02] :  passwords match for omar
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 20.34
+====================================================
+[19/10/28  20.34:48] :  correctly connected to database:
+[19/10/28  20.34:48] :  select * from users where username = 'omar'
+[19/10/28  20.34:48] :  checking password for omar
+[19/10/28  20.34:48] :  passwords match for omar
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 20.36
+====================================================
+[19/10/28  20.36:46] :  correctly connected to database:
+[19/10/28  20.36:46] :  select * from users where username = 'omar'
+[19/10/28  20.36:46] :  checking password for omar
+[19/10/28  20.36:46] :  passwords match for omar
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 20.52
+====================================================
+[19/10/28  20.52:18] :  correctly connected to database:
+[19/10/28  20.52:18] :  select * from users where username = 'omar'
+[19/10/28  20.52:18] :  checking password for omar
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 21.21
+====================================================
+[19/10/28  21.21:58] :  correctly connected to database:
+[19/10/28  21.21:58] :  select * from users where username = 'omar'
+[19/10/28  21.21:58] :  checking password for omar
+[19/10/28  21.21:58] :  passwords match for omar
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 21.24
+====================================================
+[19/10/28  21.24:05] :  correctly connected to database:
+[19/10/28  21.24:05] :  select * from users where username = 'jkljlasd'
+<br>
+
+====================================================
+./login.php.inc.log
+Date Created: 19/10/28 21.30
+====================================================
+[19/10/28  21.30:32] :  correctly connected to database:
+[19/10/28  21.30:32] :  select * from users where username = 'omar'
+[19/10/28  21.30:32] :  checking password for omar
+[19/10/28  21.30:32] :  passwords match for omar

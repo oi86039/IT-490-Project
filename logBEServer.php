@@ -8,8 +8,8 @@ require_once('rabbitMQLib.inc');
 
 function logging($filename,$contents)
 {
-    // lookup username in databas
-    // check password
+    
+    
    $log= fopen($filename, 'w')or die("Unable to open $filename");
    fwrite($log, $contents);
    fclose($log);
@@ -32,12 +32,16 @@ function requestProcessor($request)
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }
+//create ilogfile in current directory, name it test log
 $l= new iLog(__DIR__ ."test.log", "a");
-$l->print("Server Running!!\n");
 
+$l->print("Server Running!!\n");
+//create rabbitmq server using provided configuration file
 $server = new rabbitMQServer("logBE.ini","LogBEServer");
 
 $server->process_requests('requestProcessor');
+//listens for a request
+//runs callback when done. callback is a function that runs when another function ends
 $l->close();
 exit();
 ?>

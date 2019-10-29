@@ -31,7 +31,7 @@ $l->print("User: $user");
 $request['username'] = $user; $l->done();
 $l->print("Hashed Pass:".sha1($pass));
 $request['password'] = sha1($pass);$l->done();
-$l-print("Message");
+//$l-print("Message");
 $request['message'] = "Sending Authentication Request to DB";
 
 $l->print();
@@ -42,7 +42,7 @@ $response = $client->send_request($request);
 //$response = $client->publish($request);
 
 
-echo "test";
+//echo "test";
 
 //Wait for response and perform function when received
 $l->print("Client received response: $response");

@@ -6,7 +6,6 @@
   .F1 {   width: 60% ; Background: white ;   margin:auto   }             
 </style>
 
-<form  action="./IT-490/login.html">
 <fieldset class="F1">
   <legend>Flight Display</legend>
 </span>
@@ -16,7 +15,7 @@ Stop Auto-Logout<input type="checkbox" id="stop" checked>
 <span id="demo"></span><br><br>
 
 <!--Logout Hyperlink-->
-<button onclick="window.location.href = 'index.html';">Log Out</button>
+<button onclick="window.location.href = './../index.html';">Log Out</button>
 
 <!-- Javascript -->
 <script type="text/javascript">
@@ -40,7 +39,7 @@ function redir() {
     if (ptrbox.checked)
     return; //Do nothing if checked
     else
-    window.location.href = "index.html";
+    window.location.href = "./../index.html";
 }
 
 window.onclick = reset;

@@ -2,6 +2,7 @@
 require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
+require_once('../myfunctions.php');
 
 $client = new rabbitMQClient("frontToDB.ini","frontToDB");
 
@@ -25,9 +26,18 @@ $response = $client->send_request($request);
 
 
 //Wait for response and perform function when received
-echo "client received response: ".PHP_EOL;
-print_r($response);
-echo "\n\n";
+//echo "client received response: ".PHP_EOL;
+//print_r($response);
+//echo "\n\n";
 
-echo $argv[0]." END".PHP_EOL;
+if ($response == 1){
+	echo "Registration successful. Redirecting to login.";
+	redirect ("",5,"../login.html");
+}
+else{
+	echo "Registration failed. Redirecting to Sign Up.";
+	redirect ("",5,"../register.html");
+}
+
+//echo $argv[0]." END".PHP_EOL;
 

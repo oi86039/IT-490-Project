@@ -1029,3 +1029,16 @@ Date Created: 19/10/28 16.29
 [19/10/28  16.29:24] :  Request VarDump:
 
 <br>
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/flightSearch.log
+Date Created: 19/10/28 20.29
+====================================================
+[19/10/28  20.29:54] :  Setting up RMQ Client...
+[19/10/28  20.29:54] :  Request VarDump:
+
+<br>
+[19/10/28  20.34:34] :  Client received response: 
+[19/10/28  20.34:34] :  
+
+<br>

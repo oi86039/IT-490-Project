@@ -75,41 +75,34 @@ $l->print("Client received response: ".PHP_EOL);
 
 //$response = json_decode($response,true);
 
-//var_dump($response);
 $l->print("\n\n");
 
-var_dump($response);
+//var_dump($response);
 
 //echo ("PROJECTED VALUE:". $response["Places"][0]["PlaceId"]."\n");
+$Itin = response["Itineraries"];
 
-//Display Origin
-for($i = 0; $i < count($response[0]["Places"]); $i++){
-	$PlaceID = $response[0]["Places"][$i]["PlaceId"];
-	$PlaceName = $response[0]["Places"][$i]["PlaceName"];
-	$CountryId = $response[0]["Places"][$i]["CountryId"];
-	$RegionID = $response[0]["Places"][$i]["RegionId"];
-	$CityID = $response[0]["Places"][$i]["PlaceId"];
-	$CountryName = $response[0]["Places"][$i]["CountryName"];
-	echo "    ". $PlaceID."&#9;|&#9;".$PlaceName."&#9;|&#9;".$CountryId."&#9;|&#9;".$RegionID."&#9;|&#9;".$CityID."&#9;|&#9;".$CountryName."<br><br>";
-}
+//Display Results using nested for loop
+for($i = 0; $i < count($Itin); $i++){
+	$Inbound = $Itin[$i]["InboundLegId"];
+	$Outbound = $Itin[$i]["OutboundLegId"];
+	$Pricing = $Itin[$i]["PricingOptions"];
+	echo "    "."Inbound: ". $Inbound."&#9;|&#9;"."Outbound: ".$Outbound."&#9;|&#9;";
 
-echo "<br>Destination <br>
-Place ID \t|\t Place Name \t|\t Country ID \t|\t; RegionId \t|\t City ID \t|\t Country Name <br><br>
-";
-
-//Display Destination
-for($i = 0; $i < count($response[1]["Places"]); $i++){
-	$PlaceID = $response[1]["Places"][$i]["PlaceId"];
-	$PlaceName = $response[1]["Places"][$i]["PlaceName"];
-	$CountryId = $response[1]["Places"][$i]["CountryId"];
-	$RegionID = $response[1]["Places"][$i]["RegionId"];
-	$CityID = $response[1]["Places"][$i]["PlaceId"];
-	$CountryName = $response[1]["Places"][$i]["CountryName"];
-	echo "<br>    ". $PlaceID."&#9;|&#9;".$PlaceName."&#9;|&#9;".$CountryId."&#9;|&#9;".$RegionID."&#9;|&#9;".$CityID."&#9;|&#9;".$CountryName."<br><br>";
+	//Display Pricing options
+	for ($j = 0; $j < count($Pricing)){
+		$Agent = $Pricing["Agents"];
+		$Price = $Pricing["Price"];
+		$TicketURL = $Pricing["Deeplink_URL"];
+	echo 	"<br>        "."Agent: "$Agent."&#9;|&#9;".
+		"<br>        "."Price: ".$Price."&#9;|&#9;".
+		"<br>        "."Ticket URL: <a href = ".$TicketURL."</a> <br>";
+	}
+	echo "<br><br>";
 }
 
 //CLose Logger
-$l->sendToRabbitMQ(__DIR__ . '/_logs/flightSearch.log','./_logs/flightSearch.log');
+$l->sendToRabbitMQ(__DIR__ . '/_logs/destSearch.log','./_logs/destSearch.log');
 
 //echo "Flight Search.php"." END".PHP_EOL;
 ?>

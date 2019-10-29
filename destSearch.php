@@ -46,7 +46,7 @@ $request['outboundDate'] = $c["outboundDate"]; //YYYY-01-06 | When to leave
 $request['adults'] = $c["adults"]; //int
 
 //Optional tag parameters
-$tags = array();
+//$tags = array();
 //$tags['inboundDate'] = "2020-01-20"; //When to return
 //$tags['cabinClass'] = "economy"; //economy, premiumeconomy, business, first
 //$tags['children'] = 2; //int (must be 1-16 yrs old)
@@ -54,7 +54,7 @@ $tags = array();
 //$tags['includeCarriers'] = ""; 
 //$tags['excludeCarriers'] = "";
 //$tags['groupPricing'] = ""; 
-$request['tags'] = $tags;
+$request['tags'] =$c['tags'];
 
 //Optional Filter parameters
 $filters = array();

@@ -1483,3 +1483,147 @@ Date Created: 19/10/26 21.35
 [19/10/26  21.35:47] :  Hashed Pass:85f1002bf139bebdb7f0d07b31fa14155aea9dfcDone.<br>
 <br>
 [19/10/26  21.35:47] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 19.22
+====================================================
+[19/10/28  19.22:18] :  Initializing Logger!
+[19/10/28  19.22:18] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  19.22:18] :  Getting HTML vars...
+[19/10/28  19.22:18] :  Getting user...Done.<br>
+[19/10/28  19.22:18] :  Getting pass...Done.<br>
+[19/10/28  19.22:18] :  Preparing RabbitMQ request...
+[19/10/28  19.22:18] :  Type: Login...Done.<br>
+[19/10/28  19.22:18] :  User: omarDone.<br>
+[19/10/28  19.22:18] :  Hashed Pass:85f1002bf139bebdb7f0d07b31fa14155aea9dfcDone.<br>
+<br>
+[19/10/28  19.22:18] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 19.25
+====================================================
+[19/10/28  19.25:16] :  Initializing Logger!
+[19/10/28  19.25:16] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  19.25:16] :  Getting HTML vars...
+[19/10/28  19.25:16] :  Getting user...Done.<br>
+[19/10/28  19.25:16] :  Getting pass...Done.<br>
+[19/10/28  19.25:16] :  Preparing RabbitMQ request...
+[19/10/28  19.25:16] :  Type: Login...Done.<br>
+[19/10/28  19.25:16] :  User: omarDone.<br>
+[19/10/28  19.25:16] :  Hashed Pass:85f1002bf139bebdb7f0d07b31fa14155aea9dfcDone.<br>
+<br>
+[19/10/28  19.25:16] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 19.35
+====================================================
+[19/10/28  19.35:59] :  Initializing Logger!
+[19/10/28  19.35:59] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  19.35:59] :  Getting HTML vars...
+[19/10/28  19.35:59] :  Getting user...Done.<br>
+[19/10/28  19.35:59] :  Getting pass...Done.<br>
+[19/10/28  19.35:59] :  Preparing RabbitMQ request...
+[19/10/28  19.35:59] :  Type: Login...Done.<br>
+[19/10/28  19.35:59] :  User: omarDone.<br>
+[19/10/28  19.35:59] :  Hashed Pass:85f1002bf139bebdb7f0d07b31fa14155aea9dfcDone.<br>
+<br>
+[19/10/28  19.35:59] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 19.40
+====================================================
+[19/10/28  19.40:21] :  Initializing Logger!
+[19/10/28  19.40:21] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  19.40:21] :  Getting HTML vars...
+[19/10/28  19.40:21] :  Getting user...Done.<br>
+[19/10/28  19.40:21] :  Getting pass...Done.<br>
+[19/10/28  19.40:21] :  Preparing RabbitMQ request...
+[19/10/28  19.40:21] :  Type: Login...Done.<br>
+[19/10/28  19.40:21] :  User: elfjseDone.<br>
+[19/10/28  19.40:21] :  Hashed Pass:1179c3d855a83fe14a6e10aaa215d8124eeb20f2Done.<br>
+<br>
+[19/10/28  19.40:21] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 19.48
+====================================================
+[19/10/28  19.48:35] :  Initializing Logger!
+[19/10/28  19.48:35] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  19.48:35] :  Getting HTML vars...
+[19/10/28  19.48:35] :  Getting user...Done.<br>
+[19/10/28  19.48:35] :  Getting pass...Done.<br>
+[19/10/28  19.48:35] :  Preparing RabbitMQ request...
+[19/10/28  19.48:35] :  Type: Login...Done.<br>
+[19/10/28  19.48:35] :  User: omarDone.<br>
+[19/10/28  19.48:35] :  Hashed Pass:40bd001563085fc35165329ea1ff5c5ecbdbbeefDone.<br>
+<br>
+[19/10/28  19.48:35] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 20.04
+====================================================
+[19/10/28  20.04:37] :  Initializing Logger!
+[19/10/28  20.04:37] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  20.04:37] :  Getting HTML vars...
+[19/10/28  20.04:37] :  Getting user...Done.<br>
+[19/10/28  20.04:37] :  Getting pass...Done.<br>
+[19/10/28  20.04:37] :  Preparing RabbitMQ request...
+[19/10/28  20.04:37] :  Type: Login...Done.<br>
+[19/10/28  20.04:37] :  User: djjfDone.<br>
+[19/10/28  20.04:37] :  Hashed Pass:f93e98808c26428d4a4abf9a025348e21f6002f9Done.<br>
+<br>
+[19/10/28  20.04:37] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 20.06
+====================================================
+[19/10/28  20.06:37] :  Initializing Logger!
+[19/10/28  20.06:37] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  20.06:37] :  Getting HTML vars...
+[19/10/28  20.06:37] :  Getting user...Done.<br>
+[19/10/28  20.06:37] :  Getting pass...Done.<br>
+[19/10/28  20.06:37] :  Preparing RabbitMQ request...
+[19/10/28  20.06:37] :  Type: Login...Done.<br>
+[19/10/28  20.06:37] :  User: omarDone.<br>
+[19/10/28  20.06:37] :  Hashed Pass:40bd001563085fc35165329ea1ff5c5ecbdbbeefDone.<br>
+<br>
+[19/10/28  20.06:37] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 20.07
+====================================================
+[19/10/28  20.07:42] :  Initializing Logger!
+[19/10/28  20.07:42] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  20.07:42] :  Getting HTML vars...
+[19/10/28  20.07:42] :  Getting user...Done.<br>
+[19/10/28  20.07:42] :  Getting pass...Done.<br>
+[19/10/28  20.07:42] :  Preparing RabbitMQ request...
+[19/10/28  20.07:42] :  Type: Login...Done.<br>
+[19/10/28  20.07:42] :  User: omarDone.<br>
+[19/10/28  20.07:42] :  Hashed Pass:40bd001563085fc35165329ea1ff5c5ecbdbbeefDone.<br>
+<br>
+[19/10/28  20.07:42] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/10/28 20.09
+====================================================
+[19/10/28  20.09:44] :  Initializing Logger!
+[19/10/28  20.09:44] :  Setting up RabbitMQ Client...Done.<br>
+[19/10/28  20.09:44] :  Getting HTML vars...
+[19/10/28  20.09:44] :  Getting user...Done.<br>
+[19/10/28  20.09:44] :  Getting pass...Done.<br>
+[19/10/28  20.09:44] :  Preparing RabbitMQ request...
+[19/10/28  20.09:44] :  Type: Login...Done.<br>
+[19/10/28  20.09:44] :  User: omarDone.<br>
+[19/10/28  20.09:44] :  Hashed Pass:40bd001563085fc35165329ea1ff5c5ecbdbbeefDone.<br>
+<br>
+[19/10/28  20.09:44] :  Sending request...

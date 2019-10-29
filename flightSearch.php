@@ -10,6 +10,17 @@ $cookie_value['destinationPlace'] = $_GET["destinationPlace"];
 $cookie_value['outboundDate'] = $_GET["outboundDate"]; //YYYY-01-06 | When to leave
 $cookie_value['adults'] = $_GET["adults"]; //int
 
+//Optional tag parameters
+$tags = array();
+$tags['inboundDate'] = "2020-01-20"; //When to return
+$tags['cabinClass'] = "economy"; //economy, premiumeconomy, business, first
+$tags['children'] = 2; //int (must be 1-16 yrs old)
+$tags['infants'] = 0; //int (must be >12 months old)
+$tags['includeCarriers'] = ""; 
+$tags['excludeCarriers'] = "";
+$tags['groupPricing'] = ""; 
+$cookie_value['tags'] = $tags;
+
 setcookie($cookie_name, json_encode($cookie_value), time() + (86400 * 30), "/"); // 86400 = 1 day
 ?>
 
@@ -68,13 +79,13 @@ $request['adults'] = $_GET["adults"]; //int
 
 //Optional tag parameters
 $tags = array();
-//$tags['inboundDate'] = "2020-01-20"; //When to return
-//$tags['cabinClass'] = "economy"; //economy, premiumeconomy, business, first
-//$tags['children'] = 2; //int (must be 1-16 yrs old)
-//$tags['infants'] = 0; //int (must be >12 months old)
-//$tags['includeCarriers'] = ""; 
-//$tags['excludeCarriers'] = "";
-//$tags['groupPricing'] = ""; 
+$tags['inboundDate'] = "2020-01-20"; //When to return
+$tags['cabinClass'] = "economy"; //economy, premiumeconomy, business, first
+$tags['children'] = 2; //int (must be 1-16 yrs old)
+$tags['infants'] = 0; //int (must be >12 months old)
+$tags['includeCarriers'] = ""; 
+$tags['excludeCarriers'] = "";
+$tags['groupPricing'] = ""; 
 $request['tags'] = $tags;
 
 //Optional Filter parameters

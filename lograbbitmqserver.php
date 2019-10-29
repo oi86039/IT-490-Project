@@ -25,14 +25,15 @@ function requestProcessor($request)
   }
   switch ($request['type'])
   {
-    case "logging":
+  case "logging":
+  echo("SUCCESS!!!");
       return logging($request['filename'],$request['contents']);
       
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }
 $l= new iLog(__DIR__ ."test.log", "a");
-$l->print("success!!\n");
+$l->print("Server Running!!\n");
 
 $server = new rabbitMQServer("log.ini","LogServer");
 

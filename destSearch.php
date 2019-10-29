@@ -80,23 +80,26 @@ $l->print("\n\n");
 //var_dump($response);
 
 //echo ("PROJECTED VALUE:". $response["Places"][0]["PlaceId"]."\n");
-$Itin = response["Itineraries"];
+//$response["Itineraries"] = response["Itineraries"];
+//var_dump($response);
+
 
 //Display Results using nested for loop
-for($i = 0; $i < count($Itin); $i++){
-	$Inbound = $Itin[$i]["InboundLegId"];
-	$Outbound = $Itin[$i]["OutboundLegId"];
-	$Pricing = $Itin[$i]["PricingOptions"];
-	echo "    "."Inbound: ". $Inbound."&#9;|&#9;"."Outbound: ".$Outbound."&#9;|&#9;";
+for($i = 0; $i < count($response); $i++){
+	$Inbound = $response[$i]["InboundLegId"];
+	$Outbound = $response[$i]["OutboundLegId"];
+	$Pricing = $response[$i]["PricingOptions"];
+	//print_r($Pricing);
+	//echo "    "."Inbound: ". $Inbound."&#9;|&#9;"."Outbound: ".$Outbound."&#9;|&#9;";
 
 	//Display Pricing options
-	for ($j = 0; $j < count($Pricing)){
-		$Agent = $Pricing["Agents"];
-		$Price = $Pricing["Price"];
-		$TicketURL = $Pricing["Deeplink_URL"];
-	echo 	"<br>        "."Agent: "$Agent."&#9;|&#9;".
+	for ($j = 0; $j < count($Pricing);$j++){
+		$Agent = $Pricing[$j]["Agents"][0];
+		$Price = $Pricing[$j]["Price"];
+		$TicketURL = $Pricing[$j]["DeeplinkUrl"];
+	echo 	"<br>        "."Agent: ".$Agent."&#9;|&#9;".
 		"<br>        "."Price: ".$Price."&#9;|&#9;".
-		"<br>        "."Ticket URL: <a href = ".$TicketURL."</a> <br>";
+		"<br>        "."Ticket URL: <a href = ".$TicketURL.">Click for External Link</a> <br>";
 	}
 	echo "<br><br>";
 }

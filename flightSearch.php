@@ -41,9 +41,49 @@ Enter Place ID of desired destination: <input type= text name= "DestID" id="Dest
 
 <input type = submit>
 <br>
-<br>
+
 </span>
 
+<!--Stop Auto Logout Checkbox + Text-->
+Stop Auto-Logout<input type="checkbox" id="stop" checked>		
+<span id="demo"></span><br><br>
+
+<!--Logout Hyperlink-->
+<button onclick="window.location.href = 'index.html';">Log Out</button>
+
+<!-- Javascript -->
+<script type="text/javascript">
+"use strict";
+var ptrbox = document.getElementById("stop");  
+var timeOut;
+
+function reset() {
+  //If not checked, monitor activity and logout if none
+  if (!ptrbox.checked){
+    document.getElementById("demo").innerHTML= "<h1>Will logout after 5 seconds. </h1>";
+    window.clearTimeout(timeOut);
+    timeOut = window.setTimeout( "redir()" , 5000 );
+    }
+    //If checked, do nothing
+    else
+    document.getElementById("demo").innerHTML="";
+}
+
+function redir() {
+    if (ptrbox.checked)
+    return; //Do nothing if checked
+    else
+    window.location.href = "index.html";
+}
+
+window.onclick = reset;
+window.onkeypress = reset;
+window.onload = reset;
+window.onmousemove = reset;
+
+</script>
+
+<br><br>
 Origin <br>
 Place ID &#9;|&#9; Place Name &#9;|&#9; Country ID &#9;|&#9; RegionId &#9;|&#9; City ID &#9;|&#9; Country Name <br><br>
 

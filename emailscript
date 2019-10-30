@@ -1,13 +1,28 @@
-#!/bin/bash
+curl -s \
+-X POST \
+--user "7b19a3dba62d0e21400302140515772e:50ff09d1196ae315b00310a86305b97f" \
+https://api.mailjet.com/v3.1/send \
+-H 'Content-Type: application/json' \
+-d '{
+  "Messages":[
+    {
+      "From": {
+        "Email": "ars66@njit.edu",
+        "Name": "anwar"
+      },
+      "To": [
+        {
+          "Email": "ni45@njit.edu",
+          "Name": "nouman"
+        }
+      ],
+      "Subject": "flight email test",
+      "TextPart": "Greetings from Skyscanner.",
+      "HTMLPart": "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+      "CustomID": "AppGettingStartedTest"
+    }
+  ]
+}'
 
-SMTPFROM=entermatrixxx@gmail.com
-SMTPTO=entermatrixxx@gmail.com
-SMTPSERVER=smtp.googlemail.com:587
-SMTPUSER=entermatrixxx
-SMTPPASS=NJITit490
-MESSAGEBODY="Testing 1 2 3"
-SUBJECT="This is a test."
-
-sendmail -f $SMTPFROM -t $SMTPTO -u $SUBJECT -m $MESSAGEBODY -s $SMTPSERVER -xu $SMTPUSER -xp $SMTPPASS
 
 

@@ -12,8 +12,8 @@ https://api.mailjet.com/v3.1/send \
       },
       "To": [
         {
-          "Email": "ni45@njit.edu",
-          "Name": "nouman"
+          "Email": "oai4@njit.edu",
+          "Name": "Omar"
         }
       ],
       "Subject": "flight email test",

@@ -12,13 +12,13 @@ https://api.mailjet.com/v3.1/send \
       },
       "To": [
         {
-          "Email": "oai4@njit.edu",
-          "Name": "Omar"
+          "Email": "entermatrixxx@gmail.com",
+          "Name": "anwar"
         }
       ],
       "Subject": "flight email test",
       "TextPart": "Greetings from Skyscanner.",
-      "HTMLPart": "<h3>Dear passenger 1, welcome to <a href='https://www.mailjet.com/'>Mailjet</a>!</h3><br />May the delivery force be with you!",
+      "HTMLPart": "<h3>Dear passenger 1, please verify yourself. <a href='192.168.15.7/IT490/IT-490/verify.php?user=omar'>Skyscanner</a>!</h3><br />Take Flight!",
       "CustomID": "AppGettingStartedTest"
     }
   ]

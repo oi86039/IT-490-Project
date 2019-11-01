@@ -8,6 +8,12 @@ require_once('login.php.inc');
 //include ("accounts.php");
 //include ("myfunctions.php");
 
+
+function doVerify($user)
+{
+	$login = new loginDB();
+	return $login-> verify ($user);
+}
 function doLogin($username,$password)
 {
     // lookup username in database
@@ -45,7 +51,12 @@ function requestProcessor($request)
 		    $request['confirmPass'],
 		    $request['plainPass']);
     case "validate_session":
-      return doValidate($request['sessionId']);
+	    return doValidate($request['sessionId']);
+	    
+	    
+    case "verify": 
+	    return doVerify($request['user']);
+
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }

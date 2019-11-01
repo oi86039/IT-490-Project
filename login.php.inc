@@ -1,6 +1,7 @@
 <?php
+//curl_exec ("emailscript.php") : mixed; 
 require_once("Log.php.inc");
-require_once("sendmail.php");
+require_once("emailscript");
 
 class loginDB
 {
@@ -18,6 +19,24 @@ public function __construct()
 		exit(1);
 	}
 	$this->l->print("correctly connected to database:".PHP_EOL);
+}
+public function verify($user)
+{
+
+
+	$u= "select * from users where username = '$user'";
+	($t = mysqli_query( $this->logindb, $u)) or die( mysqli_error($this->logindb));
+	$result = mysqli_num_rows($t);
+
+	if($result >0)
+	{
+	$s= "UPDATE users SET verify = 1 WHERE username = '$user'";	
+	($t = mysqli_query( $this->logindb, $s)) or die( mysqli_error($this->logindb));
+	
+	return 1;
+	}
+	else 
+	{return 0;}
 }
 
 public function validateLogin($username,$password)
@@ -37,10 +56,10 @@ public function validateLogin($username,$password)
 		if ($row["password"] == $pw)
 		{
 			$this->l->print("passwords match for $username".PHP_EOL);
-			//verfied if true say password match
-		//	if ($row ["verify"]  == 1) 	     
+		//verfied if true say password match
+			if ($row ["verify"]  == 1){ 	     
 			$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
-			return 1;// password match send to rabbitmq with a 1
+			return 1;}// password match send to rabbitmq with a 1
 		} else{
 			$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");//send a 0 to rabbitmq and an email link for the user to register.
 	       email($row ['email'], ' register', 'please setup your account');

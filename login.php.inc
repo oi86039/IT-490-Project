@@ -58,13 +58,19 @@ public function validateLogin($username,$password)
 			$this->l->print("passwords match for $username".PHP_EOL);
 		//verfied if true say password match
 			if ($row ["verify"]  == 1){ 	     
-			$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
-			return 1;}// password match send to rabbitmq with a 1
-		} else{
-			$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");//send a 0 to rabbitmq and an email link for the user to register.
-	       email($row ['email'], ' register', 'please setup your account');
-		return 0;
+				$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
+				return 1;// password match send to rabbitmq with a 1
+			}
+		       	else{
+				$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");//send a 0 to rabbitmq and an email link for the user to register.
+			$old_path = getcwd();
+			chdir('./');
+			shell_exec('./emailscript');
+               		chdir($old_path);
+			return 0;
+			}
 		}
+		else
 		$this->l->print("passwords did not match for $username".PHP_EOL);
 	}
 	$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");

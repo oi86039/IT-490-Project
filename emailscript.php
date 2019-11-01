@@ -1,6 +1,7 @@
 <?php
-  //curl_exec ( resource $ch ) : mixed
-  require 'vendor/autoload.php';
+ curl_init
+ curl_exec ( resource $ch ) : mixed
+ require 'vendor/autoload.php';
   use \Mailjet\Resources;
   $mj = new \Mailjet\Client('7b19a3dba62d0e21400302140515772e','50ff09d1196ae315b00310a86305b97f',true,['version' => 'v3.1']);
   $body = [

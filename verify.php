@@ -23,7 +23,8 @@ $l->print("Preparing RabbitMQ request...\n");
 $l->print("Type: Verify...");
 
 $request = array();
-$request['type'] = "Verify"; $l->done();
+$request['type'] = "verify"; $l->done();
+$request['user'] = $user;
 $l->print("User: $user");
 $l->print();
 
@@ -38,15 +39,18 @@ $l->print("Client received response: $response");
 
 //if not verified, send email.
 if ($response == 0){
-	redirect("<br><br>Email not verified. Check your email.<br><br>", 6,"../login.html" );
+	redirect("<br><br>Email not verified. Check your email. Redirecting in 6 seconds...<br><br>", 6,"../index.html" );
 	//send request for email THROUGH login.php.inc
 }
+else
+	redirect("<br><br>Email verified! Redirecting to login page in 6 seconds...",6,"../login.html");
+
 
 $l->print("\n\n");
 //$l->close();
 
 //Send file to RMQ
-$filenameOUT = __DIR__ . '/_RLogs/verify.log';
+$filenameOUT = __DIR__ . '/_logs/verify.log';
 $filenameIN = __DIR__ . '/_logs/verify.log';
 $l->sendToRabbitMQ($filenameIN, $filenameOUT);
 echo "Sent Log to rabbitMQ.";

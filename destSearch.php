@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <meta charset="utf-8"/>
+<meta http-equiv="refresh" content="30"/>
 
 <style>
   .F1 {   width: 60% ; Background: white ;   margin:auto   }             
@@ -9,6 +10,8 @@
 <fieldset class="F1">
   <legend>Flight Display</legend>
 </span>
+
+Warning: Page will automatically search for new flights in 30 seconds...<br><br>
 
 <!--Stop Auto Logout Checkbox + Text-->
 Stop Auto-Logout<input type="checkbox" id="stop" checked>		

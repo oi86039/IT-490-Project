@@ -181,7 +181,8 @@ for($i = 0; $i < count($response[1]["Places"]); $i++){
 }
 
 //CLose Logger
-$l->sendToRabbitMQ(__DIR__ . '/_logs/flightSearch.log','./_logs/flightSearch.log');
+//$l->sendToRabbitMQ(__DIR__ . '/_logs/flightSearch.log','./_logs/flightSearch.log');
+$l->close();
 
 //echo "Flight Search.php"." END".PHP_EOL;
 ?>

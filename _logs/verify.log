@@ -1,0 +1,133 @@
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 10.36
+====================================================
+[19/11/01  10.36:10] :  Initializing Logger!
+[19/11/01  10.36:10] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  10.36:10] :  Getting HTML vars...
+[19/11/01  10.36:10] :  Getting user...Done.<br>
+[19/11/01  10.36:10] :  Preparing RabbitMQ request...
+[19/11/01  10.36:10] :  Type: Verify...Done.<br>
+[19/11/01  10.36:10] :  User: omar<br>
+[19/11/01  10.36:10] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 11.18
+====================================================
+[19/11/01  11.18:45] :  Initializing Logger!
+[19/11/01  11.18:45] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  11.18:45] :  Getting HTML vars...
+[19/11/01  11.18:45] :  Getting user...Done.<br>
+[19/11/01  11.18:45] :  Preparing RabbitMQ request...
+[19/11/01  11.18:45] :  Type: Verify...Done.<br>
+[19/11/01  11.18:45] :  User: omar<br>
+[19/11/01  11.18:45] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 11.18
+====================================================
+[19/11/01  11.18:57] :  Initializing Logger!
+[19/11/01  11.18:57] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  11.18:57] :  Getting HTML vars...
+[19/11/01  11.18:57] :  Getting user...Done.<br>
+[19/11/01  11.18:57] :  Preparing RabbitMQ request...
+[19/11/01  11.18:57] :  Type: Verify...Done.<br>
+[19/11/01  11.18:57] :  User: omar<br>
+[19/11/01  11.18:57] :  Sending request...
+[19/11/01  11.23:37] :  Client received response: Array[19/11/01  11.23:37] :  
+
+<br>
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 11.28
+====================================================
+[19/11/01  11.28:41] :  Initializing Logger!
+[19/11/01  11.28:41] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  11.28:41] :  Getting HTML vars...
+[19/11/01  11.28:41] :  Getting user...Done.<br>
+[19/11/01  11.28:41] :  Preparing RabbitMQ request...
+[19/11/01  11.28:41] :  Type: Verify...Done.<br>
+[19/11/01  11.28:41] :  User: omar<br>
+[19/11/01  11.28:41] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 11.32
+====================================================
+[19/11/01  11.32:02] :  Initializing Logger!
+[19/11/01  11.32:02] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  11.32:02] :  Getting HTML vars...
+[19/11/01  11.32:02] :  Getting user...Done.<br>
+[19/11/01  11.32:02] :  Preparing RabbitMQ request...
+[19/11/01  11.32:02] :  Type: Verify...Done.<br>
+[19/11/01  11.32:02] :  User: omar<br>
+[19/11/01  11.32:02] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 11.34
+====================================================
+[19/11/01  11.34:29] :  Initializing Logger!
+[19/11/01  11.34:29] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  11.34:29] :  Getting HTML vars...
+[19/11/01  11.34:29] :  Getting user...Done.<br>
+[19/11/01  11.34:29] :  Preparing RabbitMQ request...
+[19/11/01  11.34:29] :  Type: Verify...Done.<br>
+[19/11/01  11.34:29] :  User: omar<br>
+[19/11/01  11.34:29] :  Sending request...
+[19/11/01  11.34:29] :  Client received response: 1
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 12.06
+====================================================
+[19/11/01  12.06:13] :  Initializing Logger!
+[19/11/01  12.06:13] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  12.06:13] :  Getting HTML vars...
+[19/11/01  12.06:13] :  Getting user...Done.<br>
+[19/11/01  12.06:13] :  Preparing RabbitMQ request...
+[19/11/01  12.06:13] :  Type: Verify...Done.<br>
+[19/11/01  12.06:13] :  User: omar<br>
+[19/11/01  12.06:13] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 12.08
+====================================================
+[19/11/01  12.08:23] :  Initializing Logger!
+[19/11/01  12.08:23] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  12.08:23] :  Getting HTML vars...
+[19/11/01  12.08:23] :  Getting user...Done.<br>
+[19/11/01  12.08:23] :  Preparing RabbitMQ request...
+[19/11/01  12.08:23] :  Type: Verify...Done.<br>
+[19/11/01  12.08:23] :  User: omar<br>
+[19/11/01  12.08:23] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 12.10
+====================================================
+[19/11/01  12.10:30] :  Initializing Logger!
+[19/11/01  12.10:30] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  12.10:30] :  Getting HTML vars...
+[19/11/01  12.10:30] :  Getting user...Done.<br>
+[19/11/01  12.10:30] :  Preparing RabbitMQ request...
+[19/11/01  12.10:30] :  Type: Verify...Done.<br>
+[19/11/01  12.10:30] :  User: omar<br>
+[19/11/01  12.10:30] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/01 12.11
+====================================================
+[19/11/01  12.11:07] :  Initializing Logger!
+[19/11/01  12.11:07] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/01  12.11:07] :  Getting HTML vars...
+[19/11/01  12.11:07] :  Getting user...Done.<br>
+[19/11/01  12.11:07] :  Preparing RabbitMQ request...
+[19/11/01  12.11:07] :  Type: Verify...Done.<br>
+[19/11/01  12.11:07] :  User: omar<br>
+[19/11/01  12.11:07] :  Sending request...

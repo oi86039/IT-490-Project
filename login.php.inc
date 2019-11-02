@@ -61,12 +61,15 @@ public function validateLogin($username,$password)
 				$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");
 				return 1;// password match send to rabbitmq with a 1
 			}
-		       	else{
-				$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");//send a 0 to rabbitmq and an email link for the user to register.
+			else{
+			//Get email address, change path and send email
+			$email = $row["email"];
 			$old_path = getcwd();
 			chdir('./');
-			shell_exec('./emailscript');
-               		chdir($old_path);
+			shell_exec("./emailscript $username $email");
+			$this->l->print("Email sent!\n");
+			chdir($old_path);
+			$this->l->sendToRabbitMQ("./login.php.inc.log","./_logs/login.php.inc.log");//send a 0 to rabbitmq and an email link for the user to register.	
 			return 0;
 			}
 		}

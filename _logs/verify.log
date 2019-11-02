@@ -131,3 +131,56 @@ Date Created: 19/11/01 12.11
 [19/11/01  12.11:07] :  Type: Verify...Done.<br>
 [19/11/01  12.11:07] :  User: omar<br>
 [19/11/01  12.11:07] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/02 11.02
+====================================================
+[19/11/02  11.02:50] :  Initializing Logger!
+[19/11/02  11.02:50] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/02  11.02:50] :  Getting HTML vars...
+[19/11/02  11.02:50] :  Getting user...Done.<br>
+[19/11/02  11.02:50] :  Preparing RabbitMQ request...
+[19/11/02  11.02:50] :  Type: Verify...Done.<br>
+[19/11/02  11.02:50] :  User: omar<br>
+[19/11/02  11.02:50] :  Sending request...
+[19/11/02  11.02:50] :  Client received response: 1
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/02 11.39
+====================================================
+[19/11/02  11.39:44] :  Initializing Logger!
+[19/11/02  11.39:44] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/02  11.39:44] :  Getting HTML vars...
+[19/11/02  11.39:44] :  Getting user...Done.<br>
+[19/11/02  11.39:44] :  Preparing RabbitMQ request...
+[19/11/02  11.39:44] :  Type: Verify...Done.<br>
+[19/11/02  11.39:44] :  User: omar<br>
+[19/11/02  11.39:44] :  Sending request...
+
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/02 11.46
+====================================================
+[19/11/02  11.46:41] :  Initializing Logger!
+[19/11/02  11.46:41] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/02  11.46:41] :  Getting HTML vars...
+[19/11/02  11.46:41] :  Getting user...Done.<br>
+[19/11/02  11.46:41] :  Preparing RabbitMQ request...
+[19/11/02  11.46:41] :  Type: Verify...Done.<br>
+[19/11/02  11.46:41] :  User: omar<br>
+[19/11/02  11.46:41] :  Sending request...
+[19/11/02  11.47:04] :  Client received response: 1[19/11/02  11.47:04] :  Client received response: 1
+====================================================
+/var/www/html/IT490/IT-490/_logs/verify.log
+Date Created: 19/11/02 11.49
+====================================================
+[19/11/02  11.49:13] :  Initializing Logger!
+[19/11/02  11.49:13] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/02  11.49:13] :  Getting HTML vars...
+[19/11/02  11.49:13] :  Getting user...Done.<br>
+[19/11/02  11.49:13] :  Preparing RabbitMQ request...
+[19/11/02  11.49:13] :  Type: Verify...Done.<br>
+[19/11/02  11.49:13] :  User: omar<br>
+[19/11/02  11.49:13] :  Sending request...
+[19/11/02  11.49:13] :  Client received response: 1

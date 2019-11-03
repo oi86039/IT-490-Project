@@ -2,28 +2,44 @@
 <meta charset="utf-8"/>
 
 <!-- INDEX.HTML -->
+<head>
 
-<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="stylesheet.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<fieldset   class="F1">
-
-	<legend>  Welcome!  <br> Which one are you?</br> </legend> 
-
-	<br>
-
-	<button onclick="window.location.href = 'login.html';"><img src="Existing customers.jpeg" id=button1> </button>
-
-
-	<br><h1 style="color:white">OR<br></h1>
-
-
-
-<button onclick="window.location.href = 'register.html' ;"><img src="New Customers.jpeg" id=button2></button>
+</head>
+<body>
+<div class="container-fluid bg">
+  <div class="row">
+  <div class="col-md col-sm-4 col-xs-12"></div>
+  <div class="col-md col-sm-4 col-xs-12">
 
 
-</fieldset>
+<form class="form-container">
+<fieldset   class="F1"> 
+		<legend>  Welcome!   </legend>
 
+<br>Create a New Account<br> 
 
+<button onclick="window.location.href = 'register.html';">Sign Up</button>
 
+<br><br>OR<br>
+
+<br>Log into an Existing Account<br>
+
+<button onclick="window.location.href = 'login.html';"class="btn btn-success btn-block">Log In</button>
+
+ </fieldset>
+</form>
+
+  </div>
+  <div class="col-md col-sm-4 col-xs-12"></div>
+  </div>
+</div>
+</body>
+</html>
 

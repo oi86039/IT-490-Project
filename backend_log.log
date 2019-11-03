@@ -341,3 +341,393 @@ Date Created: 19/10/29 18.14
 Date Created: 19/10/29 18.16
 ====================================================
 [19/10/29  18.16:44] :  Listening session created[19/10/29  18.22:03] :  Request received from Front-End[19/10/29  18.22:03] :  'getPlaces' called for proper syntax[19/10/29  18.22:04] :  'getPlaces' called for proper syntax[19/10/29  18.22:18] :  Request received from Front-End[19/10/29  18.22:18] :  'setSession' called[19/10/29  18.22:19] :  Returned setSession to FE[19/10/29  18.22:19] :  Returned getSession to FE[19/10/29  18.22:19] :  'getSession' is called[19/10/29  18.23:34] :  Request received from Front-End[19/10/29  18.23:34] :  'getPlaces' called for proper syntax[19/10/29  18.23:35] :  'getPlaces' called for proper syntax[19/10/29  18.23:45] :  Request received from Front-End[19/10/29  18.23:45] :  'setSession' called[19/10/29  18.23:46] :  Returned setSession to FE[19/10/29  18.23:46] :  Returned getSession to FE[19/10/29  18.23:46] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.26
+====================================================
+[19/10/29  18.26:47] :  Listening session created[19/10/29  18.28:44] :  Request received from Front-End[19/10/29  18.28:44] :  'setSession' called[19/10/29  18.28:44] :  Returned setSession to FE[19/10/29  18.28:44] :  Returned getSession to FE[19/10/29  18.28:44] :  'getSession' is called[19/10/29  18.28:49] :  Request received from Front-End[19/10/29  18.28:49] :  'setSession' called[19/10/29  18.28:50] :  Returned setSession to FE[19/10/29  18.28:50] :  Returned getSession to FE[19/10/29  18.28:50] :  'getSession' is called[19/10/29  18.30:02] :  Request received from Front-End[19/10/29  18.30:02] :  'setSession' called[19/10/29  18.30:03] :  Returned setSession to FE[19/10/29  18.30:03] :  Returned getSession to FE[19/10/29  18.30:03] :  'getSession' is called[19/10/29  18.30:11] :  Request received from Front-End[19/10/29  18.30:11] :  'setSession' called[19/10/29  18.30:12] :  Returned setSession to FE[19/10/29  18.30:12] :  Returned getSession to FE[19/10/29  18.30:12] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.32
+====================================================
+[19/10/29  18.32:09] :  Listening session created[19/10/29  18.32:09] :  Request received from Front-End[19/10/29  18.32:09] :  'getPlaces' called for proper syntax[19/10/29  18.32:09] :  'getPlaces' called for proper syntax[19/10/29  18.32:10] :  Request received from Front-End[19/10/29  18.32:10] :  'setSession' called[19/10/29  18.32:10] :  Returned setSession to FE[19/10/29  18.32:10] :  Returned getSession to FE[19/10/29  18.32:10] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.34
+====================================================
+[19/10/29  18.34:04] :  Listening session created[19/10/29  18.34:04] :  Request received from Front-End[19/10/29  18.34:04] :  'getPlaces' called for proper syntax[19/10/29  18.34:04] :  'getPlaces' called for proper syntax[19/10/29  18.34:05] :  Request received from Front-End[19/10/29  18.34:05] :  'getPlaces' called for proper syntax[19/10/29  18.34:05] :  'getPlaces' called for proper syntax[19/10/29  18.34:06] :  Request received from Front-End[19/10/29  18.34:06] :  'getPlaces' called for proper syntax[19/10/29  18.34:06] :  'getPlaces' called for proper syntax[19/10/29  18.34:07] :  Request received from Front-End[19/10/29  18.34:07] :  'getPlaces' called for proper syntax[19/10/29  18.34:07] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.42
+====================================================
+[19/10/29  18.42:20] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.42
+====================================================
+[19/10/29  18.42:51] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 18.56
+====================================================
+[19/10/29  18.56:30] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 19.03
+====================================================
+[19/10/29  19.03:39] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 19.10
+====================================================
+[19/10/29  19.10:11] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 19.13
+====================================================
+[19/10/29  19.13:58] :  Listening session created[19/10/29  19.16:28] :  Request received from Front-End[19/10/29  19.16:28] :  'getPlaces' called for proper syntax[19/10/29  19.16:29] :  'getPlaces' called for proper syntax[19/10/29  19.16:55] :  Request received from Front-End[19/10/29  19.16:55] :  'setSession' called[19/10/29  19.16:56] :  Returned setSession to FE[19/10/29  19.16:56] :  Returned getSession to FE[19/10/29  19.16:56] :  'getSession' is called[19/10/29  19.18:00] :  Request received from Front-End[19/10/29  19.18:00] :  'getPlaces' called for proper syntax[19/10/29  19.18:01] :  'getPlaces' called for proper syntax[19/10/29  19.18:14] :  Request received from Front-End[19/10/29  19.18:14] :  'setSession' called[19/10/29  19.18:14] :  Returned setSession to FE[19/10/29  19.18:14] :  Returned getSession to FE[19/10/29  19.18:14] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 19.19
+====================================================
+[19/10/29  19.19:30] :  Listening session created[19/10/29  19.19:33] :  Request received from Front-End[19/10/29  19.19:33] :  'getPlaces' called for proper syntax[19/10/29  19.19:34] :  'getPlaces' called for proper syntax[19/10/29  19.20:15] :  Request received from Front-End[19/10/29  19.20:15] :  'getPlaces' called for proper syntax[19/10/29  19.20:15] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/29 19.21
+====================================================
+[19/10/29  19.21:28] :  Listening session created[19/10/29  19.21:41] :  Request received from Front-End[19/10/29  19.21:41] :  'getPlaces' called for proper syntax[19/10/29  19.21:42] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/29 19.22
+====================================================
+[19/10/29  19.22:48] :  Listening session created[19/10/29  19.22:48] :  Request received from Front-End[19/10/29  19.22:48] :  'getPlaces' called for proper syntax[19/10/29  19.22:49] :  'getPlaces' called for proper syntax[19/10/29  19.23:02] :  Request received from Front-End[19/10/29  19.23:02] :  'setSession' called[19/10/29  19.23:02] :  Returned setSession to FE[19/10/29  19.23:02] :  Returned getSession to FE[19/10/29  19.23:02] :  'getSession' is called[19/10/29  19.25:15] :  Request received from Front-End[19/10/29  19.25:15] :  'setSession' called[19/10/29  19.25:15] :  Returned setSession to FE[19/10/29  19.25:15] :  Returned getSession to FE[19/10/29  19.25:15] :  'getSession' is called[19/10/29  19.29:25] :  Request received from Front-End[19/10/29  19.29:25] :  'setSession' called[19/10/29  19.29:26] :  Returned setSession to FE[19/10/29  19.29:26] :  Returned getSession to FE[19/10/29  19.29:26] :  'getSession' is called[19/10/29  19.30:08] :  Request received from Front-End[19/10/29  19.30:08] :  'getPlaces' called for proper syntax[19/10/29  19.30:08] :  'getPlaces' called for proper syntax[19/10/29  19.30:37] :  Request received from Front-End[19/10/29  19.30:37] :  'setSession' called[19/10/29  19.30:38] :  Returned setSession to FE[19/10/29  19.30:38] :  Returned getSession to FE[19/10/29  19.30:38] :  'getSession' is called[19/10/29  19.34:19] :  Request received from Front-End[19/10/29  19.34:19] :  'getPlaces' called for proper syntax[19/10/29  19.34:19] :  'getPlaces' called for proper syntax[19/10/29  19.34:24] :  Request received from Front-End[19/10/29  19.34:24] :  'setSession' called[19/10/29  19.34:25] :  Returned setSession to FE[19/10/29  19.34:25] :  Returned getSession to FE[19/10/29  19.34:25] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 19.48
+====================================================
+[19/10/29  19.48:19] :  Listening session created[19/10/29  19.48:19] :  Request received from Front-End[19/10/29  19.48:19] :  'getPlaces' called for proper syntax[19/10/29  19.48:19] :  'getPlaces' called for proper syntax[19/10/29  20.25:52] :  Request received from Front-End[19/10/29  20.25:52] :  'getPlaces' called for proper syntax[19/10/29  20.25:52] :  'getPlaces' called for proper syntax[19/10/29  20.26:18] :  Request received from Front-End[19/10/29  20.26:18] :  'getPlaces' called for proper syntax[19/10/29  20.26:19] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/29 20.26
+====================================================
+[19/10/29  20.26:41] :  Listening session created[19/10/29  20.26:48] :  Request received from Front-End[19/10/29  20.26:48] :  'getPlaces' called for proper syntax[19/10/29  20.26:48] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/29 20.27
+====================================================
+[19/10/29  20.27:11] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 20.27
+====================================================
+[19/10/29  20.27:19] :  Listening session created[19/10/29  20.27:19] :  Request received from Front-End[19/10/29  20.27:19] :  'getPlaces' called for proper syntax[19/10/29  20.27:21] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/29 20.28
+====================================================
+[19/10/29  20.28:23] :  Listening session created[19/10/29  20.28:48] :  Request received from Front-End[19/10/29  20.28:48] :  'getPlaces' called for proper syntax[19/10/29  20.28:48] :  'getPlaces' called for proper syntax[19/10/29  20.29:01] :  Request received from Front-End[19/10/29  20.29:01] :  'setSession' called[19/10/29  20.29:01] :  Returned setSession to FE[19/10/29  20.29:01] :  Returned getSession to FE[19/10/29  20.29:01] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/29 20.37
+====================================================
+[19/10/29  20.37:44] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 20.40
+====================================================
+[19/10/29  20.40:46] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/29 20.40
+====================================================
+[19/10/29  20.40:53] :  Listening session created[19/10/29  20.45:52] :  Request received from Front-End[19/10/29  20.45:52] :  'getPlaces' called for proper syntax[19/10/29  20.45:52] :  'getPlaces' called for proper syntax[19/10/29  20.46:27] :  Request received from Front-End[19/10/29  20.46:27] :  'setSession' called[19/10/29  20.46:28] :  Returned setSession to FE[19/10/29  20.46:28] :  Returned getSession to FE[19/10/29  20.46:28] :  'getSession' is called[19/10/29  20.52:34] :  Request received from Front-End[19/10/29  20.52:34] :  'getPlaces' called for proper syntax[19/10/29  20.52:34] :  'getPlaces' called for proper syntax[19/10/29  20.52:48] :  Request received from Front-End[19/10/29  20.52:48] :  'setSession' called[19/10/29  20.52:49] :  Returned setSession to FE[19/10/29  20.52:49] :  Returned getSession to FE[19/10/29  20.52:49] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/30 15.29
+====================================================
+[19/10/30  15.29:16] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 15.50
+====================================================
+[19/10/30  15.50:11] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.07
+====================================================
+[19/10/30  16.07:20] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.08
+====================================================
+[19/10/30  16.08:41] :  Listening session created[19/10/30  16.09:10] :  Request received from Front-End[19/10/30  16.09:10] :  'getPlaces' called for proper syntax[19/10/30  16.09:11] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.09
+====================================================
+[19/10/30  16.09:59] :  Listening session created[19/10/30  16.09:59] :  Request received from Front-End[19/10/30  16.09:59] :  'setSession' called[19/10/30  16.09:59] :  Returned setSession to FE[19/10/30  16.09:59] :  Returned getSession to FE[19/10/30  16.09:59] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.10
+====================================================
+[19/10/30  16.10:22] :  Listening session created[19/10/30  16.10:22] :  Request received from Front-End[19/10/30  16.10:22] :  'getPlaces' called for proper syntax[19/10/30  16.10:23] :  'getPlaces' called for proper syntax[19/10/30  16.10:25] :  Request received from Front-End[19/10/30  16.10:25] :  'getPlaces' called for proper syntax[19/10/30  16.10:25] :  'getPlaces' called for proper syntax[19/10/30  16.10:57] :  Request received from Front-End[19/10/30  16.10:57] :  'getPlaces' called for proper syntax[19/10/30  16.10:57] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.11
+====================================================
+[19/10/30  16.11:54] :  Listening session created[19/10/30  16.11:54] :  Request received from Front-End[19/10/30  16.11:54] :  'getPlaces' called for proper syntax[19/10/30  16.11:55] :  'getPlaces' called for proper syntax[19/10/30  16.12:44] :  Request received from Front-End[19/10/30  16.12:44] :  'getPlaces' called for proper syntax[19/10/30  16.12:45] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.24
+====================================================
+[19/10/30  16.24:14] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.30
+====================================================
+[19/10/30  16.30:16] :  Listening session created[19/10/30  16.30:16] :  Request received from Front-End[19/10/30  16.30:16] :  'getPlaces' called for proper syntax[19/10/30  16.30:17] :  'getPlaces' called for proper syntax[19/10/30  16.30:17] :  Request received from Front-End[19/10/30  16.30:17] :  'getPlaces' called for proper syntax[19/10/30  16.30:18] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.30
+====================================================
+[19/10/30  16.30:34] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.30
+====================================================
+[19/10/30  16.30:46] :  Listening session created[19/10/30  16.30:46] :  Request received from Front-End[19/10/30  16.30:46] :  'getPlaces' called for proper syntax[19/10/30  16.30:46] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.30
+====================================================
+[19/10/30  16.30:50] :  Listening session created[19/10/30  16.30:50] :  Request received from Front-End[19/10/30  16.30:50] :  'getPlaces' called for proper syntax[19/10/30  16.30:50] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.30
+====================================================
+[19/10/30  16.30:52] :  Listening session created[19/10/30  16.30:55] :  Request received from Front-End[19/10/30  16.30:55] :  'getPlaces' called for proper syntax[19/10/30  16.30:56] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.34
+====================================================
+[19/10/30  16.34:29] :  Listening session created[19/10/30  16.34:29] :  Request received from Front-End[19/10/30  16.34:29] :  'getPlaces' called for proper syntax[19/10/30  16.34:35] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.35
+====================================================
+[19/10/30  16.35:05] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.35
+====================================================
+[19/10/30  16.35:17] :  Listening session created[19/10/30  16.35:17] :  Request received from Front-End[19/10/30  16.35:17] :  'getPlaces' called for proper syntax[19/10/30  16.35:17] :  'getPlaces' called for proper syntax[19/10/30  16.36:30] :  Request received from Front-End[19/10/30  16.36:30] :  'getPlaces' called for proper syntax[19/10/30  16.36:31] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.36
+====================================================
+[19/10/30  16.36:59] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.40
+====================================================
+[19/10/30  16.40:48] :  Listening session created[19/10/30  16.41:31] :  Request received from Front-End[19/10/30  16.41:31] :  'getPlaces' called for proper syntax[19/10/30  16.41:31] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 16.44
+====================================================
+[19/10/30  16.44:53] :  Listening session created[19/10/30  16.44:53] :  Request received from Front-End[19/10/30  16.44:53] :  'getPlaces' called for proper syntax[19/10/30  16.44:53] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 17.44
+====================================================
+[19/10/30  17.44:01] :  Listening session created[19/10/30  17.44:01] :  Request received from Front-End[19/10/30  17.44:01] :  'getPlaces' called for proper syntax[19/10/30  17.44:01] :  'getPlaces' called for proper syntax[19/10/30  17.46:56] :  Request received from Front-End[19/10/30  17.46:56] :  'getPlaces' called for proper syntax[19/10/30  17.46:57] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 17.52
+====================================================
+[19/10/30  17.52:06] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 17.54
+====================================================
+[19/10/30  17.54:40] :  Listening session created[19/10/30  17.55:07] :  Request received from Front-End[19/10/30  17.55:07] :  'getPlaces' called for proper syntax[19/10/30  17.55:08] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 17.59
+====================================================
+[19/10/30  17.59:40] :  Listening session created[19/10/30  17.59:47] :  Request received from Front-End[19/10/30  17.59:47] :  'getPlaces' called for proper syntax[19/10/30  17.59:47] :  'getPlaces' called for proper syntax
+====================================================
+./backend_log.log
+Date Created: 19/10/30 18.03
+====================================================
+[19/10/30  18.03:34] :  Listening session created[19/10/30  18.03:34] :  Request received from Front-End[19/10/30  18.03:34] :  'getPlaces' called for proper syntax[19/10/30  18.03:34] :  Returned 'getPlaces' for Atlantic City[19/10/30  18.03:34] :  'getPlaces' called for proper syntax[19/10/30  18.03:35] :  Returned 'getPlaces' for Orlando[19/10/30  18.03:35] :  Request received from Front-End[19/10/30  18.03:35] :  'getPlaces' called for proper syntax[19/10/30  18.03:35] :  Returned 'getPlaces' for Atlantic City[19/10/30  18.03:35] :  'getPlaces' called for proper syntax[19/10/30  18.03:36] :  Returned 'getPlaces' for Orlando[19/10/30  18.03:45] :  Request received from Front-End[19/10/30  18.03:45] :  'getPlaces' called for proper syntax[19/10/30  18.03:46] :  Returned 'getPlaces' for Atlantic City[19/10/30  18.03:46] :  'getPlaces' called for proper syntax[19/10/30  18.03:46] :  Returned 'getPlaces' for Orlando
+====================================================
+./backend_log.log
+Date Created: 19/10/30 18.07
+====================================================
+[19/10/30  18.07:38] :  Listening session created[19/10/30  18.07:55] :  Request received from Front-End[19/10/30  18.07:55] :  'getPlaces' called for proper syntax[19/10/30  18.07:55] :  Returned 'getPlaces' for Atlantic City[19/10/30  18.07:55] :  'getPlaces' called for proper syntax[19/10/30  18.07:56] :  Returned 'getPlaces' for Orlando[19/10/30  18.07:56] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.05
+====================================================
+[19/10/30  19.05:47] :  Listening session created[19/10/30  19.06:06] :  Request received from Front-End[19/10/30  19.06:06] :  'getPlaces' called for proper syntax[19/10/30  19.06:07] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.06:07] :  'getPlaces' called for proper syntax[19/10/30  19.06:07] :  Returned 'getPlaces' for Orlando[19/10/30  19.06:07] :  Returned 'getPlaces' to FE[19/10/30  19.06:41] :  Request received from Front-End[19/10/30  19.06:41] :  'setSession' called[19/10/30  19.06:41] :  Returned Sessionkey for Session Search.[19/10/30  19.06:41] :  Returned getSession to FE[19/10/30  19.06:41] :  'getSession' is called[19/10/30  19.07:04] :  Returning final response for search query![19/10/30  19.10:31] :  Request received from Front-End[19/10/30  19.10:31] :  'setSession' called[19/10/30  19.10:37] :  Returned Sessionkey for Session Search.[19/10/30  19.10:37] :  Returned getSession to FE[19/10/30  19.10:37] :  'getSession' is called[19/10/30  19.10:39] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.20
+====================================================
+[19/10/30  19.20:12] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.22
+====================================================
+[19/10/30  19.22:36] :  Listening session created[19/10/30  19.22:37] :  Request received from Front-End[19/10/30  19.22:37] :  'getPlaces' called for proper syntax[19/10/30  19.22:38] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.22:38] :  'getPlaces' called for proper syntax[19/10/30  19.22:38] :  Returned 'getPlaces' for Orlando[19/10/30  19.22:38] :  Returned 'getPlaces' to FE[19/10/30  19.22:47] :  Request received from Front-End[19/10/30  19.22:47] :  'setSession' called[19/10/30  19.22:48] :  Returned Sessionkey for Session Search.[19/10/30  19.22:48] :  Returned getSession to FE[19/10/30  19.22:48] :  'getSession' is called[19/10/30  19.22:52] :  Returning final response for search query![19/10/30  19.23:11] :  Request received from Front-End[19/10/30  19.23:11] :  'setSession' called[19/10/30  19.23:12] :  Returned Sessionkey for Session Search.[19/10/30  19.23:12] :  Returned getSession to FE[19/10/30  19.23:12] :  'getSession' is called[19/10/30  19.23:15] :  Returning final response for search query![19/10/30  19.24:05] :  Request received from Front-End[19/10/30  19.24:05] :  'setSession' called[19/10/30  19.24:06] :  Returned Sessionkey for Session Search.[19/10/30  19.24:06] :  Returned getSession to FE[19/10/30  19.24:06] :  'getSession' is called[19/10/30  19.24:08] :  Returning final response for search query![19/10/30  19.24:18] :  Request received from Front-End[19/10/30  19.24:18] :  'setSession' called[19/10/30  19.24:19] :  Returned Sessionkey for Session Search.[19/10/30  19.24:19] :  Returned getSession to FE[19/10/30  19.24:19] :  'getSession' is called[19/10/30  19.24:20] :  Returning final response for search query![19/10/30  19.26:52] :  Request received from Front-End[19/10/30  19.26:52] :  'setSession' called[19/10/30  19.26:52] :  Returned Sessionkey for Session Search.[19/10/30  19.26:52] :  Returned getSession to FE[19/10/30  19.26:52] :  'getSession' is called[19/10/30  19.26:54] :  Returning final response for search query![19/10/30  19.27:59] :  Request received from Front-End[19/10/30  19.27:59] :  'setSession' called[19/10/30  19.28:00] :  Returned Sessionkey for Session Search.[19/10/30  19.28:00] :  Returned getSession to FE[19/10/30  19.28:00] :  'getSession' is called[19/10/30  19.28:02] :  Returning final response for search query![19/10/30  19.28:14] :  Request received from Front-End[19/10/30  19.28:14] :  'setSession' called[19/10/30  19.28:15] :  Returned Sessionkey for Session Search.[19/10/30  19.28:15] :  Returned getSession to FE[19/10/30  19.28:15] :  'getSession' is called[19/10/30  19.28:16] :  Returning final response for search query![19/10/30  19.29:25] :  Request received from Front-End[19/10/30  19.29:25] :  'setSession' called[19/10/30  19.29:25] :  Returned Sessionkey for Session Search.[19/10/30  19.29:25] :  Returned getSession to FE[19/10/30  19.29:25] :  'getSession' is called[19/10/30  19.29:27] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.31
+====================================================
+[19/10/30  19.31:05] :  Listening session created[19/10/30  19.33:55] :  Request received from Front-End[19/10/30  19.33:55] :  'getPlaces' called for proper syntax[19/10/30  19.33:56] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.33:56] :  'getPlaces' called for proper syntax[19/10/30  19.33:56] :  Returned 'getPlaces' for Orlando[19/10/30  19.33:56] :  Returned 'getPlaces' to FE[19/10/30  19.34:06] :  Request received from Front-End[19/10/30  19.34:06] :  'setSession' called[19/10/30  19.34:06] :  Returned Sessionkey for Session Search.[19/10/30  19.34:06] :  Returned getSession to FE[19/10/30  19.34:06] :  'getSession' is called[19/10/30  19.34:10] :  Returning final response for search query![19/10/30  19.35:20] :  Request received from Front-End[19/10/30  19.35:20] :  'getPlaces' called for proper syntax[19/10/30  19.35:20] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.35:20] :  'getPlaces' called for proper syntax[19/10/30  19.35:21] :  Returned 'getPlaces' for Orlando[19/10/30  19.35:21] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.36
+====================================================
+[19/10/30  19.36:03] :  Listening session created[19/10/30  19.37:08] :  Request received from Front-End[19/10/30  19.37:08] :  'getPlaces' called for proper syntax[19/10/30  19.37:08] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.37:08] :  'getPlaces' called for proper syntax[19/10/30  19.37:09] :  Returned 'getPlaces' for Orlando[19/10/30  19.37:09] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.38
+====================================================
+[19/10/30  19.38:03] :  Listening session created[19/10/30  19.38:46] :  Request received from Front-End[19/10/30  19.38:46] :  'getPlaces' called for proper syntax[19/10/30  19.38:46] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.38:46] :  'getPlaces' called for proper syntax[19/10/30  19.38:47] :  Returned 'getPlaces' for Orlando[19/10/30  19.38:47] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.52
+====================================================
+[19/10/30  19.52:58] :  Listening session created[19/10/30  19.52:58] :  Request received from Front-End[19/10/30  19.52:58] :  'getPlaces' called for proper syntax[19/10/30  19.52:59] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.52:59] :  'getPlaces' called for proper syntax[19/10/30  19.53:00] :  Returned 'getPlaces' for Orlando[19/10/30  19.53:00] :  Returned 'getPlaces' to FE[19/10/30  19.55:19] :  Request received from Front-End[19/10/30  19.55:19] :  'setSession' called[19/10/30  19.55:20] :  Returned Sessionkey for Session Search.[19/10/30  19.55:20] :  Returned getSession to FE[19/10/30  19.55:20] :  'getSession' is called[19/10/30  19.55:32] :  Returning final response for search query![19/10/30  19.57:51] :  Request received from Front-End[19/10/30  19.57:51] :  'getPlaces' called for proper syntax[19/10/30  19.57:52] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.57:52] :  'getPlaces' called for proper syntax[19/10/30  19.57:53] :  Returned 'getPlaces' for Orlando[19/10/30  19.57:53] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/30 19.57
+====================================================
+[19/10/30  19.57:56] :  Listening session created[19/10/30  19.57:57] :  Request received from Front-End[19/10/30  19.57:57] :  'getPlaces' called for proper syntax[19/10/30  19.57:58] :  Returned 'getPlaces' for Atlantic City[19/10/30  19.57:58] :  'getPlaces' called for proper syntax[19/10/30  19.57:59] :  Returned 'getPlaces' for Orlando[19/10/30  19.57:59] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/30 20.00
+====================================================
+[19/10/30  20.00:29] :  Listening session created[19/10/30  20.00:31] :  Request received from Front-End[19/10/30  20.00:31] :  'getPlaces' called for proper syntax[19/10/30  20.00:31] :  Returned 'getPlaces' for Atlantic City[19/10/30  20.00:31] :  'getPlaces' called for proper syntax[19/10/30  20.00:32] :  Returned 'getPlaces' for Orlando[19/10/30  20.00:32] :  Returned 'getPlaces' to FE[19/10/30  20.00:43] :  Request received from Front-End[19/10/30  20.00:43] :  'setSession' called[19/10/30  20.00:44] :  Returned Sessionkey for Session Search.[19/10/30  20.00:44] :  Returned getSession to FE[19/10/30  20.00:44] :  'getSession' is called[19/10/30  20.00:45] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/10/30 20.02
+====================================================
+[19/10/30  20.02:06] :  Listening session created[19/10/30  20.02:07] :  Request received from Front-End[19/10/30  20.02:07] :  'getPlaces' called for proper syntax[19/10/30  20.02:08] :  Returned 'getPlaces' for Atlantic City[19/10/30  20.02:08] :  'getPlaces' called for proper syntax[19/10/30  20.02:08] :  Returned 'getPlaces' for Orlando[19/10/30  20.02:08] :  Returned 'getPlaces' to FE[19/10/30  20.03:21] :  Request received from Front-End[19/10/30  20.03:21] :  'getPlaces' called for proper syntax[19/10/30  20.03:21] :  Returned 'getPlaces' for Atlantic City[19/10/30  20.03:21] :  'getPlaces' called for proper syntax[19/10/30  20.03:22] :  Returned 'getPlaces' for Orlando[19/10/30  20.03:22] :  Returned 'getPlaces' to FE[19/10/30  20.03:30] :  Request received from Front-End[19/10/30  20.03:30] :  'setSession' called[19/10/30  20.03:31] :  Returned Sessionkey for Session Search.[19/10/30  20.03:31] :  Returned getSession to FE[19/10/30  20.03:31] :  'getSession' is called
+====================================================
+./backend_log.log
+Date Created: 19/10/30 20.03
+====================================================
+[19/10/30  20.03:53] :  Listening session created[19/10/30  20.04:12] :  Request received from Front-End[19/10/30  20.04:12] :  'getPlaces' called for proper syntax[19/10/30  20.04:12] :  Returned 'getPlaces' for Atlantic City[19/10/30  20.04:12] :  'getPlaces' called for proper syntax[19/10/30  20.04:13] :  Returned 'getPlaces' for Orlando[19/10/30  20.04:13] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/10/30 20.10
+====================================================
+[19/10/30  20.10:45] :  Listening session created[19/10/30  20.10:46] :  Request received from Front-End[19/10/30  20.10:46] :  'getPlaces' called for proper syntax[19/10/30  20.10:46] :  Returned 'getPlaces' for Atlantic City[19/10/30  20.10:46] :  'getPlaces' called for proper syntax[19/10/30  20.10:47] :  Returned 'getPlaces' for Orlando[19/10/30  20.10:47] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 11.21
+====================================================
+[19/11/03  11.21:35] :  Listening session created[19/11/03  11.21:35] :  Request received from Front-End[19/11/03  11.21:35] :  'getPlaces' called for proper syntax[19/11/03  11.21:35] :  Returned 'getPlaces' for [19/11/03  11.21:35] :  'getPlaces' called for proper syntax[19/11/03  11.21:35] :  Returned 'getPlaces' for [19/11/03  11.21:35] :  Returned 'getPlaces' to FE[19/11/03  11.21:35] :  Request received from Front-End[19/11/03  11.21:35] :  'getPlaces' called for proper syntax[19/11/03  11.21:35] :  Returned 'getPlaces' for [19/11/03  11.21:35] :  'getPlaces' called for proper syntax[19/11/03  11.21:35] :  Returned 'getPlaces' for [19/11/03  11.21:35] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 11.21
+====================================================
+[19/11/03  11.21:49] :  Listening session created[19/11/03  11.22:31] :  Request received from Front-End[19/11/03  11.22:31] :  'getPlaces' called for proper syntax[19/11/03  11.22:32] :  Returned 'getPlaces' for Atlantic City[19/11/03  11.22:32] :  'getPlaces' called for proper syntax[19/11/03  11.22:32] :  Returned 'getPlaces' for Orlando[19/11/03  11.22:32] :  Returned 'getPlaces' to FE[19/11/03  11.22:45] :  Request received from Front-End[19/11/03  11.22:45] :  'setSession' called[19/11/03  11.22:46] :  Returned Sessionkey for Session Search.[19/11/03  11.22:46] :  Returned getSession to FE[19/11/03  11.22:46] :  'getSession' is called[19/11/03  11.23:08] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 11.30
+====================================================
+[19/11/03  11.30:01] :  Listening session created[19/11/03  11.30:01] :  Request received from Front-End[19/11/03  11.30:01] :  'getPlaces' called for proper syntax[19/11/03  11.30:02] :  Returned 'getPlaces' for Atlantic City[19/11/03  11.30:02] :  'getPlaces' called for proper syntax[19/11/03  11.30:03] :  Returned 'getPlaces' for Orlando[19/11/03  11.30:03] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 11.30
+====================================================
+[19/11/03  11.30:06] :  Listening session created[19/11/03  11.30:08] :  Request received from Front-End[19/11/03  11.30:08] :  'getPlaces' called for proper syntax[19/11/03  11.30:09] :  Returned 'getPlaces' for Atlantic City[19/11/03  11.30:09] :  'getPlaces' called for proper syntax[19/11/03  11.30:09] :  Returned 'getPlaces' for Orlando[19/11/03  11.30:09] :  Returned 'getPlaces' to FE[19/11/03  11.30:20] :  Request received from Front-End[19/11/03  11.30:20] :  'setSession' called[19/11/03  11.30:21] :  Returned Sessionkey for Session Search.[19/11/03  11.30:21] :  Returned getSession to FE[19/11/03  11.30:21] :  'getSession' is called[19/11/03  11.30:22] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 11.38
+====================================================
+[19/11/03  11.38:29] :  Listening session created[19/11/03  11.38:30] :  Request received from Front-End[19/11/03  11.38:30] :  'getPlaces' called for proper syntax[19/11/03  11.38:31] :  Returned 'getPlaces' for Atlantic City[19/11/03  11.38:31] :  'getPlaces' called for proper syntax[19/11/03  11.38:31] :  Returned 'getPlaces' for Orlando[19/11/03  11.38:31] :  Returned 'getPlaces' to FE[19/11/03  11.39:17] :  Request received from Front-End[19/11/03  11.39:17] :  'getPlaces' called for proper syntax[19/11/03  11.39:18] :  Returned 'getPlaces' for Atlantic City[19/11/03  11.39:18] :  'getPlaces' called for proper syntax[19/11/03  11.39:18] :  Returned 'getPlaces' for Orlando[19/11/03  11.39:18] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 11.42
+====================================================
+[19/11/03  11.42:30] :  Listening session created[19/11/03  11.42:30] :  Request received from Front-End[19/11/03  11.42:30] :  'getPlaces' called for proper syntax[19/11/03  11.42:31] :  Returned 'getPlaces' for Atlantic City[19/11/03  11.42:31] :  'getPlaces' called for proper syntax[19/11/03  11.42:31] :  Returned 'getPlaces' for Orlando[19/11/03  11.42:31] :  Returned 'getPlaces' to FE[19/11/03  11.42:31] :  Request received from Front-End[19/11/03  11.42:31] :  'getPlaces' called for proper syntax[19/11/03  11.42:32] :  Returned 'getPlaces' for Atlantic City[19/11/03  11.42:32] :  'getPlaces' called for proper syntax[19/11/03  11.42:33] :  Returned 'getPlaces' for Orlando[19/11/03  11.42:33] :  Returned 'getPlaces' to FE[19/11/03  11.42:50] :  Request received from Front-End[19/11/03  11.42:50] :  'setSession' called[19/11/03  11.42:50] :  Returned Sessionkey for Session Search.[19/11/03  11.42:50] :  Returned getSession to FE[19/11/03  11.42:50] :  'getSession' is called[19/11/03  11.42:55] :  Returning final response for search query![19/11/03  11.43:25] :  Request received from Front-End[19/11/03  11.43:25] :  'setSession' called[19/11/03  11.43:26] :  Returned Sessionkey for Session Search.[19/11/03  11.43:26] :  Returned getSession to FE[19/11/03  11.43:26] :  'getSession' is called[19/11/03  11.43:27] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.14
+====================================================
+[19/11/03  12.14:38] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.15
+====================================================
+[19/11/03  12.15:47] :  Listening session created[19/11/03  12.15:47] :  Request received from Front-End[19/11/03  12.15:47] :  'getPlaces' called for proper syntax[19/11/03  12.15:48] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.15:48] :  'getPlaces' called for proper syntax[19/11/03  12.15:48] :  Returned 'getPlaces' for Orlando[19/11/03  12.15:48] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.15
+====================================================
+[19/11/03  12.15:54] :  Listening session created[19/11/03  12.16:06] :  Request received from Front-End[19/11/03  12.16:06] :  'getPlaces' called for proper syntax[19/11/03  12.16:06] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.16:06] :  'getPlaces' called for proper syntax[19/11/03  12.16:07] :  Returned 'getPlaces' for Orlando[19/11/03  12.16:07] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.17
+====================================================
+[19/11/03  12.17:42] :  Listening session created[19/11/03  12.18:29] :  Request received from Front-End[19/11/03  12.18:29] :  'getPlaces' called for proper syntax[19/11/03  12.18:29] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.18:29] :  'getPlaces' called for proper syntax[19/11/03  12.18:30] :  Returned 'getPlaces' for Orlando[19/11/03  12.18:30] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.19
+====================================================
+[19/11/03  12.19:54] :  Listening session created[19/11/03  12.19:55] :  Request received from Front-End[19/11/03  12.19:55] :  'getPlaces' called for proper syntax[19/11/03  12.19:55] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.19:55] :  'getPlaces' called for proper syntax[19/11/03  12.19:56] :  Returned 'getPlaces' for Orlando[19/11/03  12.19:56] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.21
+====================================================
+[19/11/03  12.21:19] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.25
+====================================================
+[19/11/03  12.25:26] :  Listening session created[19/11/03  12.25:26] :  Request received from Front-End[19/11/03  12.25:26] :  'getPlaces' called for proper syntax[19/11/03  12.25:26] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.25:26] :  'getPlaces' called for proper syntax[19/11/03  12.25:27] :  Returned 'getPlaces' for Orlando[19/11/03  12.25:27] :  Returned 'getPlaces' to FE[19/11/03  12.25:27] :  Request received from Front-End[19/11/03  12.25:27] :  'getPlaces' called for proper syntax[19/11/03  12.25:27] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.25:27] :  'getPlaces' called for proper syntax[19/11/03  12.25:28] :  Returned 'getPlaces' for Orlando[19/11/03  12.25:28] :  Returned 'getPlaces' to FE[19/11/03  12.25:28] :  Request received from Front-End[19/11/03  12.25:28] :  'getPlaces' called for proper syntax[19/11/03  12.25:28] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.25:28] :  'getPlaces' called for proper syntax[19/11/03  12.25:29] :  Returned 'getPlaces' for Orlando[19/11/03  12.25:29] :  Returned 'getPlaces' to FE[19/11/03  12.25:29] :  Request received from Front-End[19/11/03  12.25:29] :  'getPlaces' called for proper syntax[19/11/03  12.25:30] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.25:30] :  'getPlaces' called for proper syntax[19/11/03  12.25:30] :  Returned 'getPlaces' for Orlando[19/11/03  12.25:30] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.25
+====================================================
+[19/11/03  12.25:59] :  Listening session created[19/11/03  12.25:59] :  Request received from Front-End[19/11/03  12.25:59] :  'getPlaces' called for proper syntax[19/11/03  12.25:59] :  Returned 'getPlaces' for Atlantic City[19/11/03  12.25:59] :  'getPlaces' called for proper syntax[19/11/03  12.26:00] :  Returned 'getPlaces' for Orlando[19/11/03  12.26:00] :  Returned 'getPlaces' to FE[19/11/03  12.26:17] :  Request received from Front-End[19/11/03  12.26:17] :  'setSession' called[19/11/03  12.26:18] :  Returned Sessionkey for Session Search.[19/11/03  12.26:18] :  Returned getSession to FE[19/11/03  12.26:18] :  'getSession' is called[19/11/03  12.26:29] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.28
+====================================================
+[19/11/03  12.28:15] :  Listening session created[19/11/03  12.28:15] :  Request received from Front-End[19/11/03  12.28:15] :  'setSession' called[19/11/03  12.28:16] :  Returned Sessionkey for Session Search.[19/11/03  12.28:16] :  Returned getSession to FE[19/11/03  12.28:16] :  'getSession' is called[19/11/03  12.28:17] :  Returning final response for search query![19/11/03  12.28:47] :  Request received from Front-End[19/11/03  12.28:47] :  'setSession' called[19/11/03  12.28:48] :  Returned Sessionkey for Session Search.[19/11/03  12.28:48] :  Returned getSession to FE[19/11/03  12.28:48] :  'getSession' is called[19/11/03  12.28:49] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.29
+====================================================
+[19/11/03  12.29:38] :  Listening session created[19/11/03  12.29:38] :  Request received from Front-End[19/11/03  12.29:38] :  'setSession' called[19/11/03  12.29:39] :  Returned Sessionkey for Session Search.[19/11/03  12.29:39] :  Returned getSession to FE[19/11/03  12.29:39] :  'getSession' is called[19/11/03  12.29:40] :  Returning final response for search query![19/11/03  12.30:11] :  Request received from Front-End[19/11/03  12.30:11] :  'setSession' called[19/11/03  12.30:12] :  Returned Sessionkey for Session Search.[19/11/03  12.30:12] :  Returned getSession to FE[19/11/03  12.30:12] :  'getSession' is called[19/11/03  12.30:13] :  Returning final response for search query![19/11/03  12.30:43] :  Request received from Front-End[19/11/03  12.30:43] :  'setSession' called[19/11/03  12.30:44] :  Returned Sessionkey for Session Search.[19/11/03  12.30:44] :  Returned getSession to FE[19/11/03  12.30:44] :  'getSession' is called[19/11/03  12.30:45] :  Returning final response for search query![19/11/03  12.31:15] :  Request received from Front-End[19/11/03  12.31:15] :  'setSession' called[19/11/03  12.31:16] :  Returned Sessionkey for Session Search.[19/11/03  12.31:16] :  Returned getSession to FE[19/11/03  12.31:16] :  'getSession' is called[19/11/03  12.31:17] :  Returning final response for search query![19/11/03  12.31:47] :  Request received from Front-End[19/11/03  12.31:47] :  'setSession' called[19/11/03  12.31:48] :  Returned Sessionkey for Session Search.[19/11/03  12.31:48] :  Returned getSession to FE[19/11/03  12.31:48] :  'getSession' is called[19/11/03  12.31:49] :  Returning final response for search query![19/11/03  12.32:19] :  Request received from Front-End[19/11/03  12.32:19] :  'setSession' called[19/11/03  12.32:20] :  Returned Sessionkey for Session Search.[19/11/03  12.32:20] :  Returned getSession to FE[19/11/03  12.32:20] :  'getSession' is called[19/11/03  12.32:21] :  Returning final response for search query![19/11/03  12.32:52] :  Request received from Front-End[19/11/03  12.32:52] :  'setSession' called[19/11/03  12.32:52] :  Returned Sessionkey for Session Search.[19/11/03  12.32:52] :  Returned getSession to FE[19/11/03  12.32:52] :  'getSession' is called[19/11/03  12.32:54] :  Returning final response for search query![19/11/03  12.33:24] :  Request received from Front-End[19/11/03  12.33:24] :  'setSession' called[19/11/03  12.33:25] :  Returned Sessionkey for Session Search.[19/11/03  12.33:25] :  Returned getSession to FE[19/11/03  12.33:25] :  'getSession' is called[19/11/03  12.33:26] :  Returning final response for search query![19/11/03  12.33:56] :  Request received from Front-End[19/11/03  12.33:56] :  'setSession' called[19/11/03  12.33:57] :  Returned Sessionkey for Session Search.[19/11/03  12.33:57] :  Returned getSession to FE[19/11/03  12.33:57] :  'getSession' is called[19/11/03  12.33:58] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.35
+====================================================
+[19/11/03  12.35:00] :  Listening session created[19/11/03  12.35:00] :  Request received from Front-End[19/11/03  12.35:00] :  'setSession' called[19/11/03  12.35:01] :  Returned Sessionkey for Session Search.[19/11/03  12.35:01] :  Returned getSession to FE[19/11/03  12.35:01] :  'getSession' is called[19/11/03  12.35:02] :  Returning final response for search query![19/11/03  12.35:32] :  Request received from Front-End[19/11/03  12.35:32] :  'setSession' called[19/11/03  12.35:33] :  Returned Sessionkey for Session Search.[19/11/03  12.35:33] :  Returned getSession to FE[19/11/03  12.35:33] :  'getSession' is called[19/11/03  12.35:34] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.36
+====================================================
+[19/11/03  12.36:09] :  Listening session created[19/11/03  12.36:09] :  Request received from Front-End[19/11/03  12.36:09] :  'setSession' called[19/11/03  12.36:10] :  Returned Sessionkey for Session Search.[19/11/03  12.36:10] :  Returned getSession to FE[19/11/03  12.36:10] :  'getSession' is called[19/11/03  12.36:14] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.38
+====================================================
+[19/11/03  12.38:53] :  Listening session created[19/11/03  12.38:53] :  Request received from Front-End[19/11/03  12.38:53] :  'setSession' called[19/11/03  12.38:54] :  Returned Sessionkey for Session Search.[19/11/03  12.38:54] :  Returned getSession to FE[19/11/03  12.38:54] :  'getSession' is called[19/11/03  12.38:55] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.39
+====================================================
+[19/11/03  12.39:40] :  Listening session created[19/11/03  12.39:40] :  Request received from Front-End[19/11/03  12.39:40] :  'setSession' called[19/11/03  12.39:41] :  Returned Sessionkey for Session Search.[19/11/03  12.39:41] :  Returned getSession to FE[19/11/03  12.39:41] :  'getSession' is called[19/11/03  12.39:41] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/03 12.40
+====================================================
+[19/11/03  12.40:27] :  Listening session created

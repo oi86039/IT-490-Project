@@ -5,7 +5,8 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 require_once('login.php.inc');
-require('Log.php.inc');
+require_once('Log.php.inc');
+
 
 function getPlaces($query,$country,$currency,$locale){
 	global $L;
@@ -45,6 +46,7 @@ function getPlaces($query,$country,$currency,$locale){
 		$jresponse = json_decode($response,true);
 		//var_dump($jresponse);
 		echo "getPlaces Created for ".$query."\n";
+		$L -> print("Returned 'getPlaces' for $query");
 		return $jresponse;
 	}
 }
@@ -112,10 +114,11 @@ function setSession($country,$currency,$locale,$origin,$dest,$leaveDate,$adults,
 		echo "\n";
 	} else {
 		echo "Session key created: ".$locKey."\n";
+		$L -> print("Returned Sessionkey for Session Search.");
 		return $locKey;
 	}
 }
-function getSession($locKey, $filters){
+function getSession($locKey, $filters, $search){
 	global $L;
 	$L -> print("'getSession' is called");
 	echo "\n";
@@ -172,7 +175,7 @@ function getSession($locKey, $filters){
 		echo "\n";
 	} else {
 		//var_dump($jresponse);
-		var_dump($jresponse['Query']);
+		//var_dump($jresponse['Query']);
 
 		$jr_itineraries = $jresponse["Itineraries"];
 		$jr_legs = $jresponse['Legs'];
@@ -218,8 +221,8 @@ function getSession($locKey, $filters){
 											foreach($ai2 as $akey3 => $ai3){//Id => 43234
 												if($akey3 == "Id"){
 													if($i5 == $ai2["Id"]){	
-														$jrequest[Itineraries][$key][$key2][$key3][$key4][$key5] = $ai2i["Name"];
-														var_dump($jrequest[Itineraries][$key][$key2][$key3][$key4][$key5]);
+														$jrequest["Itineraries"][$key][$key2][$key3][$key4][$key5] = $ai2["Name"];
+														var_dump($jrequest["Itineraries"][$key][$key2][$key3][$key4][$key5]);
 													}
 												}
 											}
@@ -232,18 +235,47 @@ function getSession($locKey, $filters){
 				}
 			}
 		}
+		
+		$maxP = floatval($search["maxPrice"]);
+		echo $maxP."\n";
+		$minP = floatval($search["minPrice"]);
+		echo $minP."\n";
+
 
 		$final_jr = $jresponse["Itineraries"];
-		var_dump($final_jr);
+
+		foreach($final_jr as $k => $d){ //[0] => ()
+			foreach($final_jr[$k] as $k2 => $d2){ //priceoptions => ()
+				if($k2 == "PriceOptions"){
+					foreach($final_jr[$k][$k2] as $k3 => $d3){
+						if($k3 == "Price"){
+							echo "Price = True";
+							$dd3 = floatval($d3);
+							if($dd3 <= $maxP && $dd3 >= $minP){
+								continue;
+							}
+							else{
+								unset($final_jr[$k][$k2]);
+								echo "removed";
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+		//var_dump($final_jr);
 
 		//return $jresponse;
+		$L -> print("Returning final response for search query!");
 		return $final_jr;
 
 	}
 }
 function requestProcessor($request){
 	global $L;
-	static $origin = 0;
+	//static $origin = 0;
 	//Required Params: query, country, currency, locale, originPlace, destinationPlace, outboundDate, adults, tags[], filters[].
 	$L -> print("Request received from Front-End");
 	echo "\n";
@@ -271,7 +303,9 @@ function requestProcessor($request){
 				$request['currency'],
 				$request['locale'])
 			);
+			$L -> print("Returned 'getPlaces' to FE");
 			return $setPlaces;
+			echo "something happened in setplaces!";
 			break;
 		case "getSessions":
 			$locKey = setSession($request['country'],
@@ -284,8 +318,6 @@ function requestProcessor($request){
 				$request['tags'],
 				$request['filters']);
 			
-			$L -> print("Returned setSession to FE");
-			echo "\n";
 			//**tag must include: 
 			//	inboundDate,
 			//	cabinClass,
@@ -296,8 +328,9 @@ function requestProcessor($request){
 			//	groupPricing
 		
 			$L -> print("Returned getSession to FE");
-			echo "\n";
-			return getSession($locKey,$request['filters']);
+			$getSession = getSession($locKey,$request['filters'],$request);
+			return $getSession;
+			echo "something happened in getSession!";
 			break;
 			//**filter must have:
 			//sortType - string

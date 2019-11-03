@@ -30,26 +30,32 @@ setcookie($cookie_name, json_encode($cookie_value), time() + (86400 * 30), "/");
   .F1 {   width: 60% ; Background: white ;   margin:auto   }             
 </style>
 
-<form  action="./destSearch.php">
 <fieldset class="F1">
   <legend>Select Origin/Destination</legend>
 
+<!--Buttons for every page-->
+<!--Homepage-->
+<button onclick="window.location.href = '../flightSearch.php'">Flight Search</button>
+<!--Go to Profile-->
+<button onclick="window.location.href = 'profile.php'" disabled>Go to Profile</button>
+<!--View Saved-->
+<button onclick="window.location.href = 'savedResults.php'" disabled>Saved Results</button>
+<!--Logout Hyperlink-->
+<button onclick="window.location.href = './../index.html'">Log Out</button><br>
+<!--Stop Auto Logout Checkbox + Text-->
+Stop Auto-Logout<input type="checkbox" id="stop" checked>
+<span id="demo"></span><br><br>
+
+<form  action="./destSearch.php">
 <!--Type Place ID here-->
 <span id = "PlaceID">
-Enter Place ID of desired origin: <input type= text name="OriginID" id= "OriginID" placeholder="Enter PlaceID:"  autocomplete=off> <br>
-Enter Place ID of desired destination: <input type= text name= "DestID" id="DestID" placeholder="Enter PlaceID:" autocomplete = off> <br>
+Enter Place ID of desired origin: <input type= text name="OriginID" id= "OriginID" placeholder="Enter PlaceID:"  autocomplete=off required> <br>
+Enter Place ID of desired destination: <input type= text name= "DestID" id="DestID" placeholder="Enter PlaceID:" autocomplete = off required> <br>
 
 <input type = submit>
 <br>
 
 </span>
-
-<!--Stop Auto Logout Checkbox + Text-->
-Stop Auto-Logout<input type="checkbox" id="stop" checked>		
-<span id="demo"></span><br><br>
-
-<!--Logout Hyperlink-->
-<button onclick="window.location.href = './../index.html';">Log Out</button>
 
 <!-- Javascript -->
 <script type="text/javascript">

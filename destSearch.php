@@ -13,12 +13,18 @@
 
 Warning: Page will automatically search for new flights in 30 seconds...<br><br>
 
-<!--Stop Auto Logout Checkbox + Text-->
-Stop Auto-Logout<input type="checkbox" id="stop" checked>		
-<span id="demo"></span><br><br>
-
+<!--Buttons for every page-->
+<!--Homepage-->
+<button onclick="window.location.href = 'flightSearch.php'">Flight Search</button>
+<!--Go to Profile-->
+<button onclick="window.location.href = 'profile.php'" disabled>Go to Profile</button>
+<!--View Saved-->
+<button onclick="window.location.href = 'savedResults.php'" disabled>Saved Results</button>
 <!--Logout Hyperlink-->
-<button onclick="window.location.href = './../index.html';">Log Out</button>
+<button onclick="window.location.href = './../index.html'">Log Out</button><br>
+<!--Stop Auto Logout Checkbox + Text-->
+Stop Auto-Logout<input type="checkbox" id="stop" checked>
+<span id="demo"></span><br><br>
 
 <!-- Javascript -->
 <script type="text/javascript">

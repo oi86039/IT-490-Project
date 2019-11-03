@@ -1,0 +1,31 @@
+echo $1; #username
+echo $2; #email
+echo $3; #message
+
+curl -s \
+-X POST \
+--user "7b19a3dba62d0e21400302140515772e:50ff09d1196ae315b00310a86305b97f" \
+https://api.mailjet.com/v3.1/send \
+-H 'Content-Type: application/json' \
+-d '{
+  "Messages":[
+    {
+      "From": {
+        "Email": "ars66@njit.edu",
+        "Name": "anwar"
+      },
+      "To": [
+        {
+          "Email": "'$2'",
+          "Name": "'$1'"
+        }
+      ],
+      "Subject": "Flights within Specified Price Range",
+      "TextPart": "Greetings from Skyscanner.",
+      "HTMLPart": "'$3'",
+      "CustomID": "AppGettingStartedTest"
+    }
+  ]
+}'
+
+

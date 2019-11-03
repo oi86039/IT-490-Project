@@ -9,6 +9,9 @@ $cookie_value['originPlace'] = $_GET["originPlace"];
 $cookie_value['destinationPlace'] = $_GET["destinationPlace"];
 $cookie_value['outboundDate'] = $_GET["outboundDate"]; //YYYY-01-06 | When to leave
 $cookie_value['adults'] = $_GET["adults"]; //int
+$cookie_value['email'] = $_GET["email"]; //Email checkbox val
+$cookie_value['minPrice'] = $_GET["minPrice"];
+$cookie_valie['maxPrice'] = $_GET["maxPrice"];
 
 //Optional tag parameters
 $tags = array();
@@ -122,6 +125,8 @@ $request['originPlace'] = $_GET["originPlace"];
 $request['destinationPlace'] = $_GET["destinationPlace"];
 $request['outboundDate'] = $_GET["outboundDate"]; //YYYY-01-06 | When to leave
 $request['adults'] = $_GET["adults"]; //int
+$request['minPrice'] = $_GET["minPrice"];
+$request['maxPrice'] = $_GET["maxPrice"];
 
 //Optional tag parameters
 $tags = array();

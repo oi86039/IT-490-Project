@@ -52,9 +52,12 @@ if ($response == 0){
 	redirect("Authentication Failed. Redirecting back to Login Page...", 6,"../login.html" );
 }
 
-else
+else{
+	$cookie_name = "prof";
+	$cookie_value = $user;
+	setcookie($cookie_name, json_encode($cookie_value), time() + (86400 * 30), "/"); // 86400 = 1 day
 	redirect("Going to flightSearch page.",6,"../flightSearch.php");
-
+}
 $l->print("\n\n");
 //$l->close();
 

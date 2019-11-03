@@ -1,0 +1,29 @@
+echo $1;
+
+curl -s \
+-X POST \
+--user "7b19a3dba62d0e21400302140515772e:50ff09d1196ae315b00310a86305b97f" \
+https://api.mailjet.com/v3.1/send \
+-H 'Content-Type: application/json' \
+-d '{
+  "Messages":[
+    {
+      "From": {
+        "Email": "ars66@njit.edu",
+        "Name": "anwar"
+      },
+      "To": [
+        {
+          "Email": "'$2'",
+          "Name": "'$1'"
+        }
+      ],
+      "Subject": "flight email test",
+      "TextPart": "Greetings from Skyscanner.",
+      "HTMLPart": "<h3>Dear passenger 1, please verify yourself. <a href='192.168.15.7/IT490/IT-490/verify.php?user=$1'>Skyscanner</a>!</h3><br />Take Flight!",
+      "CustomID": "AppGettingStartedTest"
+    }
+  ]
+}'
+
+

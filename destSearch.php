@@ -107,6 +107,8 @@ $request['tags'] =$c['tags'];
 
 //Optional Filter parameters
 $filters = array();
+$request['minPrice'] = $c["minPrice"];
+$request['maxPrice'] = $c["maxPrice"];
 
 $request['filters'] = $filters;
 
@@ -132,6 +134,7 @@ $l->print("\n\n");
 //$response["Itineraries"] = response["Itineraries"];
 //var_dump($response);
 
+$output = ""; //Output string for html
 
 //Display Results using nested for loop
 for($i = 0; $i < count($response); $i++){
@@ -139,21 +142,32 @@ for($i = 0; $i < count($response); $i++){
 	$Outbound = $response[$i]["OutboundLegId"]["OriginStation"];
 	$Pricing = $response[$i]["PricingOptions"];
 	//print_r($Pricing);
-	echo "    "."Inbound: ". $Inbound."&#9;|&#9;"."Outbound: ".$Outbound."&#9;&#9;";
+	$output.= "    "."Inbound: ". $Inbound."&#9;|&#9;"."Outbound: ".$Outbound."&#9;&#9;";
 
 	//Display Pricing options
 	for ($j = 0; $j < count($Pricing);$j++){
 		$Agent = $Pricing[$j]["Agents"][0];
 		$Price = $Pricing[$j]["Price"];
 		$TicketURL = $Pricing[$j]["DeeplinkUrl"];
-	echo 	"<br>        "."Agent: ".$Agent."&#9;&#9;".
+	$output.= 	"<br>        "."Agent: ".$Agent."&#9;&#9;".
 		"<br>        "."Price: ".$Price."&#9;&#9;".
 		"<br>        "."Ticket URL: <a target = \"_blank\" href = ".$TicketURL.">Click for External Link</a>   ";
 
 	//Favorite button
-	echo "<button onclick=window.location.href = \'favorite.php\'>Favorite</button>";
+	$output .= "<button onclick=window.location.href = \'favorite.php\'>Favorite</button>";
 	}
-	echo "<br><br>";
+	$output .= "<br><br>";
+}
+
+echo $output;
+
+//Email user if checked
+if (isset($c['email'])){
+	$old_path = getcwd();
+	chdir('./');
+	shell_exec("./emailWithinPrice omar oai4@njit.edu $output");
+	$this->l->print("Email sent!\n");
+	chdir($old_path);
 }
 
 //CLose Logger

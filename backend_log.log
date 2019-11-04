@@ -731,3 +731,83 @@ Date Created: 19/11/03 12.39
 Date Created: 19/11/03 12.40
 ====================================================
 [19/11/03  12.40:27] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.30
+====================================================
+[19/11/04  17.30:06] :  Listening session created[19/11/04  17.30:06] :  Request received from Front-End[19/11/04  17.30:06] :  'setSession' called[19/11/04  17.30:07] :  Returned Sessionkey for Session Search.[19/11/04  17.30:07] :  Returned getSession to FE[19/11/04  17.30:07] :  'getSession' is called[19/11/04  17.30:12] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.32
+====================================================
+[19/11/04  17.32:07] :  Listening session created[19/11/04  17.32:07] :  Request received from Front-End[19/11/04  17.32:07] :  'getPlaces' called for proper syntax[19/11/04  17.32:09] :  Returned 'getPlaces' for Atlantic City[19/11/04  17.32:09] :  'getPlaces' called for proper syntax[19/11/04  17.32:09] :  Returned 'getPlaces' for Orlando[19/11/04  17.32:09] :  Returned 'getPlaces' to FE[19/11/04  17.32:20] :  Request received from Front-End[19/11/04  17.32:20] :  'setSession' called[19/11/04  17.32:21] :  Returned Sessionkey for Session Search.[19/11/04  17.32:21] :  Returned getSession to FE[19/11/04  17.32:21] :  'getSession' is called[19/11/04  17.32:22] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.35
+====================================================
+[19/11/04  17.35:09] :  Listening session created[19/11/04  17.35:09] :  Request received from Front-End[19/11/04  17.35:09] :  'setSession' called[19/11/04  17.35:10] :  Returned Sessionkey for Session Search.[19/11/04  17.35:10] :  Returned getSession to FE[19/11/04  17.35:10] :  'getSession' is called[19/11/04  17.35:10] :  Returning final response for search query![19/11/04  17.35:17] :  Request received from Front-End[19/11/04  17.35:17] :  'setSession' called[19/11/04  17.35:18] :  Returned Sessionkey for Session Search.[19/11/04  17.35:18] :  Returned getSession to FE[19/11/04  17.35:18] :  'getSession' is called[19/11/04  17.35:19] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.36
+====================================================
+[19/11/04  17.36:39] :  Listening session created[19/11/04  17.36:39] :  Request received from Front-End[19/11/04  17.36:39] :  'setSession' called[19/11/04  17.36:39] :  Returned Sessionkey for Session Search.[19/11/04  17.36:39] :  Returned getSession to FE[19/11/04  17.36:39] :  'getSession' is called[19/11/04  17.36:40] :  Returning final response for search query![19/11/04  17.37:10] :  Request received from Front-End[19/11/04  17.37:10] :  'setSession' called[19/11/04  17.37:11] :  Returned Sessionkey for Session Search.[19/11/04  17.37:11] :  Returned getSession to FE[19/11/04  17.37:11] :  'getSession' is called[19/11/04  17.37:12] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.38
+====================================================
+[19/11/04  17.38:35] :  Listening session created[19/11/04  17.38:35] :  Request received from Front-End[19/11/04  17.38:35] :  'setSession' called[19/11/04  17.38:36] :  Returned Sessionkey for Session Search.[19/11/04  17.38:36] :  Returned getSession to FE[19/11/04  17.38:36] :  'getSession' is called[19/11/04  17.38:37] :  Returning final response for search query![19/11/04  17.38:47] :  Request received from Front-End[19/11/04  17.38:47] :  'getPlaces' called for proper syntax[19/11/04  17.38:47] :  Returned 'getPlaces' for Atlantic City[19/11/04  17.38:47] :  'getPlaces' called for proper syntax[19/11/04  17.38:48] :  Returned 'getPlaces' for Orlando[19/11/04  17.38:48] :  Returned 'getPlaces' to FE[19/11/04  17.38:59] :  Request received from Front-End[19/11/04  17.38:59] :  'setSession' called[19/11/04  17.39:00] :  Returned Sessionkey for Session Search.[19/11/04  17.39:00] :  Returned getSession to FE[19/11/04  17.39:00] :  'getSession' is called[19/11/04  17.39:01] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.39
+====================================================
+[19/11/04  17.39:57] :  Listening session created[19/11/04  17.39:57] :  Request received from Front-End[19/11/04  17.39:57] :  'setSession' called[19/11/04  17.39:58] :  Returned Sessionkey for Session Search.[19/11/04  17.39:58] :  Returned getSession to FE[19/11/04  17.39:58] :  'getSession' is called[19/11/04  17.39:58] :  Returning final response for search query![19/11/04  17.40:08] :  Request received from Front-End[19/11/04  17.40:08] :  'getPlaces' called for proper syntax[19/11/04  17.40:08] :  Returned 'getPlaces' for Atlantic City[19/11/04  17.40:08] :  'getPlaces' called for proper syntax[19/11/04  17.40:09] :  Returned 'getPlaces' for Orlando[19/11/04  17.40:09] :  Returned 'getPlaces' to FE[19/11/04  17.40:20] :  Request received from Front-End[19/11/04  17.40:20] :  'setSession' called[19/11/04  17.40:21] :  Returned Sessionkey for Session Search.[19/11/04  17.40:21] :  Returned getSession to FE[19/11/04  17.40:21] :  'getSession' is called[19/11/04  17.40:25] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.43
+====================================================
+[19/11/04  17.43:06] :  Listening session created[19/11/04  17.43:06] :  Request received from Front-End[19/11/04  17.43:06] :  'setSession' called[19/11/04  17.43:07] :  Returned Sessionkey for Session Search.[19/11/04  17.43:07] :  Returned getSession to FE[19/11/04  17.43:07] :  'getSession' is called[19/11/04  17.43:11] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.45
+====================================================
+[19/11/04  17.45:46] :  Listening session created[19/11/04  17.45:54] :  Request received from Front-End[19/11/04  17.45:54] :  'getPlaces' called for proper syntax[19/11/04  17.45:55] :  Returned 'getPlaces' for Atlantic City[19/11/04  17.45:55] :  'getPlaces' called for proper syntax[19/11/04  17.45:56] :  Returned 'getPlaces' for Orlando[19/11/04  17.45:56] :  Returned 'getPlaces' to FE[19/11/04  17.46:05] :  Request received from Front-End[19/11/04  17.46:05] :  'setSession' called[19/11/04  17.46:06] :  Returned Sessionkey for Session Search.[19/11/04  17.46:06] :  Returned getSession to FE[19/11/04  17.46:06] :  'getSession' is called[19/11/04  17.46:09] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.46
+====================================================
+[19/11/04  17.46:41] :  Listening session created[19/11/04  17.46:41] :  Request received from Front-End[19/11/04  17.46:41] :  'setSession' called[19/11/04  17.46:42] :  Returned Sessionkey for Session Search.[19/11/04  17.46:42] :  Returned getSession to FE[19/11/04  17.46:42] :  'getSession' is called[19/11/04  17.46:45] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.48
+====================================================
+[19/11/04  17.48:13] :  Listening session created[19/11/04  17.48:13] :  Request received from Front-End[19/11/04  17.48:13] :  'setSession' called[19/11/04  17.48:14] :  Returned Sessionkey for Session Search.[19/11/04  17.48:14] :  Returned getSession to FE[19/11/04  17.48:14] :  'getSession' is called[19/11/04  17.48:18] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.50
+====================================================
+[19/11/04  17.50:37] :  Listening session created[19/11/04  17.50:37] :  Request received from Front-End[19/11/04  17.50:37] :  'setSession' called[19/11/04  17.50:37] :  Returned Sessionkey for Session Search.[19/11/04  17.50:37] :  Returned getSession to FE[19/11/04  17.50:37] :  'getSession' is called[19/11/04  17.50:44] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.52
+====================================================
+[19/11/04  17.52:48] :  Listening session created
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.53
+====================================================
+[19/11/04  17.53:00] :  Listening session created[19/11/04  17.53:00] :  Request received from Front-End[19/11/04  17.53:00] :  'getPlaces' called for proper syntax[19/11/04  17.53:00] :  Returned 'getPlaces' for Atlantic City[19/11/04  17.53:00] :  'getPlaces' called for proper syntax[19/11/04  17.53:01] :  Returned 'getPlaces' for Orlando[19/11/04  17.53:01] :  Returned 'getPlaces' to FE[19/11/04  17.53:06] :  Request received from Front-End[19/11/04  17.53:06] :  'setSession' called[19/11/04  17.53:07] :  Returned Sessionkey for Session Search.[19/11/04  17.53:07] :  Returned getSession to FE[19/11/04  17.53:07] :  'getSession' is called[19/11/04  17.53:08] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.54
+====================================================
+[19/11/04  17.54:56] :  Listening session created[19/11/04  17.54:56] :  Request received from Front-End[19/11/04  17.54:56] :  'getPlaces' called for proper syntax[19/11/04  17.54:57] :  Returned 'getPlaces' for Atlantic City[19/11/04  17.54:57] :  'getPlaces' called for proper syntax[19/11/04  17.54:57] :  Returned 'getPlaces' for Orlando[19/11/04  17.54:57] :  Returned 'getPlaces' to FE
+====================================================
+./backend_log.log
+Date Created: 19/11/04 17.55
+====================================================
+[19/11/04  17.55:25] :  Listening session created[19/11/04  17.55:25] :  Request received from Front-End[19/11/04  17.55:25] :  'getPlaces' called for proper syntax[19/11/04  17.55:26] :  Returned 'getPlaces' for Atlantic City[19/11/04  17.55:26] :  'getPlaces' called for proper syntax[19/11/04  17.55:27] :  Returned 'getPlaces' for Orlando[19/11/04  17.55:27] :  Returned 'getPlaces' to FE[19/11/04  17.55:34] :  Request received from Front-End[19/11/04  17.55:34] :  'setSession' called[19/11/04  17.55:34] :  Returned Sessionkey for Session Search.[19/11/04  17.55:34] :  Returned getSession to FE[19/11/04  17.55:34] :  'getSession' is called[19/11/04  17.55:35] :  Returning final response for search query![19/11/04  17.56:05] :  Request received from Front-End[19/11/04  17.56:05] :  'setSession' called[19/11/04  17.56:06] :  Returned Sessionkey for Session Search.[19/11/04  17.56:06] :  Returned getSession to FE[19/11/04  17.56:06] :  'getSession' is called[19/11/04  17.56:07] :  Returning final response for search query![19/11/04  17.56:37] :  Request received from Front-End[19/11/04  17.56:37] :  'setSession' called[19/11/04  17.56:38] :  Returned Sessionkey for Session Search.[19/11/04  17.56:38] :  Returned getSession to FE[19/11/04  17.56:38] :  'getSession' is called[19/11/04  17.56:39] :  Returning final response for search query!
+====================================================
+./backend_log.log
+Date Created: 19/11/04 18.02
+====================================================
+[19/11/04  18.02:44] :  Listening session created[19/11/04  18.02:44] :  Request received from Front-End[19/11/04  18.02:44] :  'setSession' called[19/11/04  18.02:44] :  Returned Sessionkey for Session Search.[19/11/04  18.02:44] :  Returned getSession to FE[19/11/04  18.02:44] :  'getSession' is called[19/11/04  18.02:56] :  Returning final response for search query![19/11/04  18.03:26] :  Request received from Front-End[19/11/04  18.03:26] :  'setSession' called[19/11/04  18.03:26] :  Returned Sessionkey for Session Search.[19/11/04  18.03:26] :  Returned getSession to FE[19/11/04  18.03:26] :  'getSession' is called[19/11/04  18.03:27] :  Returning final response for search query!

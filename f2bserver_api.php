@@ -185,6 +185,26 @@ function getSession($locKey, $filters, $search){
 		$jr_places = $jresponse['Places'];
 		$jr_currencies = $jresponse['Currencies'];
 
+		/*foreach($jresponse["Itineraries"] as $itin => $iv){ // [0] => (access to inside string)
+                        foreach($jresponse["Legs"] as $legs => $lv){ // Access to Array in Legs
+                                //foreach($legs as $lArray){
+                                        if($legs["Id"] == $itin["OutboundLegId"]){
+                                                $jresponse["Itineraries"][$itin]["OutboundLegId"] = $lv;
+                                        }
+                                        if($legs["Id"] == $itin["InboundLegId"]){
+                                                $jresponse["Itineraries"][$itin]["InboundLegId"] = $lv;
+                                        }
+                                //}
+                        }
+                        foreach($jresponse["Itineraries"][$itin]["PricingOptions"] as $priceOps => $pv){
+                                foreach($jresponse["Agents"] as $agents => $av){
+                                        if($agents["Id"] == $priceOps["Agents"][0]){
+                                                $jresponse["Itineraries"]["PricingOptions"]["Agents"][0] = $agents["Name"];
+                                        }
+                                }
+                        }
+		}*/
+
 		foreach($jr_itineraries as $key => $i){ //intineraries => [0]
 			foreach($i as $key2 => $i2){ //[0] => {}
 				if($key2 == "OutboundLegId"){ //OutboundLegId => 123412341243
@@ -192,9 +212,6 @@ function getSession($locKey, $filters, $search){
 						foreach($i3 as $key4 => $i4){
 							if($i3["Id"] == $i2){
 								$jresponse["Itineraries"][$key][$key2] = $i3;
-							}
-							else{
-								break;
 							}
 						}
 					}
@@ -205,34 +222,31 @@ function getSession($locKey, $filters, $search){
                                                         if($i3["Id"] == $i2){
                                                                 $jresponse["Itineraries"][$key][$key2] = $i3;
                                                         }
-                                                        else{
-                                                                break;
-                                                        }
                                                 }
                                         }
 				}
-				if($key2 == "PriceOptions"){ //PriceOptions => [0]
-					foreach($i2 as $key3 => $i3){ //[0] => {}
+				//if($key2 == "PriceOptions"){ //PriceOptions => [0]
+					foreach($i["PricingOptions"] as $key3 => $i3){ //[0] => {}
 						foreach($i3 as $key4 => $i4){ //Agents => {}
 							if($key4 == "Agents"){
 								foreach($i4 as $key5 => $i5){ //0 => 43234
-									foreach($jr_agents as $akey => $ai){//(dict)Agents => [0]
-										foreach($ai as $akey2 => $ai2){//[0] => {}
-											foreach($ai2 as $akey3 => $ai3){//Id => 43234
-												if($akey3 == "Id"){
-													if($i5 == $ai2["Id"]){	
-														$jrequest["Itineraries"][$key][$key2][$key3][$key4][$key5] = $ai2["Name"];
-														var_dump($jrequest["Itineraries"][$key][$key2][$key3][$key4][$key5]);
+									foreach($jr_agents as $akey => $ai){//[0] {}
+										foreach($ai as $akey2 => $ai2){//Id => 43234
+											//foreach($ai2 as $akey3 => $ai3){
+												if($akey2 == "Id"){
+													if($i5 == $ai2){	
+														$jrequest["Itineraries"][$key][$key2][$key3][$key4][$key5] = $akey["Name"];
+														//var_dump($jrequest["Itineraries"][$key][$key2][$key3][$key4][$key5]);
 													}
 												}
-											}
+											//}
 										}
 									}
 								}
 							}
 						}
 					}
-				}
+				//}
 			}
 		}
 		

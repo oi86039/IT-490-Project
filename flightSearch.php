@@ -54,11 +54,12 @@ Stop Auto-Logout<input type="checkbox" id="stop" checked>
 <span id = "PlaceID">
 Enter Place ID of desired origin: <input type= text name="OriginID" id= "OriginID" placeholder="Enter PlaceID:"  autocomplete=off required> <br>
 Enter Place ID of desired destination: <input type= text name= "DestID" id="DestID" placeholder="Enter PlaceID:" autocomplete = off required> <br>
-
 <input type = submit>
 <br>
-
 </span>
+
+<!--Save Query button-->
+<button onclick="window.location.href = '../saveResult.php'" disabled>Save Results for Later</button>
 
 <!-- Javascript -->
 <script type="text/javascript">

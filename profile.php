@@ -77,7 +77,7 @@ $request = array();
 //Get cookie
 $c = json_decode($_COOKIE["prof"],true);
 
-//Mandatory search parameters
+//Send display request to login.php.inc
 $request['type'] = "profile";
 $request['user'] = $c;
 
@@ -96,9 +96,19 @@ $l->print("Client received response: ".PHP_EOL);
 //var_dump($response);
 $l->print("\n\n");
 
-//echo ("PROJECTED VALUE:". $response["Places"][0]["PlaceId"]."\n");
+$output = "";
 
+//Display response values 
+$output.= "Username: ".$c."<br>
+	Home Airport: ".$response[0]"<br>
+	<br>
+	Favorite(s) List:<br>";
+for ($i = 1; $i < count($response); $i++){
+$output.= $response[$i]."<br>";
+}
 
+echo $output;
+$l->print("$output\n");
 
 //CLose Logger
 //$l->sendToRabbitMQ(__DIR__ . '/_logs/flightSearch.log','./_logs/flightSearch.log');

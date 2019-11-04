@@ -40,7 +40,7 @@ setcookie($cookie_name, json_encode($cookie_value), time() + (86400 * 30), "/");
 <!--Homepage-->
 <button onclick="window.location.href = '../flightSearch.php'">Flight Search</button>
 <!--Go to Profile-->
-<button onclick="window.location.href = 'profile.php'" disabled>Go to Profile</button>
+<button onclick="window.location.href = 'profile.php'">Go to Profile</button>
 <!--View Saved-->
 <button onclick="window.location.href = 'savedResults.php'" disabled>Saved Results</button>
 <!--Logout Hyperlink-->

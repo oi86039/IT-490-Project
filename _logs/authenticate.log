@@ -2316,3 +2316,19 @@ Date Created: 19/11/02 11.49
 <br>
 [19/11/02  11.49:22] :  Sending request...
 [19/11/02  11.49:22] :  Client received response: 1
+====================================================
+/var/www/html/IT490/IT-490/_logs/authenticate.log
+Date Created: 19/11/04 11.39
+====================================================
+[19/11/04  11.39:46] :  Initializing Logger!
+[19/11/04  11.39:46] :  Setting up RabbitMQ Client...Done.<br>
+[19/11/04  11.39:46] :  Getting HTML vars...
+[19/11/04  11.39:46] :  Getting user...Done.<br>
+[19/11/04  11.39:46] :  Getting pass...Done.<br>
+[19/11/04  11.39:46] :  Preparing RabbitMQ request...
+[19/11/04  11.39:46] :  Type: Login...Done.<br>
+[19/11/04  11.39:46] :  User: omarDone.<br>
+[19/11/04  11.39:46] :  Hashed Pass:0ec09ef9836da03f1add21e3ef607627e687e790Done.<br>
+<br>
+[19/11/04  11.39:46] :  Sending request...
+[19/11/04  11.39:46] :  Client received response: 1

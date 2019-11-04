@@ -100,7 +100,7 @@ $output = "";
 
 //Display response values 
 $output.= "Username: ".$c."<br>
-	Home Airport: ".$response[0]"<br>
+	Home Airport: ".$response[0]."<br>
 	<br>
 	Favorite(s) List:<br>";
 for ($i = 1; $i < count($response); $i++){

@@ -28,7 +28,7 @@ include ("./IT-490/myfunctions.php");
 <!--Homepage-->
 <button onclick="window.location.href = 'flightSearch.php'">Flight Search</button>
 <!--Go to Profile-->
-<button onclick="window.location.href = 'profile.php'" disabled>Go to Profile</button>
+<button onclick="window.location.href = 'IT-490/profile.php'">Go to Profile</button>
 <!--View Saved-->
 <button onclick="window.location.href = 'savedResults.php'" disabled>Saved Results</button>
 <!--Logout Hyperlink-->
@@ -76,13 +76,11 @@ Number of Adults: <input type= number name="adults" id= "adults" placeholder="1"
 </span>
 
 <!--Price-->
-<span id = "price">
 Price Range<input type= number name="minPrice" id= "minPrice" placeholder="$---.--" value = "0.01" step = "0.01"  autocomplete=on>
 - <input type= number name="maxPrice" id= "maxPrice" placeholder="$---.--" value = "0.01" step = "0.01"  autocomplete=on> <br>
-</span>
 
 <span id = "email">
-Email<input type=checkbox name=email id="email" placeholder="furCoat@example.com"> 
+Email<input type=checkbox name=email id="email" placeholder="furCoat@example.com"><br> 
 </span>
 
 <!--Optional Tags-->

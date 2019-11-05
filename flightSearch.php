@@ -11,7 +11,7 @@ $cookie_value['outboundDate'] = $_GET["outboundDate"]; //YYYY-01-06 | When to le
 $cookie_value['adults'] = $_GET["adults"]; //int
 $cookie_value['email'] = $_GET["email"]; //Email checkbox val
 $cookie_value['minPrice'] = $_GET["minPrice"];
-$cookie_valie['maxPrice'] = $_GET["maxPrice"];
+$cookie_value['maxPrice'] = $_GET["maxPrice"];
 
 //Optional tag parameters
 $tags = array();

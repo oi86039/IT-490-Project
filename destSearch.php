@@ -64,6 +64,7 @@ require_once('path.inc');
 require_once('get_host_info.inc');
 require_once('rabbitMQLib.inc');
 require_once('Log.php.inc');
+//require_once('emailWithinPrice');
 
 //PHP Error Reporting
 error_reporting(E_ERROR | E_Warning | E_PARSE | E_NOTICE);
@@ -150,25 +151,25 @@ for($i = 0; $i < count($response); $i++){
 		$Price = $Pricing[$j]["Price"];
 		$TicketURL = $Pricing[$j]["DeeplinkUrl"];
 	$output.= 	"<br>        "."Agent: ".$Agent."&#9;&#9;".
-		"<br>        "."Price: ".$Price."&#9;&#9;".
+		"<br>        "."Price: \$".$Price."&#9;&#9;".
 		"<br>        "."Ticket URL: <a target = \"_blank\" href = ".$TicketURL.">Click for External Link</a>   ";
 
 	//Favorite button
-	$output .= "<button onclick=window.location.href = \'favorite.php\'>Favorite</button>";
+	$output .= "<button onclick=window.location.href = \'favorite.php\' disabled>Favorite</button>";
 	}
 	$output .= "<br><br>";
 }
 
 echo $output;
-
+$l->print($output."\n");
 //Email user if checked
-if (isset($c['email'])){
+//if (isset($c['email'])){
 	$old_path = getcwd();
 	chdir('./');
 	shell_exec("./emailWithinPrice omar oai4@njit.edu $output");
 	$this->l->print("Email sent!\n");
 	chdir($old_path);
-}
+//}
 
 //CLose Logger
 $l->sendToRabbitMQ(__DIR__ . '/_logs/destSearch.log','./_logs/destSearch.log');

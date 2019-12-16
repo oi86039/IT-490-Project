@@ -52,12 +52,24 @@ if ($response == 0){
 	redirect("Authentication Failed. Redirecting back to Login Page...", 6,"../login.html" );
 }
 
-else{
+else if ($response == 1){
 	$cookie_name = "prof";
 	$cookie_value = $user;
 	setcookie($cookie_name, json_encode($cookie_value), time() + (86400 * 30), "/"); // 86400 = 1 day
 	redirect("Going to flightSearch page.",6,"../flightSearch.php");
 }
+
+//if not verified, email user and redirect user to login page.
+else if ($response.is_array()){
+	$user = $response['user'];
+	$email = $response['email'];
+	$old_path = getcwd();
+                        chdir('./');
+                        shell_exec("./emailscript $user $email");
+                        chdir($old_path);
+	redirect("Email not verified. Check your email! Redirecting back to Login Page...", 6,"../login.html" );
+}
+
 $l->print("\n\n");
 //$l->close();
 

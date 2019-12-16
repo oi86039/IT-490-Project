@@ -8,6 +8,10 @@ require_once('login.php.inc');
 //include ("accounts.php");
 //include ("myfunctions.php");
 
+function doProfile($user){
+	$login = new loginDB();
+	return $login-> displayProfile($user);
+}
 
 function doVerify($user)
 {
@@ -56,7 +60,9 @@ function requestProcessor($request)
 	    
     case "verify": 
 	    return doVerify($request['user']);
-
+	    
+    case "profile":
+	    return doProfile($request['user']);
   }
   return array("returnCode" => '0', 'message'=>"Server received request and processed");
 }

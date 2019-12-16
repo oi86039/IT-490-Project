@@ -38,7 +38,35 @@ public function verify($user)
 	else 
 	{return 0;}
 }
+public function displayProfile($user)
+{
+	echo "got to displayProfile function";
+	$r = array();// making an array
 
+	//Select home and store in array
+	$statement= "select home from users where username = '$user'";
+	($home = mysqli_query( $this->logindb, $statement)) or die( mysqli_error($this->logindb));
+	$home = mysqli_fetch_row ($home);
+	var_dump($home[0]."\n");
+	array_push($r,$home[0]);
+
+	echo "Stored home in array";
+
+	//Select favorites from profile and store in array
+	$newStatement= "select favorite from profile where username ='$user'";
+	($favorite = mysqli_query( $this->logindb, $newStatement)) or die( mysqli_error($this->logindb));
+	while ($row = $favorite->fetch_assoc())
+	{
+		array_push($r,$row["favorite"]); //Store row one by one in array
+	}
+
+	echo "Finished favorites while loop";
+	//Return array to frontToDBServer
+	echo "sent back array in return";
+	return $r;
+}
+		
+	
 public function validateLogin($username,$password)
 {
 	$un = $this->logindb->real_escape_string($username);
@@ -114,7 +142,7 @@ public function register($user, $email, $pass, $confirmPass, $plainPass)
 	}
 
 	//Add to DB
-	$statement = "INSERT INTO users (username, password, plainpassword, email, verify) VALUES ('$user','$pass','$plainPass','$email','0')";
+	$statement = "INSERT INTO users (username, password, plainpassword, email, verify, home) VALUES ('$user','$pass','$plainPass','$email','0','NULL')";
 	$this ->l ->print($statement .PHP_EOL); //Debug
 	$response=$this->logindb->query($statement);
 	if($response===TRUE){

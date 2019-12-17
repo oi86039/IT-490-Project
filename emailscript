@@ -1,5 +1,7 @@
-!/bin/bash
+#!/bin/bash
 echo $1;
+
+ip=192.168.15.7
 
 curl -s \
 -X POST \
@@ -21,7 +23,7 @@ https://api.mailjet.com/v3.1/send \
       ],
       "Subject": "flight email test",
       "TextPart": "Greetings from Skyscanner.",
-      "HTMLPart": "<h3>Dear passenger 1, please verify yourself. <a href='192.168.15.7/IT490/IT-490/verify.php?user=$1'>Skyscanner</a>!</h3><br />Take Flight!",
+      "HTMLPart": "<h3>Dear passenger 1, please verify yourself. <a href='$ip/IT490/IT-490/verify.php?user=$1'>Skyscanner</a>!</h3><br />Take Flight!",
       "CustomID": "AppGettingStartedTest"
     }
   ]
